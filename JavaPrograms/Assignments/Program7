@@ -1,0 +1,138 @@
+
+/*Qu 7. Write a menu driven program for calculator using Java Language. Menu Details are mentioned below :-
+
+	1. Addition
+	2. Substraction
+	3. Multiplication
+	4. Division
+	5. Percentage
+	6. Exit*/
+package assignments;
+
+import java.util.Scanner;
+
+public class Program7 {
+	
+    static int n;
+	static Scanner s=new Scanner(System.in);
+
+	public void menu()
+	{
+		System.out.println("Welcome to Menu");
+		System.out.println("1.Addtion");
+		System.out.println("2.Subtraction");
+		System.out.println("3.Multiplication");
+		System.out.println("4.Division");
+		System.out.println("5.Percentage");
+		System.out.println("6.exit");
+		System.out.println("Enter your option from 1 to 6");
+	}
+	
+	public void Calulator(int [] num)//using switch case to use the calculator functions
+	{	int choise=0;
+		choise=s.nextInt();
+		switch(choise)
+		{
+		case 1:
+		{
+			System.out.println("Welcome to Addtion section");
+			 int sum=0;
+			for(int i=0;i<num.length;i++)
+			{sum=sum+num[i];}
+			System.out.println("The addtion of values--->"+sum);
+			break;
+		}
+		case 2:
+		{
+			System.out.println("Subtraction section");
+			 int sub=0;
+			for(int i=0;i<num.length;i++)
+			{sub=sub-num[i];}
+			System.out.println("The subtraction of values--->"+sub);
+			break;
+		}
+		case 3:
+		{
+			System.out.println("Multiplication section");
+			 int mul=1;
+			for(int i=0;i<num.length;i++)
+			{mul=mul*num[i];}
+			System.out.println("The multiplication of values--->"+mul);
+			break;
+		}
+		case 4:
+		{
+			System.out.println("Division section");
+			 double div=1;
+			for(int i=0;i<num.length;i++)
+			{div=div/num[i];}
+			System.out.println("The Division of the values--->"+div);
+			break;
+		}
+		case 5:
+		{System.out.println("Percentage section");
+		 double per=0;
+		double sum=0;
+		for(int i=0;i<num.length;i++)
+		{
+		sum=sum+num[i];
+		}
+		for(int j=0;j<num.length;j++)
+		{
+		per=(num[j]/sum)*100;
+		}
+		System.out.println("The percentage of the values--->"+per);
+		break;
+		}
+		case 6:
+		{
+			System.out.println("Exit");
+			System.exit(0);
+			break;
+		}
+		default :
+		{
+			System.out.println("Invalid option");
+		}
+		}
+	}
+	
+	public static void main(String[] args) {
+		Program7 p=new Program7();
+		System.out.println("Welcome to use of calculator");
+		System.out.println("Enter the number of digits to calculate");
+		  n=s.nextInt();//to store the number of elements
+		  int [] num=new int[n];//array to store the elements
+		  for(int i=0;i<num.length;i++)
+			{
+				System.out.println("Enter the number "+(i+1)+":");
+				num[i]=s.nextInt();
+			}
+		p.menu();
+		p.Calulator(num);
+	
+
+}
+}
+
+output:
+
+Welcome to use of calculator
+Enter the number of digits to calculate
+2
+Enter the number 1:
+21
+Enter the number 2:
+34
+Welcome to Menu
+1.Addtion
+2.Subtraction
+3.Multiplication
+4.Division
+5.Percentage
+6.exit
+Enter your option from 1 to 6
+1
+Welcome to Addtion section
+The addtion of values--->55
+

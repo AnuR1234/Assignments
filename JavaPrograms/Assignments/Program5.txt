@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+//Qu 5. Write a program to accept marks of 10 students using array and display the name of highest scorer.
+public class Program5 {
+static String [] studentName=new String[10];//array to store the name of 10 students
+static int [] marks=new int[10];//array to store the marks of 10 students
+
+	public static void main(String[] args) {
+		String highscorerName=null;
+		int highscore=0;//initial high marks
+		Scanner s=new Scanner(System.in);
+		for(int i=0;i<10;i++)
+		{
+			System.out.println("Enter the Student "+(i+1)+" name:");
+			studentName[i]=s.next();
+			System.out.println("Enter the marks of Student "+(i+1)+":");
+			marks[i]=s.nextInt();
+			
+		}
+		for (int i=0;i<10;i++)
+		{
+			if(marks[i]>highscore)//comparing the marks with the highestscore
+			{
+				highscore=marks[i];//if true make the new marks as highest
+				highscorerName=studentName[i];//if true make that studentname as the name of the highest scorer
+			}
+			
+		}
+		System.out.println("The highest scorer is--->"+highscorerName+"with highest marks--->"+highscore);
+	}
+	}
+
+Output:
+
+Enter the Student 1 name:
+ramu
+Enter the marks of Student 1:
+56
+Enter the Student 2 name:
+rahul
+Enter the marks of Student 2:
+60
+Enter the Student 3 name:
+malli
+Enter the marks of Student 3:
+45
+Enter the Student 4 name:
+punit
+Enter the marks of Student 4:
+68
+Enter the Student 5 name:
+uma
+Enter the marks of Student 5:
+55
+Enter the Student 6 name:
+umesh
+Enter the marks of Student 6:
+60
+Enter the Student 7 name:
+tanu
+Enter the marks of Student 7:
+70
+Enter the Student 8 name:
+kiran
+Enter the marks of Student 8:
+77
+Enter the Student 9 name:
+jolly
+Enter the marks of Student 9:
+78
+Enter the Student 10 name:
+tim
+Enter the marks of Student 10:
+75
+The highest scorer is--->jollywith highest marks--->78
+

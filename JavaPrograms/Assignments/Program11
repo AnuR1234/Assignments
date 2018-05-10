@@ -1,0 +1,77 @@
+//Qu 11. Write a Java Program to do product of 2 matrices of 3 rows and 3 columns.
+package assignments;
+
+import java.util.Scanner;
+
+public class Program11 {
+
+   public static void main(String[] args) {
+       Scanner s = new Scanner(System.in);
+       int[][] a = new int[3][3];
+       int[][] b = new int[3][3];
+       System.out.println("Enter matrix A");
+       for (int i = 0; i < a.length; i++) {
+           for (int j = 0; j < a[0].length; j++) {
+               a[i][j] = s.nextInt();
+           }
+       }
+       System.out.println("Enter matrix B");
+       for (int i = 0; i < b.length; i++) {
+           for (int j = 0; j < b[0].length; j++) {
+               b[i][j] = s.nextInt();
+           }
+       }
+       int[][] c = matrixMul(a, b);
+       System.out.println("Product of A and B is");
+       for (int i = 0; i < c.length; i++) {
+           for (int j = 0; j < c[0].length; j++) {
+               System.out.print(c[i][j] + " ");
+           }
+           System.out.println();
+       }
+   }
+
+   public static int[][] matrixMul(int[][] a, int[][] b) {
+       int[][] c = new int[3][3];
+       for (int i = 0; i < a.length; i++) {
+           for (int j = 0; j < b.length; j++) {
+               for (int k = 0; k < a.length; k++) {
+                   c[i][j] = c[i][j] + a[i][k] * b[k][j];
+               }
+           }
+       }
+       return c;
+   }
+}
+
+Output:
+
+Enter matrix A
+5
+7
+4
+2
+
+8
+9
+6
+8
+14
+Enter matrix B
+5
+9
+7
+3
+9
+1
+44
+7
+34
+Product of A and B is
+222 136 178 
+430 153 328 
+670 224 526 
+
+
+
+

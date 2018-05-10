@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+/*Qu 2. 
+Write a program in Java to accept the details of 10 Employees.Display the total bonus given to the employees during festival season. Bonus Criteria is given below.
+
+if Salary is . 10000 Bonus will be 30%
+if Salary is . 50000 Bonus will be 20%
+if Salary is . 100000 Bonus will be 10%
+Details will be   : EmployeeName   : EmployeeSalary
+*/
+public class Program2 {
+static String [] EmployeeName=new String[10];//an array to store employeename
+static double [] EmployeeSalary=new double[10];//an array to store employeesalary
+
+public double bonus(double[] employeeSalary2)//method to calculate the bonus
+{double bonus=0;
+for(int i=0;i<EmployeeSalary.length;i++)
+{
+	if(EmployeeSalary[i] >=10000)
+	{
+		bonus=((30*EmployeeSalary[i])/100)+EmployeeSalary[i];
+	}
+		else
+			if(EmployeeSalary[i] >= 50000)
+			{
+				bonus=((20*EmployeeSalary[i])/100)+EmployeeSalary[i];
+			}
+			else
+				if(EmployeeSalary[i] >= 100000)
+				{
+					bonus=((10*EmployeeSalary[i])/100)+EmployeeSalary[i];
+				}
+}	return bonus;
+	}
+
+	public static void main(String[] args) {
+		Program2 p=new Program2();
+		double hike=0;
+		Scanner s=new Scanner(System.in);
+		for(int i=0;i<2;i++)
+		{
+			System.out.println("Enter the Name of Employee "+(i+1)+":");
+			EmployeeName[i]=s.next();
+			System.out.println("Enter the Salary of Employee "+(i+1)+":");
+			EmployeeSalary[i]=s.nextInt();
+			hike=p.bonus(EmployeeSalary);
+			System.out.println("The total salary of Employee"+(i+1)+":"+hike);
+		}
+		
+
+	}
+
+}
+
+output:
+Enter the Name of Employee 1:
+ravi
+Enter the Salary of Employee 1:
+20000
+The total salary of Employee1:26000.0
+Enter the Name of Employee 2:
+krish
+Enter the Salary of Employee 2:
+16000
+The total salary of Employee2:20800.0
+Enter the Name of Employee 3:
+malli
+Enter the Salary of Employee 3:
+20000
+The total salary of Employee3:26000.0
+Enter the Name of Employee 4:
+usha
+Enter the Salary of Employee 4:
+22000
+The total salary of Employee4:28600.0
+Enter the Name of Employee 5:
+uma
+Enter the Salary of Employee 5:
+18000
+The total salary of Employee5:23400.0
+Enter the Name of Employee 6:
+raheam
+Enter the Salary of Employee 6:
+19000
+The total salary of Employee6:24700.0
+Enter the Name of Employee 7:
+kailesh
+Enter the Salary of Employee 7:
+27000
+The total salary of Employee7:35100.0
+Enter the Name of Employee 8:
+raju
+Enter the Salary of Employee 8:
+30000
+The total salary of Employee8:39000.0
+Enter the Name of Employee 9:
+komal
+Enter the Salary of Employee 9:
+26000
+The total salary of Employee9:33800.0
+Enter the Name of Employee 10:
+jai
+Enter the Salary of Employee 10:
+30000
+The total salary of Employee10:39000.0
+

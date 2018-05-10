@@ -1,0 +1,55 @@
+package aaaa;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Emp{  
+int id;  
+String name;  
+int age;  
+Emp(int id,String name,int age){  
+this.id=id;  
+this.name=name;  
+this.age=age;  
+}  
+}  
+class IdCompare implements Comparator<Emp>{  
+public int compare(Emp e1,Emp e2){  
+if(e1.id==e2.id)  
+return 0;  
+else if(e1.id>e2.id)  
+return 1;  
+else  
+return -1;  
+}  
+}   
+class Program16{  
+public static void main(String args[]){  
+  
+ArrayList<Emp> al=new ArrayList<Emp>();  
+al.add(new Emp(101,"Vijay",23));  
+al.add(new Emp(100,"Ajay",27));  
+al.add(new Emp(107,"Jai",21));  
+  
+
+  
+System.out.println("sorting by id...");  
+  
+Collections.sort(al,new IdCompare());  
+for(Emp e: al){  
+System.out.println(e.id+" "+e.name+" "+e.age);  
+}  
+  
+}  
+}  
+
+
+
+Output:
+
+sorting by id...
+100 Ajay 27
+101 Vijay 23
+107 Jai 21
+

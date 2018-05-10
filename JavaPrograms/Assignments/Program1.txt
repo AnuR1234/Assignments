@@ -1,0 +1,80 @@
+import java.util.Scanner;
+
+/*Write a program in Java to accept the details of 10 Students. Display the total count of students who are eligible for taking admission in Graduation 1st Year if age is greater than 18.
+
+Details will be 
+
+studentName
+StudentAge*/
+
+public class Program1 {
+static String [] studentName=new String[2];//an array to store studentnames
+static int [] studentAge=new int[2];//an array to store the studentage
+
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);//to take the input from the user.
+		int count=0;
+		for(int i=0;i<10;i++)
+		{	
+			System.out.println("Enter the Student "+i+" name");
+			studentName[i]=s.next();
+			System.out.println("Enter the Student" +i+" age");
+			studentAge[i]=s.nextInt();
+		}
+		for(int j=0;j<10;j++)
+		{
+			if(studentAge[j]>18)
+			{
+					count++;
+			}		
+		}
+		System.out.println("The number of students eligible for admission in Graduation 1st Year ---> "+count);
+	}
+
+}
+
+Output:
+
+Enter the Student 1 name
+hari
+Enter the Student1 age
+12
+Enter the Student 2 name
+maneesh
+Enter the Student2 age
+15
+Enter the Student 3 name
+anil
+Enter the Student3 age
+17
+Enter the Student 4 name
+manasa
+Enter the Student4 age
+16
+Enter the Student 5 name
+akila
+Enter the Student5 age
+19
+Enter the Student 6 name
+malli
+Enter the Student6 age
+22
+Enter the Student 7 name
+dolly
+Enter the Student7 age
+11
+Enter the Student 8 name
+sim
+Enter the Student8 age
+16
+Enter the Student 9 name
+sally
+Enter the Student9 age
+20
+Enter the Student 10 name
+simran
+Enter the Student10 age
+21
+The number of students eligible for admission in Graduation 1st Year ---> 4
+

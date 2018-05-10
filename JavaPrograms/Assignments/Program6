@@ -1,0 +1,49 @@
+/*Qu 6. Write a java program to accept a number of any digit and reverse the numbers..
+
+Like :-   678345   --> 543876*/
+package assignments;
+import java.util.Scanner;
+public class Program6 {
+    
+
+        public static void main(String[] args)
+
+        {
+
+            int num, temp, rev = 0;
+
+            Scanner s = new Scanner(System.in);
+
+            System.out.print("Enter any number:");
+
+            num = s.nextInt();//take the input from the user
+
+            do
+
+            {
+
+                temp = num % 10;//to take the last digit
+
+                
+                rev = rev * 10 + temp;//multiply with 10 and add the last digit
+
+                num = num / 10;
+
+            }
+
+            while( num > 0);
+
+            System.out.println("Reverse of the number is--->"+rev);
+
+
+        }
+
+    }
+
+output:
+
+Enter any number:
+25678
+Reverse of the number is--->87652
+
+

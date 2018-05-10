@@ -1,0 +1,156 @@
+/*Qu 12. Write a java program to maintain Employee Details using ArrayList? 
+
+Id
+Name
+Age
+Salary
+
+
+1. Add minimum 5 employee details.
+2. Display it in proper order.
+3. Display the name to employee having highest Salary
+4. Display the details in the order of Salary*/
+package assignments;
+
+
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+public class Program12 {
+  public static void main(String[] a) {
+    ArrayList<Employee> emps = new ArrayList<Employee>();//Arraylist to stote emp object
+    emps.add(new Employee(101,"Raju",22,12000));
+    emps.add(new Employee(102,"Ravi",24,20000));
+    emps.add(new Employee(103,"Suraj",21,15000));
+    emps.add(new Employee(104,"Manoj",29,150000));
+    emps.add(new Employee(105,"alisha",25,35000));
+    
+    for(Employee e:emps)//display the emp details
+    {
+    	System.out.println("The employee details--->");
+    	System.out.println(e.getId()+"----"+e.getName()+"----"+e.getAge()+"----"+e.getSalary());
+    }
+    
+    Iterator<Employee> i = emps.iterator();//store the max salary
+    double maxsalary=0;
+    String name = null;
+    if(i.hasNext())
+    {
+    Employee e=i.next();
+    maxsalary=e.getSalary();
+    }
+
+    Iterator<Employee> i1 = emps.iterator();
+    while(i1.hasNext())
+    {
+
+    Employee e1 = i1.next();
+    if(maxsalary<=e1.getSalary())//find the max salary
+    {
+    maxsalary=e1.getSalary();
+    name=e1.getName();
+    }
+    //System.out.println(maxsalary);
+
+    }
+
+    System.out.println("The person name is " + name + " who is  having the max salary:" +maxsalary);
+    
+  Collections.sort(emps,new SalaryComp());//to sort based on salary in decreasing order
+  System.out.println("Employees sorted based on their salary");
+  for(Employee e:emps){
+      System.out.println(e.getId()+"-----"+e.getName()+"-----"+e.getAge()+"----"+e.getSalary());
+  }
+  }
+}
+
+class SalaryComp implements Comparator<Employee>{//compare their salaries
+	 
+    @Override
+    public int compare(Employee e1, Employee e2) {
+        if(e1.getSalary() < e2.getSalary()){
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+}
+
+
+class Employee {//employee class 
+  private String Name;
+
+  private int id ;
+
+  private double salary;
+
+  public int  age;
+
+  public Employee(int id, String Name,int  age,double salary) {
+    this.Name = Name;
+    this.id = id;
+    this.salary =salary;
+    this.age=age;
+
+  }
+
+public String getName() {
+	return Name;
+}
+
+public void setName(String name) {
+	Name = name;
+}
+
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public double getSalary() {
+	return salary;
+}
+
+public void setSalary(double salary) {
+	this.salary = salary;
+}
+
+public int getAge() {
+	return age;
+}
+
+public void setAge(int age) {
+	this.age = age;
+}
+  
+
+ 
+}
+
+output:
+
+The employee details--->
+101----Raju----22----12000.0
+The employee details--->
+102----Ravi----24----20000.0
+The employee details--->
+103----Suraj----21----15000.0
+The employee details--->
+104----Manoj----29----150000.0
+The employee details--->
+105----alisha----25----35000.0
+The person name is Manoj who is  having the max salary:150000.0
+Employees sorted based on their salary
+104-----Manoj-----29----150000.0
+105-----alisha-----25----35000.0
+102-----Ravi-----24----20000.0
+103-----Suraj-----21----15000.0
+101-----Raju-----22----12000.0
+
+

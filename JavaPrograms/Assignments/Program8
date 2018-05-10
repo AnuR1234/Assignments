@@ -1,0 +1,108 @@
+/*Qu 8. Write a Java Program to accept the Name and Salary of five employees using array variable and perform below task.
+
+	1. Display the name of employee who is getting paid highest
+	2. Display the name of employee who is getting paid Lowest
+	3. Display the Average Salary of Employees.*/
+package assignments;
+
+import java.util.Scanner;
+
+public class Program8 {
+static String[] EmpName=new String[3];
+static double[] EmpSal=new double[3];
+static double lowsal;
+static double highsal;
+public String HighSal(double [] EmpSal)
+{
+	
+	String NameOfEmp=null;
+	for(int i=1;i<EmpSal.length;i++)
+	{
+		if(EmpSal[i]>highsal)
+		{
+			highsal=EmpSal[i];
+			NameOfEmp=EmpName[i];
+		}
+	}
+	return NameOfEmp;;
+	
+}
+public String LowSal(double [] EmpSal)
+{
+
+String NameOfEmp=null;
+for(int i=1;i<EmpSal.length;i++)
+{
+	if(EmpSal[i]<lowsal)
+	{
+		lowsal=EmpSal[i];
+		NameOfEmp=EmpName[i];
+	}
+}
+
+return NameOfEmp;
+}
+public double avg(double [] EmpSal)
+{
+	double sum=0;
+	double avg=0;
+	for(int i=0;i<EmpSal.length;i++)
+	{
+		sum=sum+EmpSal[i];
+	}
+	avg=sum/5;
+	return avg;
+}
+	public static void main(String[] args) {
+		Program8 p=new Program8();
+		Scanner s=new Scanner(System.in);
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("Enter the Employee's Name");
+			EmpName[i]=s.next();
+			System.out.println("Enter the Employee's Salary");
+			EmpSal[i]=s.nextDouble();
+			
+		}
+		String h=p.HighSal(EmpSal);
+		System.out.println("The highest paid salary Employee is---->"+h);
+		String l=p.LowSal(EmpSal);
+		System.out.println("The least paid salary Employee is---->"+l);
+		double avg=p.avg(EmpSal);
+		System.out.println("The average salary of the employee is---->"+avg);
+		
+		
+		
+
+	}
+
+
+}
+
+
+output:
+
+Enter the Employee's Name
+Ramesh
+Enter the Employee's Salary
+20000
+Enter the Employee's Name
+Raju
+Enter the Employee's Salary
+18000
+Enter the Employee's Name
+avi
+Enter the Employee's Salary
+23000
+Enter the Employee's Name
+rahul
+Enter the Employee's Salary
+10000
+Enter the Employee's Name
+punit
+Enter the Employee's Salary
+30000
+The highest paid salary Employee is---->punit
+The least paid salary Employee is---->rahul
+The average salary of the employee is---->20200.0
+

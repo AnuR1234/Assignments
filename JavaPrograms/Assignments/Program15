@@ -1,0 +1,42 @@
+/*Qu 15. 
+Write a program in Java to perform all the operations related with HashMap. 
+	1. Store Employee Details by using Employee Class
+	2. Traverse Employee Details stored in Collection Object
+	3. Delete Employee Details
+	4. Update Employee Details*/
+package assignments;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Program15 {
+	
+	private static void main (String []a) {
+		
+	
+	HashMap<Integer, String> hmap = new HashMap<Integer, String>();
+	hmap.put(12, "Chaitanya");
+    hmap.put(2, "Rahul");
+    hmap.put(7, "Singh");
+    hmap.put(49, "Ajeet");
+    hmap.put(3, "Anuj");
+    
+    for(Map.Entry m:hmap.entrySet()){  
+    	   System.out.println(m.getKey()+" "+m.getValue());  
+    }
+    
+    hmap.remove(12);  
+    System.out.println("Values after remove: "+ hmap);
+    
+    String result = hmap.replace(2, "Ravi");
+	if (result != null) {
+		System.out.println("Student " + result
+				+ " has been replaced");
+	} else {
+		System.out.println("Specified student not found");
+	}
+	}
+}
+
+

@@ -1,0 +1,810 @@
+Qu 2 :-
+Write a Java program to accept movie details like..
+
+1. MovieID
+2. MovieName
+3. MovieDirector
+4. MovieActor
+5. MovieRating
+6. MovieType
+7. MovieReleaseDate
+
+Task:
+1. Accept 50 details and store the data inside the file using proper delimeter.
+
+Program:
+Movie.java
+
+
+import java.util.Scanner;
+
+public class Movie {
+
+	String MovieID;
+	String MovieName;
+	String MovieDirector;
+	String MovieActor;
+	String MovieType;
+	int MovieRating;
+	String MovieReleaseDate;
+	Scanner s=new Scanner(System.in);
+	public String getMovieID() {
+		return MovieID;
+	}
+	public void setMovieID(String movieID) {
+		MovieID = movieID;
+	}
+	public String getMovieName() {
+		return MovieName;
+	}
+	public void setMovieName(String movieName) {
+		
+		MovieName = movieName;
+	}
+	public String getMovieDirector() {
+		return MovieDirector;
+	}
+	public void setMovieDirector(String movieDirector) {
+		
+		MovieDirector = movieDirector;
+	}
+	public String getMovieActor() {
+		return MovieActor;
+	}
+	public void setMovieActor(String movieActor) {
+		MovieActor = movieActor;
+	}
+	public String getMovieType() {
+		return MovieType;
+	}
+	public void setMovieType(String movieType) {
+		MovieType = movieType;
+	}
+	public int getMovieRating() {
+		return MovieRating;
+	}
+	public void setMovieRating(int movieRating) {
+		MovieRating = movieRating;
+	}
+	public String getMovieReleaseDate() {
+		return MovieReleaseDate;
+	}
+	public void setMovieReleaseDate(String movieReleaseDate) {
+		MovieReleaseDate = movieReleaseDate;
+	}
+	
+	
+}
+
+
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Qns2Test {
+	static String inp;
+static File f=new File("QNS2Test");
+	
+	public static void main(String[] args) {
+		HashMap<String,Movie>hasmap=new HashMap<String,Movie>();
+		for(int i=0;i<50;i++)
+		{Movie m=new Movie();
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the Movie Details of Movie: "+(i+1));
+		System.out.println("Enter the movie id");
+		String id=s.next();
+		m.setMovieID(id);
+		System.out.println("Enter the movie name");
+		String name=s.next();
+		s.nextLine();
+		m.setMovieName(name);
+		
+		System.out.println("Enter the MovieDirector ");
+		String md=s.next();
+		m.setMovieDirector(md);
+		
+		System.out.println("Enter the MovieActor");
+		String ma=s.next();
+		m.setMovieActor(ma);
+		
+		System.out.println("Enter the MovieRating ");
+		int mr=s.nextInt();
+		m.setMovieRating(mr);
+		System.out.println("Enter the MovieType");
+		String mt=s.next();
+		m.setMovieType(mt);
+		System.out.println("Enter the MovieReleaseDate");
+		String mrd=s.next();
+		m.setMovieReleaseDate(mrd);
+		hasmap.put("i"+i, m);
+		}
+		try
+		{
+			f.createNewFile();
+
+			FileWriter fos=new FileWriter(f);
+		
+		
+		for(Map.Entry<String, Movie> e:hasmap.entrySet())
+		{
+				Movie m=e.getValue();
+				fos.write(String.valueOf(m.getMovieID()));
+				fos.write(";");
+				fos.write(m.getMovieName());
+				fos.write(";");
+				fos.write(m.getMovieDirector());
+				fos.write(";");
+				fos.write(m.getMovieActor());
+				fos.write(";");
+				fos.write(String.valueOf(m.getMovieRating()));
+				fos.write(";");
+				fos.write(m.getMovieType());
+				fos.write(";");
+				fos.write(m.getMovieReleaseDate());
+				fos.write("\n");
+		
+		}
+
+	
+			
+		fos.flush();
+				
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+
+}
+}
+
+OUTPUT:Stored in file sucessfully!
+
+M32;Badmaash;GoutamPawar;JackieShroff;6;A;1998
+M31;KuchKuchHotaHai;YashRajFilms;ShahrukKhan;6;UA;1998
+M34;GharBazar;D.S.Azad;MumtazBegum;7;A;1998
+M33;DilSe..;ManiRatnam;ShahrukhKhan;6;UA;1998
+M36;JabPyaarKisiseHotaHai;DeepakSareen;SalmanKhan;7;UA;1998
+M35;HeroHindustani;AzizSejawal;ArshadWarsi;5;U;1998
+M38;PremAggan;FerozKhan;FardeenKhan;8;UA;1998
+M37;Kareeb;VidhuVinodChopra;BobbyDeol;6;U;1998
+M40;Asoka;SantoshSivan;ShahrukhKhan;6;UA;2001
+M39;Albela;DeepakSareen;Govinda;5;U;2001
+M41;AwaraPaagalDeewana;VikramBhatt;AkshayKumar;6;U;2002
+M43;Baby;NeerajPandey;AkshayKumar;8;UA;2015
+M42;Aitraaz;Abbas-Mustan;AkshayKumar;4;A;2004
+M45;DilDhadakneDo;ZoyaAkhtar;RanveerSingh;5;U;2015
+M44;Piku;ShoojitSircar;DeepikaPadukone;7;UA;2015
+M47;Raees;RahulDholakia;MahiraKhan;5;UA;2016
+M26;RockyHandsome;NishikantKamat;JohnAbraham;5;UA;2016
+M49;Noor;SunhilSippy;SonakshiSinha;5;U;2017
+M48;Kaalakaandi;AkshatVerma;SaifAliKhan;6;UA;2018
+M50;SecretSuperstar;AmirKhan;AmirKhan;8;U;2017
+M12;Aankhen;DavidDhawan;Govinda;4;U;1993
+M11;15August;VickyRanawat;PremChopra;6;UA;1993
+M14;Geetanjali;ShaktiSamanta;Jeetendra;6;UA;1993
+M13;Dalaal;ParthoGhosh;MithunChakraborty;5;U;1993
+M16;HumHainKamaalKe;VijayReddy;Sheeba;4;A;1993
+M15;Gumrah;MaheshBhatt;SanjayDutt;6;U;1993
+M18;Sahibaan;RameshTalwar;RishiKapoor;6;U;1993
+M17;Phool;SingeethamSrinivasaRao;MayaAlagh;5;A;1993
+M20;Mahakaal;RamsayBros;KaranShah;6;U;1993
+M19;Shatranj;AzizSajawal;JackieShroff;5;UA;1993
+M21;Aag;K.RaviShankar;ShilpaShetty;6;UA;1994
+M01;Ajooba;ShashiKapoor;AmitabhBachchan;4;U;1991
+M02;Akayla;RameshSippy;AmitabhBachchan;6;UA;1991
+M23;Amanaat;RajNSippy;SanjayDutt;6;A;1994
+M03;AadhiMimansa;Apurba;MohanGokhale;6;U;1991
+M22;AaoPyaarKaren;RavendraPeepat;SaifAliKhan;6;UA;1994
+M04;AadmiAurApsara;OmPrakash;Chiranjeevi;8;UA;1991
+M25;EkkaRajaRani;AfzalAhmad;VinodKhanna;5;UA;1994
+M05;Vansh;PappuVerma;SiddharthRay;7;UA;1992
+M24;Aranyaka;ApurbaKishoreBir;MohanGokhale;5;U;1994
+MO6;DilKaKyaKasoor;LawrenceDSouza;Prithvi;5;UA;1992
+M27;Madhosh;VikramBhatt;DilipDhawan;7;A;1994
+M07;Raat;RamGopalVerma;RohiniHattangadi;5;A;1992
+M26;HumAapkeHainKoun;SoorajR.Barjatya;SalmanKhan;6;UA;1994
+M08;Panaah;KrishnakantPandya;NaseeruddinShah;6;A;1992
+M29;PremShakti;ShibuMitra;Govinda;6;UA;1994
+M09;QaidMeinHaiBulbul;RavindraPeepat;Bhagyashree;6;A;1992
+M28;Mohra;RajivRai;SunilShetty;5;UA;1994
+M10;Yudhpath;RaviRavan;SiddharthRay;6;A;1992
+M30;Tejasvini;N.Chandra;DeepakMalhotra;7;UA;1994 ETC...
+
+2. Read the data from file and perform below analysis.
+
+Display the list of all the movies released in year 2015.
+
+Program"
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Moviein2015 {
+	static String s;
+	
+	
+	public static void main(String[] args) throws IOException {
+
+		FileReader fr=new FileReader("QNS2Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			String  MovieReleaseDate=str[6];
+			String MovieID=str[0];
+			String MovieName=str[1];
+			String MovieDirector=str[2];
+			String MovieActor=str[3];
+			String MovieType=str[5];
+			int MovieRating=Integer.parseInt(str[4]);
+			
+			if(MovieReleaseDate.equals("2015"))
+			{	System.out.println("======The Movie Details=========");
+				System.out.println("The MovieID is--->"+MovieID);
+				System.out.println("The Movie Name is--->"+MovieName);
+				System.out.println("The Movie Director is ---->"+MovieDirector);
+				System.out.println("The Movie Actor is ---->"+MovieActor);
+				System.out.println("The Movie Type is ---->"+MovieType);
+				System.out.println("The Movie MovieRating is ---->"+MovieRating);	
+				System.out.println("The Movie Release Date is--->"+MovieReleaseDate);
+				System.out.println("--------------------------------------------------");
+			}
+
+	}
+	
+}
+}
+
+Output:
+
+======The Movie Details=========
+The MovieID is--->M43
+The Movie Name is--->Baby
+The Movie Director is ---->NeerajPandey
+The Movie Actor is ---->AkshayKumar
+The Movie Type is ---->UA
+The Movie MovieRating is ---->8
+The Movie Release Date is--->2015
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M45
+The Movie Name is--->DilDhadakneDo
+The Movie Director is ---->ZoyaAkhtar
+The Movie Actor is ---->RanveerSingh
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2015
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M44
+The Movie Name is--->Piku
+The Movie Director is ---->ShoojitSircar
+The Movie Actor is ---->DeepikaPadukone
+The Movie Type is ---->UA
+The Movie MovieRating is ---->7
+The Movie Release Date is--->2015
+--------------------------------------------------
+
+Display the list of all the movies having type as "U".
+
+Program:
+
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class MovieType {
+static String s;
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		FileReader fr=new FileReader("QNS2Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			String  MovieReleaseDate=str[6];
+			String MovieID=(str[0]);
+			String MovieName=str[1];
+			String MovieDirector=str[2];
+			String MovieActor=str[3];
+			String MovieType=str[5];
+			int MovieRating=Integer.parseInt(str[4]);
+			
+			if(MovieType.equals("U"))
+			{	System.out.println("======The Movie Details=========");
+				System.out.println("The MovieID is--->"+MovieID);
+				System.out.println("The Movie Name is--->"+MovieName);
+				System.out.println("The Movie Director is ---->"+MovieDirector);
+				System.out.println("The Movie Actor is ---->"+MovieActor);
+				System.out.println("The Movie Type is ---->"+MovieType);
+				System.out.println("The Movie MovieRating is ---->"+MovieRating);	
+				System.out.println("The Movie Release Date is--->"+MovieReleaseDate);
+				System.out.println("--------------------------------------------------");
+			}
+
+	}
+	
+	}
+
+}
+
+Output:
+
+======The Movie Details=========
+The MovieID is--->M35
+The Movie Name is--->HeroHindustani
+The Movie Director is ---->AzizSejawal
+The Movie Actor is ---->ArshadWarsi
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M37
+The Movie Name is--->Kareeb
+The Movie Director is ---->VidhuVinodChopra
+The Movie Actor is ---->BobbyDeol
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M39
+The Movie Name is--->Albela
+The Movie Director is ---->DeepakSareen
+The Movie Actor is ---->Govinda
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2001
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M41
+The Movie Name is--->AwaraPaagalDeewana
+The Movie Director is ---->VikramBhatt
+The Movie Actor is ---->AkshayKumar
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->2002
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M45
+The Movie Name is--->DilDhadakneDo
+The Movie Director is ---->ZoyaAkhtar
+The Movie Actor is ---->RanveerSingh
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2015
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M49
+The Movie Name is--->Noor
+The Movie Director is ---->SunhilSippy
+The Movie Actor is ---->SonakshiSinha
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2017
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M50
+The Movie Name is--->SecretSuperstar
+The Movie Director is ---->AmirKhan
+The Movie Actor is ---->AmirKhan
+The Movie Type is ---->U
+The Movie MovieRating is ---->8
+The Movie Release Date is--->2017
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M12
+The Movie Name is--->Aankhen
+The Movie Director is ---->DavidDhawan
+The Movie Actor is ---->Govinda
+The Movie Type is ---->U
+The Movie MovieRating is ---->4
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M13
+The Movie Name is--->Dalaal
+The Movie Director is ---->ParthoGhosh
+The Movie Actor is ---->MithunChakraborty
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M15
+The Movie Name is--->Gumrah
+The Movie Director is ---->MaheshBhatt
+The Movie Actor is ---->SanjayDutt
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M18
+The Movie Name is--->Sahibaan
+The Movie Director is ---->RameshTalwar
+The Movie Actor is ---->RishiKapoor
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M20
+The Movie Name is--->Mahakaal
+The Movie Director is ---->RamsayBros
+The Movie Actor is ---->KaranShah
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M01
+The Movie Name is--->Ajooba
+The Movie Director is ---->ShashiKapoor
+The Movie Actor is ---->AmitabhBachchan
+The Movie Type is ---->U
+The Movie MovieRating is ---->4
+The Movie Release Date is--->1991
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M03
+The Movie Name is--->AadhiMimansa
+The Movie Director is ---->Apurba
+The Movie Actor is ---->MohanGokhale
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1991
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M24
+The Movie Name is--->Aranyaka
+The Movie Director is ---->ApurbaKishoreBir
+The Movie Actor is ---->MohanGokhale
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1994
+--------------------------------------------------
+Display the list of all the movies having rating greater than 4 star
+
+program:
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class MovieRatings {
+static String s;
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		FileReader fr=new FileReader("QNS2Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			String  MovieReleaseDate=str[6];
+			String MovieID=(str[0]);
+			String MovieName=str[1];
+			String MovieDirector=str[2];
+			String MovieActor=str[3];
+			String MovieType=str[5];
+			int MovieRating=Integer.parseInt(str[4]);
+			
+			if(MovieRating > 5)
+			{	System.out.println("======The Movie Details=========");
+				System.out.println("The MovieID is--->"+MovieID);
+				System.out.println("The Movie Name is--->"+MovieName);
+				System.out.println("The Movie Director is ---->"+MovieDirector);
+				System.out.println("The Movie Actor is ---->"+MovieActor);
+				System.out.println("The Movie Type is ---->"+MovieType);
+				System.out.println("The Movie MovieRating is ---->"+MovieRating);	
+				System.out.println("The Movie Release Date is--->"+MovieReleaseDate);
+				System.out.println("--------------------------------------------------");
+			}
+
+	}
+
+	}
+
+}
+
+output:
+
+======The Movie Details=========
+The MovieID is--->M35
+The Movie Name is--->HeroHindustani
+The Movie Director is ---->AzizSejawal
+The Movie Actor is ---->ArshadWarsi
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M37
+The Movie Name is--->Kareeb
+The Movie Director is ---->VidhuVinodChopra
+The Movie Actor is ---->BobbyDeol
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M39
+The Movie Name is--->Albela
+The Movie Director is ---->DeepakSareen
+The Movie Actor is ---->Govinda
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2001
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M41
+The Movie Name is--->AwaraPaagalDeewana
+The Movie Director is ---->VikramBhatt
+The Movie Actor is ---->AkshayKumar
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->2002
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M45
+The Movie Name is--->DilDhadakneDo
+The Movie Director is ---->ZoyaAkhtar
+The Movie Actor is ---->RanveerSingh
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2015
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M49
+The Movie Name is--->Noor
+The Movie Director is ---->SunhilSippy
+The Movie Actor is ---->SonakshiSinha
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2017
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M50
+The Movie Name is--->SecretSuperstar
+The Movie Director is ---->AmirKhan
+The Movie Actor is ---->AmirKhan
+The Movie Type is ---->U
+The Movie MovieRating is ---->8
+The Movie Release Date is--->2017
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M12
+The Movie Name is--->Aankhen
+The Movie Director is ---->DavidDhawan
+The Movie Actor is ---->Govinda
+The Movie Type is ---->U
+The Movie MovieRating is ---->4
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M13
+The Movie Name is--->Dalaal
+The Movie Director is ---->ParthoGhosh
+The Movie Actor is ---->MithunChakraborty
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M15
+The Movie Name is--->Gumrah
+The Movie Director is ---->MaheshBhatt
+The Movie Actor is ---->SanjayDutt
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M18
+The Movie Name is--->Sahibaan
+The Movie Director is ---->RameshTalwar
+The Movie Actor is ---->RishiKapoor
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M20
+The Movie Name is--->Mahakaal
+The Movie Director is ---->RamsayBros
+The Movie Actor is ---->KaranShah
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1993
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M01
+The Movie Name is--->Ajooba
+The Movie Director is ---->ShashiKapoor
+The Movie Actor is ---->AmitabhBachchan
+The Movie Type is ---->U
+The Movie MovieRating is ---->4
+The Movie Release Date is--->1991
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M03
+The Movie Name is--->AadhiMimansa
+The Movie Director is ---->Apurba
+The Movie Actor is ---->MohanGokhale
+The Movie Type is ---->U
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1991
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M24
+The Movie Name is--->Aranyaka
+The Movie Director is ---->ApurbaKishoreBir
+The Movie Actor is ---->MohanGokhale
+The Movie Type is ---->U
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1994
+--------------------------------------------------
+
+Display the list of all the movies having Actor as "Khans"
+
+program:
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class MovieActor {
+static String s;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		FileReader fr=new FileReader("QNS2Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			String  MovieReleaseDate=str[6];
+			String MovieID=(str[0]);
+			String MovieName=str[1];
+			String MovieDirector=str[2];
+			String MovieActor=str[3];
+			String MovieType=str[5];
+			int MovieRating=Integer.parseInt(str[4]);
+			
+			if(MovieActor.contains("Khan"))
+			{	System.out.println("======The Movie Details=========");
+				System.out.println("The MovieID is--->"+MovieID);
+				System.out.println("The Movie Name is--->"+MovieName);
+				System.out.println("The Movie Director is ---->"+MovieDirector);
+				System.out.println("The Movie Actor is ---->"+MovieActor);
+				System.out.println("The Movie Type is ---->"+MovieType);
+				System.out.println("The Movie MovieRating is ---->"+MovieRating);	
+				System.out.println("The Movie Release Date is--->"+MovieReleaseDate);
+				System.out.println("--------------------------------------------------");
+			}
+
+		}
+	}
+}
+
+output:
+
+======The Movie Details=========
+The MovieID is--->M31
+The Movie Name is--->KuchKuchHotaHai
+The Movie Director is ---->YashRajFilms
+The Movie Actor is ---->ShahrukKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M33
+The Movie Name is--->DilSe..
+The Movie Director is ---->ManiRatnam
+The Movie Actor is ---->ShahrukhKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M36
+The Movie Name is--->JabPyaarKisiseHotaHai
+The Movie Director is ---->DeepakSareen
+The Movie Actor is ---->SalmanKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->7
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M38
+The Movie Name is--->PremAggan
+The Movie Director is ---->FerozKhan
+The Movie Actor is ---->FardeenKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->8
+The Movie Release Date is--->1998
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M40
+The Movie Name is--->Asoka
+The Movie Director is ---->SantoshSivan
+The Movie Actor is ---->ShahrukhKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->2001
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M47
+The Movie Name is--->Raees
+The Movie Director is ---->RahulDholakia
+The Movie Actor is ---->MahiraKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->5
+The Movie Release Date is--->2016
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M48
+The Movie Name is--->Kaalakaandi
+The Movie Director is ---->AkshatVerma
+The Movie Actor is ---->SaifAliKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->2018
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M50
+The Movie Name is--->SecretSuperstar
+The Movie Director is ---->AmirKhan
+The Movie Actor is ---->AmirKhan
+The Movie Type is ---->U
+The Movie MovieRating is ---->8
+The Movie Release Date is--->2017
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M22
+The Movie Name is--->AaoPyaarKaren
+The Movie Director is ---->RavendraPeepat
+The Movie Actor is ---->SaifAliKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1994
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M25
+The Movie Name is--->EkkaRajaRani
+The Movie Director is ---->AfzalAhmad
+The Movie Actor is ---->VinodKhanna
+The Movie Type is ---->UA
+The Movie MovieRating is ---->5
+The Movie Release Date is--->1994
+--------------------------------------------------
+======The Movie Details=========
+The MovieID is--->M26
+The Movie Name is--->HumAapkeHainKoun
+The Movie Director is ---->SoorajR.Barjatya
+The Movie Actor is ---->SalmanKhan
+The Movie Type is ---->UA
+The Movie MovieRating is ---->6
+The Movie Release Date is--->1994
+--------------------------------------------------
+
+

@@ -1,0 +1,494 @@
+Project - Retail Store Data in Hive
+----------------------------------
+The data set contains the data of the following 4 months: 
+D11: Transaction data collected in November, 2000 
+D12: Transaction data collected in December, 2000 
+D01: Transaction data collected in January, 2001 
+D02: Transaction data collected in February, 2001 
+
+Format of Transaction Data: 
+data columns separated by “;” 
+
+Column definition: 	
+1)Transaction date and time (Time is invalid)
+2)Customer I.D 
+3)Age: 10 possible values 
+A <25,B 25-29,C 30-34,D 35-39,E 40-44,F 45-49,G 50-54,H 55-59,I 60-64,J >65 
+4)Residence Area: 8 possible values, A-F: zip code area: 105,106,110,114,115,221,G:others, H: Unknown Distance to store, from the closest: 115,221,114,105,106,110 
+5)Product subclass (category)
+6)Product ID 
+7)Qty or Number of units
+8)Total Cost 
+9)Total Sales 
+
+1)create a table to store the data set in hive.
+create table retaildata(trans_date STRING,cust_id STRING,age STRING,res_area STRING,category STRING,prod_id STRING,qty INT,cost BIGINT,sales BIGINT
+>row format delimited
+>fields terminated by "\;"
+>stored as textfile;
+
+load the data into this table:
+------------------------------------------------------------------------------------------------------
+LOAD DATA LOCAL INPATH \home\hduser\documents\ReatilSourceFiles\DO1 OVERWRITE INTO TABLE retaildata;
+LOAD DATA LOCAL INPATH \home\hduser\documents\ReatilSourceFiles\DO2  INTO TABLE retaildata;
+LOAD DATA LOCAL INPATH \home\hduser\documents\ReatilSourceFiles\D11  INTO TABLE retaildata;
+LOAD DATA LOCAL INPATH \home\hduser\documents\ReatilSourceFiles\D12  INTO TABLE retaildata;
+
+Problem Statement: 
+-----------------------
+(A1)Find out the customer I.D for the customer and the date of transaction who has spent the maximum amount in a month and in all the 4 months.
+
+For all 4 months:
+------------------------
+
+1.create a udf to segregate into months in eclipse.
+
+package udfhive;
+
+import org.apache.hadoop.hive.ql.exec.UDF;
+import org.apache.hadoop.io.Text;
+
+public class getMonth extends UDF {
+
+	public Text evaluate(Text text)
+	{
+		if(text==null) return null;
+		String month=text.toString();
+		return new Text(GetMonth(month));
+	}
+	private String GetMonth(String month)
+	{
+		String m=month.split("-")[1];
+		if(m.equals("11")) return "november";
+		else if(m.equals("12")) return "december";
+		else if(m.equals("01")) return "january";
+		else if(m.equals("02")) return "feb";
+		else return "other";
+	}
+}
+
+2.create the jar file 
+3.import the libs
+a.usr/local/hive/lib(all lib in it)
+b.hadoop common-1.2.1
+
+4.add jar \home\hduser\JarFiles\udfHive.jar (in hive)
+
+5.create temporary function userdate as "udfhive.getMonth";
+6.create table to use the only based on month and use the udf in that table
+
+create table onmonth(trans_date STRING,cust_id STRING,age STRING,res_area STRING,category STRING,prod_id STRING,qty INT,cost BIGINT,sales BIGINT,month STRING)
+>row format delimited
+>fields terminated by "\;"
+
+insert overwrite table onmonth select *,userdate(trans_date) from retaildata;
+
+//Below table is there to create to extract only cust_id,sales,month.
+----------------------------------------------------------------------------
+create table a11(cust_id STRING,month STRING,maxamt BIGINT)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite tabel a11 select cust_id,month,sales from onmonth group by cust_id,month,sales;
+
+//Below table is used to create maxamt  for each month irrespective of cust_id first here we are find the maxamt for each month.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+create table maxamt(month STRING,maxamt BIGINT)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table maxamt select month,max(maxamt) from a11 group by month;
+
+//Now we have the maxamt for each month in one table and cust_id in one table
+--------------------------------------------------------------------------------
+
+select a.* from a11 a,maxamt b where a.maxamt=b.maxamt and a.month=b.month;
+
+Output:
+--------
+01062489  	january	45554
+01622362  	feb	444000
+02119083  	november	62688
+02131221  	december	70589
+02134819  	december	70589
+
+//For only the maxamt among 4 months:
+----------------------------------------
+
+select * from a11 where maxamt in (select max(maxamt) from a11);
+
+Output:
+--------
+01622362  	feb	444000
+
+(A2)Find total gross profit made by each product and also by each category for all the 4 months data.
+
+create table profitbyproduct(prod_id string,profit bigint)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profitbyproduct select prod_id,sum(sales-cost) as profit from retaildata group by prod_id;
+
+select * from profitbyproduct;
+
+Output:
+-------
+0002884011363	79
+0008635012177	3611
+0008635099680	580
+0010742201412	400
+0010742201610	426
+0010742201719	260
+0010742201818	328
+0010742202112	48
+0010742202211	408
+0010742206615	470
+etc...
+
+create table profitbycategory(category string,profit bigint)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profitbycategory select category,sum(sales-cost) as profit from retaildata group by category;
+
+select * from profitbycategory;
+
+Output:
+--------
+100101	24098
+100102	132943
+100103	30352
+100104	16434
+100105	4826
+100106	42457
+100107	8357
+100108	23405
+100109	44921
+100110	32878
+etc...
+
+(A3)Find total gross profit % made by each product and also by each category for all the 4 months data.
+
+//Below create a table on totalsales first based on product.
+------------------------------------------------
+create table totalsales(prod_id string,total double)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table totalsales select prod_id,sum(sales) as total from retaildata;
+
+//Below create a table on totalprofit first based on product.
+------------------------------------------------
+create table profit(prod_id string,profit double)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profit select prod_id,sum(sales-cost) as profit from retaildata;
+
+//Below table is for profitpercentage:
+----------------------------------------------
+
+create table profitperP(prod_id STRING,profit BIGINT,profitper DOUBLE)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profitperP select a.prod_id,a.profit ,round((a.profit)/b.total,2) as profitper from profit a,totalsales b where a.prod_id=b.prod_id group by a.prod_id,b.total;
+
+select * from profitperP;
+
+Output:
+---------
+0002884011363	79	0.28
+0008635012177	3611	0.2
+0008635099680	580	0.21
+0010742201412	400	0.19
+0010742201610	426	0.18
+0010742201719	260	0.2
+0010742201818	328	0.2
+0010742202112	48	0.2
+0010742202211	408	0.19
+0010742206615	470	0.18
+etc...
+
+//Below create a table on totalprofit first based on category.
+------------------------------------------------
+create table profitc(category string,profit double)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profitc select category,sum(sales-cost) as profit from retaildata;
+
+//Below table is for totalsales on category:
+----------------------------------------------
+
+create table totalsalesc(category STRING,total bigint)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table totalsalesc select category,sum(sales) as total from retaildata;
+
+//Below is the final table:
+-----------------------------
+create table profitperC(category STRING,profit BIGINT,profitper DOUBLE)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table profitperC select a.category,a.profit ,round((a.profit)/b.total,2) as profitper from profitc a,totalsalesc b where a.category=b.category group by a.category,b.total;
+
+select * from profitperC;
+
+Output:
+--------
+100101	24098	0.15
+100102	132943	0.16
+100103	30352	0.2
+100104	16434	0.22
+100105	4826	0.21
+100106	42457	0.17
+100107	8357	0.17
+100108	23405	0.18
+100109	44921	0.13
+100110	32878	0.2
+
+(B)Find out the top 4 or top 10 product being sold in the monthly basis and in all the 4 months.. Criteria for top should be sales amount.
+
+//Below table we create a table for totalsales based on product:
+-----------------------------------------------------------------
+
+create table totalsales(prod_id string,total double)
+>row format delimited
+>fields terminated by "\;";
+
+insert overwrite table totalsales select prod_id,sum(sales) as total from retaildata group by prod_id order by total desc limit 10;
+
+Output:
+--------
+8712045008539	1540503
+4710628131012	675112
+4710114128038	514601
+4711588210441	491292
+20553418     	470501
+4710628119010	433380
+4909978112950	432596
+8712045000151	428530
+7610053910787	392581
+4719090900065	385626
+
+(C1)Find out the (top 5*) viable products and the (top 5*) product subclass for the age group A, B, C etc..... Data should be taken for all the 4 months
+
+//can be done on the retaildata (main table) 
+----------------------------------------------
+//for one age group only we have to do the same for all age groups and store in different files
+select prod_id,age,sum(sales-cost) as profit from retaildata where trim(age)='A' group by prod_id,age having profit>0 order by profit desc limit 5;
+
+//for storing the all the age group data in a single file we can use union
+-------------------------------------------------------------------------------
+select * from(select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='A' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq1
+union
+select * from(select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='B' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq2 
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='C' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq3
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='D' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq4
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='E' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq5
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='F' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq6
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='G' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq7
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='H' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq8
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='I' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq9
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='J' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq10
+union
+select * from (select prod_id,category,age,sum(sales-cost) as profit from retaildata where trim(age)='K' group by prod_id,category,age having profit>0 order by profit desc limit 5) subq11
+order by age,profit desc;
+
+Output:
+--------
+
+4711588210441	100516	A 	12025
+20559045     	730719	A 	3290
+4973167032060	470101	A 	2163
+4973167738757	470105	A 	1854
+20556433     	320402	A 	1776
+8712045008539	560402	B 	7318
+4710628119010	560402	B 	6827
+4902430493437	560201	B 	6419
+7610053910787	560201	B 	6344
+8712045011317	560402	B 	6072
+8712045008539	560402	C 	10153
+0729238191921	470103	C 	7840
+4909978112950	470103	C 	7386
+20564100     	320402	C 	6530
+4902430040334	560201	C 	6528
+4909978112950	470103	D 	17612
+8712045008539	560402	D 	15155
+4710628131012	560402	D 	10462
+0729238191921	470103	D 	9905
+4902430493437	560201	D 	8735
+4909978112950	470103	E 	14628
+4710628131012	560402	E 	7810
+4901422038939	500307	E 	7317
+20564100     	320402	E 	7008
+4710114128038	500201	E 	6863
+4909978112950	470103	F 	10276
+20556433     	320402	F 	6388
+20564100     	320402	F 	4770
+4901422038939	500307	F 	4301
+4710114128038	500201	F 	4246
+4909978112950	470103	G 	9370
+0729238191921	470103	G 	4190
+4710114128038	500201	G 	2704
+4711713491530	520457	G 	2478
+4710043552102	110109	G 	2365
+8712045011317	560402	H 	4706
+0300086780026	560402	H 	3254
+4909978112950	470103	H 	3148
+20421151     	320407	H 	3135
+7610053910794	560201	H 	2037
+8712045011317	560402	I 	2291
+4909978112950	470103	I 	2142
+8712045000151	560402	I 	2096
+4710628119010	560402	I 	1890
+4710043552102	110109	I 	1501
+4710043552102	110109	J 	1460
+0041736007284	110114	J 	1459
+4710960918036	100431	J 	1377
+4902430493437	560201	J 	1312
+4712603669091	110512	J 	1284
+20564100     	320402	K 	2340
+4902430493437	560201	K 	2172
+4711863590077	712102	K 	1980
+20563745     	320402	K 	1583
+20456245     	320402	K 	1577
+
+
+
+(C2)Find out the (top 5*) loss making products and the (top 5*) loss making product subclass for the age group A, B, C etc..... Data should be taken for all the 4 months.
+
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='A' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq1
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='B' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq2
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='C' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq3
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='D' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq4
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='E' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq5
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='F' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq6
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='G' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq7
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='H' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq8
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='I' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq9
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='J' group by prod_id,category,age having loss>0 order by loss desc limit 5) sub10
+union
+select * from(select prod_id,category,age,sum(cost-sales) as loss from retaildata where trim(age)='K' group by prod_id,category,age having loss>0 order by loss desc limit 5) subq11
+ORDER BY age,loss desc;
+
+Output:
+-------
+
+4714981010038	130315	A 	6947
+4711271000014	110106	A 	2194
+4710265849066	110217	A 	1875
+4719090900065	110217	A 	1845
+4712425010712	500201	A 	986
+4714981010038	130315	B 	9237
+4711271000014	110106	B 	3425
+4719090900065	110217	B 	2554
+4710265849066	110217	B 	2080
+4712425010712	500201	B 	1490
+4714981010038	130315	C 	17215
+4711271000014	110106	C 	6008
+4719090900065	110217	C 	5867
+4710265849066	110217	C 	4966
+4710908110232	500202	C 	3002
+4714981010038	130315	D 	23550
+4711271000014	110106	D 	8739
+4719090900065	110217	D 	7248
+4710265849066	110217	D 	6406
+2110119000377	711409	D 	5819
+4714981010038	130315	E 	21157
+4719090900065	110217	E 	8667
+4711271000014	110106	E 	7989
+4710265849066	110217	E 	6645
+4712425010712	500201	E 	2917
+4714981010038	130315	F 	17456
+4719090900065	110217	F 	6283
+4711271000014	110106	F 	6120
+4710265849066	110217	F 	5460
+4710265847666	110217	F 	2315
+2110119000377	711409	G 	11638
+4714981010038	130315	G 	10290
+4711271000014	110106	G 	4185
+4719090900065	110217	G 	3559
+4710265849066	110217	G 	3335
+4714981010038	130315	H 	5812
+4719090900065	110217	H 	2455
+4711271000014	110106	H 	2132
+4710265849066	110217	H 	1482
+4712425010712	500201	H 	796
+4714981010038	130315	I 	5354
+4710265849066	110217	I 	2114
+4711271000014	110106	I 	2038
+4719090900065	110217	I 	1926
+4719090900058	110217	I 	1084
+4714981010038	130315	J 	10196
+4710265849066	110217	J 	3388
+4719090900065	110217	J 	3180
+4711271000014	110106	J 	2703
+4710060000099	530407	J 	1180
+4714981010038	130315	K 	3788
+4710265849066	110217	K 	1218
+4710683100015	530301	K 	852
+4719090900065	110217	K 	747
+4711271000014	110106	K 	680
+
+create a partition table on age:
+------------------------------------
+
+create table retailbyage(txndate string, cid STRING, pin string, cat string,
+prod STRING, qty int, cost bigint, sales bigint)
+partitioned by (age STRING)
+row format delimited
+fields terminated by '\;'
+stored as textfile;
+
+from retaildata txn INSERT OVERWRITE TABLE retailbyage PARTITION(age) select txn.trans_date, txn.cust_id,txn.res_area, txn.category,txn.prod_id,txn.qty,txn.cost, txn.sales, txn.age DISTRIBUTE By age;
+
+select * from(select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='A' group by prod,cat,age having profit>0 order by profit desc limit 5) subq1
+union
+select * from(select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='B' group by prod,cat,age having profit>0 order by profit desc limit 5) subq2 
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='C' group by prod,cat,age having profit>0 order by profit desc limit 5) subq3
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='D' group by prod,cat,age having profit>0 order by profit desc limit 5) subq4
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='E' group by prod,cat,age having profit>0 order by profit desc limit 5) subq5
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='F' group by prod,cat,age having profit>0 order by profit desc limit 5) subq6
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='G' group by prod,cat,age having profit>0 order by profit desc limit 5) subq7
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='H' group by prod,cat,age having profit>0 order by profit desc limit 5) subq8
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='I' group by prod,cat,age having profit>0 order by profit desc limit 5) subq9
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='J' group by prod,cat,age having profit>0 order by profit desc limit 5) subq10
+union
+select * from (select prod,cat,age,sum(sales-cost) as profit from retailbyage where trim(age)='K' group by prod,cat,age having profit>0 order by profit desc limit 5) subq11
+order by age,profit desc;
+
+same output.
+
+
+
+

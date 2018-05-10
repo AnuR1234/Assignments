@@ -1,0 +1,709 @@
+Qu 5 :-
+Write a program to accept the customer details like :-
+1.  CustomerId        -- String -- 
+2.  CustomerName      -- String -- 
+3.  CustomerGender    -- String -- 
+4.  CustomerAge       -- int -- 
+5.  CustomerAddress   -- String -- 
+6.  CustomerCity      -- String -- 
+7.  CustomerCountry   -- String -- 
+8.  CustomerPin       -- String -- 
+9.  CustomerPhone     -- String -- 
+10. CustomerAreaOfInterest --String--
+11. CustomerDOB       -- Date -- 
+
+
+Validate the data:-
+1.  CustomerId-must not be more than 4 character and must start with 'C'
+2.  CustomerName -- data must not be blank or null
+3.  CustomerGender -- Should allow only Male and Female    
+4.  CustomerPhone     should allow null value if user is not entring any data
+5. CustomerAreaOfInterest -- user must enter 2 value
+6. CustomerDOB     --should not be more than 8 characters
+
+program:
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class CustomerDetails {
+
+	
+	String CustomerId; 
+	String CustomerName;
+	String  CustomerGender;
+	int  CustomerAge;
+	String CustomerAddress; 
+	String CustomerCity;
+	String CustomerCountry;
+	String CustomerPin;        
+	String  CustomerPhone;     
+	String[] CustomerAreaOfInterest=new String[2]; 
+	Date CustomerDOB;
+	public String getCustomerId() {
+		return CustomerId;
+	}
+	public void setCustomerId(String customerId) {
+		if(customerId.matches("^[C][a-zA-Z][0-9]{2}$")){
+		
+		CustomerId = customerId;
+	}
+		else
+		{
+			System.out.println("Invalid customerID");
+			System.exit(0);
+		}
+	}
+	public String getCustomerName() {
+		return CustomerName;
+	}
+	public void setCustomerName(String customerName) {
+		if(customerName!=null || customerName==" ")
+		{
+		CustomerName = customerName;
+	}
+		else
+		{
+			System.out.println("Invalid Customer Name");
+			System.exit(0);
+		}
+	}
+	public String getCustomerGender() {
+		return CustomerGender;
+	}
+	public void setCustomerGender(String customerGender) {
+		if(customerGender.equalsIgnoreCase("MALE")||customerGender.equalsIgnoreCase("FEMALE")){
+			CustomerGender=customerGender;
+	}
+		else
+		{
+			System.out.println("Invalid Gender");
+			System.exit(0);
+		}
+	}
+	
+	public int getCustomerAge() {
+		return CustomerAge;
+	}
+	public void setCustomerAge(int customerAge) {
+		CustomerAge = customerAge;
+	}
+	public String getCustomerAddress() {
+		return CustomerAddress;
+	}
+	public void setCustomerAddress(String customerAddress) {
+		CustomerAddress = customerAddress;
+	}
+	public String getCustomerCity() {
+		return CustomerCity;
+	}
+	public void setCustomerCity(String customerCity) {
+		CustomerCity = customerCity;
+	}
+	public String getCustomerCountry() {
+		return CustomerCountry;
+	}
+	public void setCustomerCountry(String customerCountry) {
+		CustomerCountry = customerCountry;
+	}
+	public String getCustomerPin() {
+		return CustomerPin;
+	}
+	public void setCustomerPin(String customerPin) {
+		CustomerPin = customerPin;
+	}
+	public String getCustomerPhone() {
+		return CustomerPhone;
+	}
+	public void setCustomerPhone(String customerPhone) {
+		
+		CustomerPhone = customerPhone;
+	}
+
+	
+	public String[] getCustomerAreaOfInterest() {
+		
+		  String [] copy = new String[this.CustomerAreaOfInterest.length];
+		    System.arraycopy(this.CustomerAreaOfInterest, 0, copy, 0, copy.length);
+		    return copy;
+	}
+	
+	public void setCustomerAreaOfInterest(String [] customerAreaOfInterest) {
+		this.CustomerAreaOfInterest = new String[customerAreaOfInterest.length];
+	    System.arraycopy(customerAreaOfInterest, 0, this.CustomerAreaOfInterest, 0, customerAreaOfInterest.length);
+	}
+	
+	public Date getCustomerDOB() {
+		return CustomerDOB;
+	}
+	public void setCustomerDOB(Date customerDOB) {
+		
+		DateFormat df3 = new SimpleDateFormat("yyyy-mm-dd");
+
+		String strDate = df3.format(customerDOB);  
+		CustomerDOB = customerDOB;
+	} 
+}
+
+
+Analysis
+1. Add at least 10 records and store the data in file seperated by delimeter like comma and space
+
+program:
+
+
+
+import java.io.File;
+import java.io.FileWriter;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
+
+public class Qns5Test {
+	static String[] caoi=new String[2];
+	static String [] c=new String[2];
+	static String inp;
+	static File f=new File("QNS5Test");
+		
+		public static void main(String[] args) throws ParseException {
+			String cpp=null;
+			DateFormat df=new SimpleDateFormat("yyyy-mm-dd");
+			try
+			{
+			HashMap<String,CustomerDetails>hasmap=new HashMap<String,CustomerDetails>();
+			for(int i=0;i<10;i++)
+			{CustomerDetails cd=new CustomerDetails();
+			Scanner s=new Scanner(System.in);
+			System.out.println("Enter the CustomerID which has not be more than 4 character and must start with 'C'");
+			String cid=s.next();
+			cd.setCustomerId(cid);
+			System.out.println("Enter the CustomerName which  must not be blank or null");
+			String cn=s.next();
+			cd.setCustomerName(cn);
+			System.out.println("Enter the CustomerGender which should allow only Male and Female ");
+			String cg=s.next();
+			cd.setCustomerGender(cg);
+			System.out.println("Enter the CustomerAge");
+			int ca=s.nextInt();
+			cd.setCustomerAge(ca);
+			System.out.println("Enter the CustomerAddress ");
+			String caa=s.next();
+			cd.setCustomerAddress(caa);
+			System.out.println("Enter the CustomerCity");
+			String cc=s.next();
+			cd.setCustomerCity(cc);
+			System.out.println("Enter the CustomerCountry");
+			String ccc=s.next();
+			cd.setCustomerCountry(ccc);
+			System.out.println("Ener the CustomerPin");
+			String cp=s.next();
+			cd.setCustomerPin(cp);
+			System.out.println("Ener the CustomerPhone");
+			s.nextLine();
+			if((cpp = s.nextLine()).equals('\n'))
+			{
+				//cpp=null;
+				cd.setCustomerPhone(null);
+			}
+			else
+			{
+			cd.setCustomerPhone(cpp);
+			}
+			System.out.println("Enter the CustomerAreaOfInterest atleast have 2 values");
+			for(int j=0;j<2;j++){
+			caoi[j]=s.next();
+			cd.setCustomerAreaOfInterest(caoi);
+			}
+			System.out.println("Enter the CustomerDOB");
+			String cdob=s.next();
+			
+			Date d=null;
+
+			d=df.parse(cdob);
+			cd.setCustomerDOB(d);
+			
+			hasmap.put("i"+i, cd);
+			}
+			
+				f.createNewFile();
+
+				FileWriter fos=new FileWriter(f);
+			
+			for(Map.Entry<String, CustomerDetails> e:hasmap.entrySet())
+			{
+				CustomerDetails cd=e.getValue();
+					fos.write(cd.getCustomerId());
+					fos.write(",");
+					fos.write(cd.getCustomerName());
+					fos.write(",");
+					fos.write(cd.getCustomerGender());
+					fos.write(",");
+					fos.write(String.valueOf(cd.getCustomerAge()));
+					fos.write(",");
+					fos.write(cd.getCustomerAddress());
+					fos.write(",");
+					fos.write(cd.getCustomerCity());
+					fos.write(",");
+					fos.write(cd.getCustomerCountry());
+					fos.write(",");
+					fos.write(cd.getCustomerPin());
+					fos.write(",");
+					String st=cd.getCustomerPhone();
+					if(cd.getCustomerPhone().equals(""))
+					{
+						fos.write("null");
+						fos.write(",");
+					}
+					else
+					{
+					fos.write(cd.getCustomerPhone());
+					fos.write(";");
+					}
+					String str=(Arrays.toString(cd.getCustomerAreaOfInterest()));
+					fos.write(str);
+					fos.write(",");
+					String testDateString = df.format(cd.getCustomerDOB());
+					fos.write(testDateString);
+					fos.write("\n");
+			}	
+			fos.flush();		
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+				
+			}
+	}
+}
+
+output:stored in a file successfully!
+
+Cu10 KatherineDucich Female 22 xyz Bundapest Hungary 65483 37345111 [Art,Cooking] 1996-06-18
+Cu01 ClaireGute Male 16 xyz Luanda Angola 34212 null [Reading,Writing] 2002-12-15
+Cu02 DarrinVanHuff Male 12 xyz Luanda Angola 42421 4086290582 [Singing,Blogging] 2006-04-12
+Cu03 SeaO'Donnell Male 12 xyz Luanda Angola 42422 4086290583 [Sports,Gaming] 2006-10-22
+Cu04 BrosinaHoffman Male 18 xyz Dhaka Bangladesh 90033 9194896793 [Art,Travelling] 2000-01-27
+Cu05 IreneMaddox Female 18 xyz Toranto Canada 76107 null [Dancing,Reading] 2000-07-16
+Cu06 PeteKriz Female 33 xyz Copenhagen Denmark 19141 552715318 [ChildCare,PetCare] 1985-06-25
+Cu07 LindaCazamias Female 20 xyz Awasa Ethiopia 77096 22153733 [Music,Cooking] 1998-03-14
+Cu08 StewartCarmichael Male 26 xyz Helsinki Finland 77045 null [Sports,Travelling] 1992-11-05
+Cu09 Anamika Female 25 xyz Delhi India 56003 9935214783 [Reading,Travelling] 1993-10-28
+
+2. After storing the data kindly read the data from file and do below analysis
+a) Display total male and female customers
+
+Program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class GenderCounter {
+
+	
+static String s;
+	
+	public static void main(String [] a) throws IOException
+	{	GenderCounter gc=new GenderCounter();
+	int countM=0;
+	 int countF=0;
+		FileReader fr=new FileReader("QNS5Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(" ");
+			  String CustomerGender=str[2];
+			  if(CustomerGender.equalsIgnoreCase("MALE"))
+				{
+					 countM++;
+				}
+			 
+				else
+				{
+					 countF++;
+				}
+			  
+	}
+		System.out.println("The total no. of Male Customers are--->"+countM);
+		System.out.println("The total no. of Female Customers are--->"+countF);
+		br.close();
+	}
+
+	
+}
+
+output:
+
+The total no. of Male Customers are--->5
+The total no. of Female Customers are--->5
+
+b) Display the total customer country wise
+
+Program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class CountryWiseCounter {
+	static String s;
+	
+	
+	public static void main(String[] args) throws IOException {
+		int Acount=0;
+		int Icount=0;
+		int Bcount=0;
+		int Ccount=0;
+		int Ecount=0;
+		int Fcount=0;
+		int Dcount=0;
+		int Gcount=0;
+		int Hcount=0;
+		FileReader fr=new FileReader("QNS5Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(" ");
+			String  CustomerCountry=str[6];
+			switch(CustomerCountry)
+			{
+					case "Angola":
+					{	Acount++;
+						break;
+					}
+					case "Bangladesh":
+					{
+						Bcount++;
+						break;
+					}
+					case "Canada":
+					{
+						Ccount++;						
+						break;
+					}
+					case "Denmark":
+					{
+						Dcount++;						
+						break;
+					}
+					case "Ethiopia":
+					{
+						Ecount++;
+						break;
+					}
+					case "Finland":
+					{
+						Fcount++;						
+						break;
+					}
+					case "Greece":
+					{
+						Gcount++;					
+						break;
+					}
+					case "Hungary":
+					{
+						Hcount++;
+						break;
+					}
+					case "India":
+					{
+						Icount++;
+						break;
+					}
+					default:
+					{
+						System.out.println("No such country!");
+					}
+			}
+			}
+		System.out.println("=====Country wise details of customers=====");
+		int Asum=0;
+		Asum+=Asum+Acount;
+		System.out.println("The number of customers who belongs to Angola are--->"+Asum);
+		System.out.println();
+		int Bsum=0;
+		Bsum+=Bsum+Bcount;
+		System.out.println("The number of customers who belongs to Bangladesh are--->"+Bsum);
+		System.out.println();
+		int Csum=0;
+		Csum+=Csum+Ccount;
+		System.out.println("The number of customers who belongs to Canada are--->"+Csum);
+		System.out.println();
+		int Dsum=0;
+		Dsum+=Dsum+Dcount;
+		System.out.println("The number of customers who belongs to Denmark are--->"+Dsum);
+		System.out.println();
+		int Esum=0;
+		Esum+=Esum+Ecount;
+		System.out.println("The number of customers who belongs to Ethiopia are--->"+Esum);
+		System.out.println();
+		int Fsum=0;
+		Fsum+=Fsum+Fcount;
+		System.out.println("The number of customers who belongs to Finland are--->"+Fsum);
+		System.out.println();
+		int Gsum=0;
+		Gsum+=Gsum+Gcount;
+		System.out.println("The number of customers who belongs to Greece are--->"+Gsum);
+		System.out.println();
+		int Hsum=0;
+		Hsum+=Hsum+Hcount;
+		System.out.println("The number of customers who belongs to Hungary are--->"+Hsum);
+		System.out.println();
+		int Isum=0;
+		Isum+=Isum+Icount;
+		System.out.println("The number of customers who belongs to India are--->"+Isum);
+		
+		br.close();
+	}
+}
+
+Output:
+
+=====Country wise details of customers=====
+The number of customers who belongs to Angola are--->3
+
+The number of customers who belongs to Bangladesh are--->1
+
+The number of customers who belongs to Canada are--->1
+
+The number of customers who belongs to Denmark are--->1
+
+The number of customers who belongs to Ethiopia are--->1
+
+The number of customers who belongs to Finland are--->1
+
+The number of customers who belongs to Greece are--->0
+
+The number of customers who belongs to Hungary are--->1
+
+The number of customers who belongs to India are--->1
+
+c)Display the total customer who like Travelling.
+
+Program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+
+public class TravelCounter {
+	static String s;
+	public int travelCounter(String CustomerAreaOfInterest )
+	{	int count=0; 
+	String str1="TRAVELLING";
+	if(CustomerAreaOfInterest.toLowerCase().contains(str1.toLowerCase()))
+	{
+		count++;
+	}
+	return count;
+	
+	}
+
+
+	public static void main(String [] a) throws IOException
+	{	TravelCounter tc=new TravelCounter();
+		int count=0;
+	int sum=0;
+		CustomerDetails cd=new CustomerDetails();
+		String CustomerAreaOfInterest=null;
+		FileReader fr=new FileReader("QNS5Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(" ");
+			CustomerAreaOfInterest=str[9];
+			count=tc.travelCounter(CustomerAreaOfInterest);
+			String str1="TRAVELLING";
+			sum+=count;
+			
+		}
+		
+		
+		System.out.println("The No.of Customers who likes travelling are--->"+sum);
+		
+	}
+
+	
+	
+}
+output:
+
+The No.of Customers who likes travelling are--->3
+
+d) Display total customer who like reading
+
+Program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadingCounter {
+
+static String s;
+	
+	public static void main(String [] a) throws IOException
+	{	int count=0;
+	
+	CustomerDetails cd=new CustomerDetails();
+	String CustomerAreaOfInterest=null;
+	FileReader fr=new FileReader("QNS5Test");
+	BufferedReader br = new BufferedReader(fr);
+	
+	while((s = br.readLine()) != null)
+	{
+		String [] str=s.toString().split(" ");
+		CustomerAreaOfInterest=str[9];
+		String str1="READING";
+		if(CustomerAreaOfInterest.toLowerCase().contains(str1.toLowerCase()))
+		{
+			count++;
+		}
+		
+		
+}
+	
+	System.out.println("The No.of Customers who likes reading are--->"+count);
+	
+}
+
+}
+output:
+
+The No.of Customers who likes reading are--->3
+
+e). Display total customer who is above 18 years of age
+
+Program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class AgeVerifyCounter {
+
+	
+	static String s;
+
+	public void ageVerify(int CustomerAge)
+	{int count=0;
+		if(CustomerAge>18)
+		{
+			count++;
+		}
+		System.out.println("The total customers whose age is above 18 are--->"+count);
+	}
+		public static void main(String[] args) throws NumberFormatException, IOException {
+			AgeVerifyCounter av=new AgeVerifyCounter();
+			int  CustomerAge=0;
+			int count=0;
+			FileReader fr=new FileReader("QNS5Test");
+			BufferedReader br = new BufferedReader(fr);
+			
+			while((s = br.readLine()) != null)
+			{
+				String [] str=s.toString().split(" ");
+				CustomerAge=Integer.parseInt(str[3]);
+				if(CustomerAge>18)
+				{
+					count++;
+				}
+				
+				
+		}
+			System.out.println("The total customers whose age is above 18 are--->"+count);
+			//av.ageVerify(CustomerAge);
+	br.close();
+		}
+
+	
+}
+output:
+
+The total customers whose age is above 18 are--->5
+
+f). Display total customer who do not have phone number.
+
+program:
+
+package Qns5;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class NoPhoneNumberCounter {
+
+	static String s;
+
+
+	public int noPhoneNumberCount(String CustomerPhoneNumber)
+	{	int count=0; 
+		if(CustomerPhoneNumber.equals("null"))
+		{
+			count++;
+	}
+		return count;
+		
+	}
+		public static void main(String[] args) throws NumberFormatException, IOException {
+			NoPhoneNumberCounter npn=new NoPhoneNumberCounter();
+			String  CustomerPhoneNumber=null;
+			int count=0;
+			int sum=0;
+			FileReader fr=new FileReader("QNS5Test");
+			BufferedReader br = new BufferedReader(fr);
+			
+			while((s = br.readLine()) != null)
+			{
+				String [] str=s.toString().split(" ");
+				CustomerPhoneNumber=str[8];
+				count=npn.noPhoneNumberCount(CustomerPhoneNumber);
+				sum+=count;
+		}
+			
+			System.out.println("The number of customers without phonenumber--->"+sum);
+			br.close();
+		}
+
+		}
+
+
+output:
+
+The number of customers without phonenumber--->3
+
+
+
+
+
+
+

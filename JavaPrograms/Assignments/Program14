@@ -1,0 +1,65 @@
+//Qu 14. Write a program in Java to create Generic Class to accept Employee Age and Salary?
+package assignments;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program14 {
+
+	public static void main(String [] a) {
+		
+		List <Employee1> list=new ArrayList<>();
+		list.add(new Employee1(22, 12000));
+		list.add(new Employee1(23, 16000));
+		list.add(new Employee1(26, 45000));
+		list.add(new Employee1(27, 156000));
+		
+		for(Employee1 e:list)
+		{
+			System.out.println("Employee's age:"+e.getAge()+":Employee's salary:"+e.getSalary());
+		}
+		
+	}
+	
+}
+class Employee1 {//employee class 
+	 
+	  private double salary;
+
+	  public int  age;
+
+	  public Employee1(int age,double salary) {
+	    this.salary =salary;
+	    this.age=age;
+
+	  }
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	  
+
+	 
+	}
+
+
+output:
+
+Employee's age:22:Employee's salary:12000.0
+Employee's age:23:Employee's salary:16000.0
+Employee's age:26:Employee's salary:45000.0
+Employee's age:27:Employee's salary:156000.0
+
+

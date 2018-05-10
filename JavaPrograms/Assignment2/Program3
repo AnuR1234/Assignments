@@ -1,0 +1,392 @@
+Qu 3 :-
+Write a Java program to accept Transaction details like..
+
+1. CustomerID
+2. ProductID
+3. ProductPrice
+4. Quantity
+5. TotalPrice
+6. DateOfPurchase
+7. productType
+8. DiscountPercentage
+
+1. Accept 50 details and store the data inside the file using proper delimeter.
+
+Program:
+
+import java.io.File;
+import java.io.FileWriter;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+
+public class Qns3Test {
+
+	static String inp;
+	static File f=new File("QNS3Test");
+		
+		public static void main(String[] args) {
+			HashMap<String,TransactionDetails>hasmap=new HashMap<String,TransactionDetails>();
+			for(int i=0;i<50;i++)
+			{TransactionDetails td=new TransactionDetails();
+			Scanner s=new Scanner(System.in);
+			System.out.println("Enter the CustomerID");
+			String cid=s.next();
+			td.setCustomerID(cid);
+			System.out.println("Enter the ProductID");
+			String pid=s.next();
+			td.setProductID(pid);
+			System.out.println("Enter the ProductPrice ");
+			double pp=s.nextDouble();
+			td.setProductPrice(pp);
+			System.out.println("Enter the Quantity");
+			int q=s.nextInt();
+			td.setQuantity(q);
+			System.out.println("Enter the TotalPrice ");
+			double tp=s.nextDouble();
+			td.setTotalPrice(tp);
+			System.out.println("Enter the DateOfPurchase");
+			String dop=s.next();
+			td.setDateOfPurchase(dop);
+			System.out.println("Enter the productType");
+			String pt=s.next();
+			td.setProductType(pt);
+			System.out.println("Enter the DiscountPercentage");
+			double dp=s.nextDouble();
+			td.setDiscountPercentage(dp);
+			hasmap.put("i"+i, td);
+			}
+			try
+			{
+				f.createNewFile();
+
+				FileWriter fos=new FileWriter(f);
+			
+			
+			for(Map.Entry<String, TransactionDetails> e:hasmap.entrySet())
+			{
+				TransactionDetails td=e.getValue();
+					fos.write(String.valueOf(td.getCustomerID()));
+					fos.write(";");
+					fos.write(String.valueOf(td.getProductID()));
+					fos.write(";");
+					fos.write(String.valueOf(td.getProductPrice()));
+					fos.write(";");
+					fos.write(String.valueOf(td.getQuantity()));
+					fos.write(";");
+					fos.write(String.valueOf(td.getTotalPrice()));
+					fos.write(";");
+					fos.write(td.getDateOfPurchase());
+					fos.write(";");
+					fos.write(String.valueOf(td.getProductPrice()));
+					fos.write(";");
+					fos.write(String.valueOf(td.getDiscountPercentage()));
+					fos.write("\n");
+			
+			}
+
+		
+				
+			fos.flush();
+					
+			}
+			catch(Exception e)
+			{
+				System.out.println(e);
+			}
+
+	}
+}
+
+OUTPUT:stored in file successfully!
+
+TB-21520;OFF-EN-10001509;155.1016;2;310.2032;17/09/2015;155.1016;0.2
+TB-21520;FUR-FU-10004848;15.525;3;46.575;17/09/2015;15.525;0.2
+TB-21520;OFF-BI-10001525;892.715;6;5356.29;17/09/2015;892.715;0.7
+TB-21520;OFF-AR-10004042;95.709199;6;574.255194;17/09/2015;95.709199;0.2
+MA-17560;OFF-PA-10000249;9.9468;3;29.8404;19/10/2017;9.9468;0.2
+TB-21520;OFF-AR-10001683;344.546;2;689.092;17/09/2015;344.546;0.2
+GH-14485;FUR-FU-10003664;147.963;5;739.815;08/12/2016;147.963;0.6
+GH-14485;TEC-PH-10004977;123.4737;7;864.3159;08/12/2016;123.4737;0.2
+SN-20710;FUR-CH-10004218;615.147;3;1845.441;27/12/2015;615.147;0.3
+SN-20710;OFF-EN-10002986;35.415;9;318.735;27/12/2015;35.415;0.2
+SN-20710;TEC-PH-10000486;41.7564;4;167.0256;27/12/2015;41.7564;0.2
+RA-19885;OFF-ST-10003479;333.893999;2;667.787998;17/07/2016;333.893999;0.0
+LC-16930;TEC-PH-10004093;16.5564;4;66.2256;10/09/2017;16.5564;0.2
+ON-18715;TEC-AC-10000171;19.7714;2;39.5428;11/03/2016;19.7714;0.0
+ES-14080;OFF-ST-10003282;239.5616;2;479.1232;19/09/2017;239.5616;0.2
+PO-18865;OFF-ST-10001713;8.4784;4;33.9136;20/10/2014;8.4784;0.0
+ON-18715;OFF-BI-10003291;8.2062;2;16.4124;11/03/2016;8.2062;0.0
+LH-16900;TEC-PH-10003988;68.104;2;136.208;20/06/2016;68.104;0.0
+LH-16900;TEC-AC-10002167;433.95;3;1301.85;20/06/2016;433.95;0.0
+PO-18865;TEC-AC-10000171;8.4784;4;33.9136;11/03/2016;8.4784;0.2
+BH-11710;FUR-TA-10001539;85.3092;9;767.7828;09/06/2014;85.3092;0.2
+BH-11710;OFF-AP-10002892;34.47;5;172.35;09/06/2014;34.47;0.0
+AA-10480;OFF-PA-10002365;5.4432;3;16.3296;15/04/2017;5.4432;0.2
+BH-11710;TEC-PH-10002033;68.3568;4;273.4272;09/06/2014;68.3568;0.2
+HP-14815;OFF-AP-10002311;123.858;5;619.29;22/11/2015;123.858;0.8
+IM-15070;OFF-BI-10003656;132.5922;3;397.7766;05/12/2016;132.5922;0.2
+PK-19075;OFF-ST-10004186;13.3176;6;79.9056;11/11/2014;13.3176;0.0
+HP-14815;OFF-BI-10000756;83.816;3;251.448;22/11/2015;83.816;0.8
+ZD-21925;OFF-AR-10003056;25.4824;2;50.9648;27/08/2014;25.4824;0.0
+AG-10270;OFF-ST-10000107;459.99;2;919.98;13/05/2014;459.99;0.0
+ZD-21925;TEC-PH-10001949;16.011;3;48.033;27/08/2014;16.011;0.2
+CG-12520;FUR-BO-10001798;41.9136;2;83.8272;08/11/2016;41.9136;0.0
+CG-12520;FUR-CH-10000454;219.582;3;658.746;08/11/2016;219.582;0.0
+KB-16585;OFF-AR-10000246;5.0596;7;35.4172;09/12/2016;5.0596;0.0
+DV-13045;OFF-LA-10000240;46.8714;2;93.7428;12/06/2016;46.8714;0.0
+ZD-21925;OFF-BI-10002215;7.384;4;29.536;27/08/2014;7.384;0.2
+SO-20335;FUR-TA-10000577;383.031;5;1915.155;11/10/2015;383.031;0.45
+SF-20065;FUR-CH-10002774;561.0196;1000;561019.6;16/07/2017;561.0196;0.3
+SO-20335;OFF-ST-10000760;62.5164;2;125.0328;11/10/2015;62.5164;0.2
+KB-16585;OFF-AP-10001492;15.6884;7;109.8188;09/12/2016;15.6884;0.0
+BH-11710;FUR-FU-10001487;14.1694;7;99.1858;09/06/2014;14.1694;0.0
+EH-13945;OFF-BI-10001634;47.2224;2;94.4448;16/01/2016;47.2224;0.2
+BH-11710;OFF-AR-10002833;11.9656;4;47.8624;09/06/2014;11.9656;0.0
+EB-13870;FUR-TA-10000577;240.2649;3;720.7947;25/09/2015;240.2649;0.0
+0;OFF-AR-10002833;11.9656;4;47.8624;09/06/2014;11.9656;0.0
+TB-21520;FUR-BO-10004834;1665.0522;7;11655.3654;17/09/2015;1665.0522;0.5
+BH-11710;TEC-PH-10002275;90.7152;6;544.2912;09/06/2014;90.7152;0.2
+EH-13945;TEC-AC-10003027;11.7741;0;0.0;16/01/2016;11.7741;0.0
+BH-11710;OFF-BI-10003910;5.7825;3;17.3475;OfficeSupplies;5.7825;0.2
+TB-21520;OFF-BI-10000474;787.0532;2;1574.1064;17/09/2015;787.0532;0.7
+
+CustomerDetails.java
+
+
+
+public class TransactionDetails {
+
+	String CustomerID;
+	String ProductID;
+	double ProductPrice;
+	int Quantity;
+	double TotalPrice;
+	String DateOfPurchase;
+	String productType;
+	double DiscountPercentage;
+	public String getCustomerID() {
+		return CustomerID;
+	}
+	public void setCustomerID(String customerID) {
+		CustomerID = customerID;
+	}
+	public String getProductID() {
+		return ProductID;
+	}
+	public void setProductID(String productID) {
+		ProductID = productID;
+	}
+	public double getProductPrice() {
+		return ProductPrice;
+	}
+	public void setProductPrice(double productPrice) {
+		ProductPrice = productPrice;
+	}
+	public int getQuantity() {
+		return Quantity;
+	}
+	public void setQuantity(int quantity) {
+		Quantity = quantity;
+	}
+	public double getTotalPrice() {
+		return TotalPrice;
+	}
+	public void setTotalPrice(double totalPrice) {
+		TotalPrice = totalPrice;
+	}
+	public String getDateOfPurchase() {
+		return DateOfPurchase;
+	}
+	public void setDateOfPurchase(String dateOfPurchase) {
+		DateOfPurchase = dateOfPurchase;
+	}
+	public String getProductType() {
+		return productType;
+	}
+	public void setProductType(String productType) {
+		this.productType = productType;
+	}
+	public double getDiscountPercentage() {
+		return DiscountPercentage;
+	}
+	public void setDiscountPercentage(double discountPercentage) {
+		DiscountPercentage = discountPercentage;
+	}
+	
+}
+
+2. Read the data from file and perform below analysis.
+
+a)Customer did highest purchase in a day
+Program:
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class CustHightestPurchase {
+static String s;
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		double max=0;
+		double maxpurchase=0;
+		String  CustomerID=null;
+		FileReader fr=new FileReader("QNS3Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			  CustomerID=(str[0]);
+			double ProductPrice=Double.parseDouble(str[2]);
+			int Quantity=Integer.parseInt(str[3]);
+			 maxpurchase=ProductPrice*Quantity;
+			 
+	}
+		if(maxpurchase>max)
+		{
+			max=maxpurchase;
+			
+		}
+	 System.out.println("The maximum purchase done by customer --->"+CustomerID +" with the max purchase of: "+max);
+		
+	}
+}
+
+output:
+
+The maximum purchase done by customer --->TB-21520 with the max purchase of: 1574.1064
+
+b)Display the details of all the products where discount is >25%
+
+Program:
+
+package Qns3;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ProdDiscount {
+static String s;
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		
+		FileReader fr=new FileReader("QNS3Test");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while((s = br.readLine()) != null)
+		{
+			String [] str=s.toString().split(";");
+			//int  CustomerID=Integer.parseInt(str[0]);
+			String ProductID=(str[1]);
+			double ProductPrice=Double.parseDouble(str[2]);
+			int Quantity=Integer.parseInt(str[3]);
+			double TotalPrice=Double.parseDouble(str[4]);
+			String DateOfPurchase=str[5];
+			String productType=str[6];
+			double DiscountPercentage=Double.parseDouble(str[7]);
+			if(DiscountPercentage>0.25)
+			{
+				System.out.println("======Product Details=====");
+				System.out.println("The Product ID is---->"+ProductID);
+				System.out.println("The Product Price is---->"+ProductPrice);
+				System.out.println("The Quantity is----->"+Quantity);
+				System.out.println("The TotalPrice is----->"+TotalPrice);
+				System.out.println("The DateOfPurchase is----->"+DateOfPurchase);
+				System.out.println("The productType is----->"+productType);
+				System.out.println("The DiscountPercentage is----->"+DiscountPercentage);
+				System.out.println("------------------------------------------------------------");
+	}
+	}
+br.close();
+	}
+
+}
+
+output:
+======Product Details=====
+The Product ID is---->OFF-BI-10001525
+The Product Price is---->892.715
+The Quantity is----->6
+The TotalPrice is----->5356.29
+The DateOfPurchase is----->17/09/2015
+The productType is----->892.715
+The DiscountPercentage is----->0.7
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->FUR-FU-10003664
+The Product Price is---->147.963
+The Quantity is----->5
+The TotalPrice is----->739.815
+The DateOfPurchase is----->08/12/2016
+The productType is----->147.963
+The DiscountPercentage is----->0.6
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->FUR-CH-10004218
+The Product Price is---->615.147
+The Quantity is----->3
+The TotalPrice is----->1845.441
+The DateOfPurchase is----->27/12/2015
+The productType is----->615.147
+The DiscountPercentage is----->0.3
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->OFF-AP-10002311
+The Product Price is---->123.858
+The Quantity is----->5
+The TotalPrice is----->619.29
+The DateOfPurchase is----->22/11/2015
+The productType is----->123.858
+The DiscountPercentage is----->0.8
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->OFF-BI-10000756
+The Product Price is---->83.816
+The Quantity is----->3
+The TotalPrice is----->251.448
+The DateOfPurchase is----->22/11/2015
+The productType is----->83.816
+The DiscountPercentage is----->0.8
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->FUR-TA-10000577
+The Product Price is---->383.031
+The Quantity is----->5
+The TotalPrice is----->1915.155
+The DateOfPurchase is----->11/10/2015
+The productType is----->383.031
+The DiscountPercentage is----->0.45
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->FUR-CH-10002774
+The Product Price is---->561.0196
+The Quantity is----->1000
+The TotalPrice is----->561019.6
+The DateOfPurchase is----->16/07/2017
+The productType is----->561.0196
+The DiscountPercentage is----->0.3
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->FUR-BO-10004834
+The Product Price is---->1665.0522
+The Quantity is----->7
+The TotalPrice is----->11655.3654
+The DateOfPurchase is----->17/09/2015
+The productType is----->1665.0522
+The DiscountPercentage is----->0.5
+------------------------------------------------------------
+======Product Details=====
+The Product ID is---->OFF-BI-10000474
+The Product Price is---->787.0532
+The Quantity is----->2
+The TotalPrice is----->1574.1064
+The DateOfPurchase is----->17/09/2015
+The productType is----->787.0532
+The DiscountPercentage is----->0.7
+------------------------------------------------------------
+
+

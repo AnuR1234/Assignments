@@ -1,0 +1,162 @@
+/*Qu 17. 
+Write program in java to create a base class name for accepting Studnet Details of Science Stream with common properties. After that create child classes of various Science Stream like (Maths, Biology, Computer, Electronics)
+
+After that also create the another child class (Software,Hardware),(Botany,Zoology) on class like Computer and Biology.*/
+
+package aaaa;
+
+class Student_Sci
+{
+	int id;
+	String name;
+	int age;
+	
+	public Student_Sci(int id,String name,int age)
+	{
+		this.id=id;
+		this.name=name;
+		this.age=age;
+	}
+	public void display()
+	{
+		System.out.println(toString());
+	}
+	
+}
+class Student_math extends Student_Sci
+{
+	String subject;
+
+	public Student_math(int id, String name, int age, String subject) {
+		super(id, name, age);
+		this.subject=subject;
+		
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+this.subject);
+	}
+	
+}
+class Student_bio extends Student_Sci
+{	String subject;
+	public Student_bio(int id, String name, int age,String subject) {
+		super(id, name, age);
+		this.subject=subject;
+	}
+
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+this.subject);
+	}
+}
+class Student_comp extends Student_Sci
+{
+String subject;
+	public Student_comp(int id, String name, int age,String subject) {
+		super(id, name, age);
+		this.subject=subject;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+this.subject);
+	}
+}
+
+class Student_elec extends Student_Sci
+{	String subject;
+	public Student_elec(int id, String name, int age,String subject) {
+		super(id, name, age);
+		this.subject=subject;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+this.subject);
+	}
+	
+}
+class Student_sw extends Student_comp
+{String operation;
+	public Student_sw(int id, String name, int age, String subject,String operation) {
+		super(id, name, age, subject);
+		this.operation=operation;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+subject+"the operation is :"+this.operation);
+	}
+}
+class Student_hw extends Student_comp
+{String operation;
+	public Student_hw(int id, String name, int age, String subject,String operation) {
+		super(id, name, age, subject);
+		this.operation=operation;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+subject+"the operation is :"+this.operation);
+	}
+}
+class Student_botnany extends Student_bio
+{
+	String section;
+
+	public Student_botnany(int id, String name, int age, String subject,String section) {
+		super(id, name, age, subject);
+		this.section=section;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+subject+"the section is :"+this.section);
+	}
+	
+}
+class Student_zoology extends Student_bio
+{String section;
+
+	public Student_zoology(int id, String name, int age, String subject,String section) {
+		super(id, name, age, subject);
+		this.section=section;
+	}
+	public void display()
+	{
+		System.out.println("id is:"+id+"---name is:"+name+"----age is :"+age+"---subject is :"+subject+"the section is :"+this.section);
+	}	
+}
+	
+public class Program17 {
+	
+	public static void main(String [] a) {
+		
+		Student_Sci s1=new Student_math(101, "abhi", 12, "maths");
+		s1.display();
+		Student_Sci s2=new Student_bio(104, "ajay", 12, "biology");
+		s2.display();
+		Student_Sci s3=new Student_comp(106, "mahi", 14, "computers");
+		s3.display();
+		Student_Sci s4=new Student_elec(110, "rajesh", 17, "electronics");
+		s4.display();
+		Student_bio s5=new Student_botnany(118, "sweety", 18, "biology", "botnany");
+		s5.display();
+		Student_bio s6=new Student_zoology(124, "shankar", 18, "biology", "zoology");
+		s6.display();
+		Student_comp s7=new Student_sw(120, "anil", 18, "computers", "software");
+		s7.display();
+		Student_comp s8=new Student_hw(127, "mahesh", 18,"computers", "hardware");
+		s8.display();
+	}
+}
+
+
+Output:
+
+id is:101---name is:abhi----age is :12---subject is :maths
+id is:104---name is:ajay----age is :12---subject is :biology
+id is:106---name is:mahi----age is :14---subject is :computers
+id is:110---name is:rajesh----age is :17---subject is :electronics
+id is:118---name is:sweety----age is :18---subject is :biology the section is :botnany
+id is:124---name is:shankar----age is :18---subject is :biology the section is :zoology
+id is:120---name is:anil----age is :18---subject is :computers the operation is :software
+id is:127---name is:mahesh----age is :18---subject is :computers the operation is :hardware
+
+

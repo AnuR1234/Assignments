@@ -1,0 +1,492 @@
+Qu 1 :- 
+
+Write a Program to accept 10 Student Details Like..
+
+1. StudentID - String - StudentID must start with S and followed by 3 digit.
+2. StudentName - String
+3. StudentAge  - int - Value entered by user must not be greater than 100
+4. StudentCity - String - 
+5. StudentCountry - String - Only India is allowed
+
+Soln:
+Task :-
+1. Store all the data inside txt file.
+Student.java file to store and fetch the student details using setter and getter methods.
+
+
+import java.io.Serializable;
+
+public class Student implements Serializable {
+	
+	String StudentID;
+	String  StudentName;
+	String   StudentCity;
+	String  StudentCountry;
+	int  StudentAge;
+	public String getStudentID() {
+		return StudentID;
+	}
+	public void setStudentID(String studentID) {
+		if(studentID.matches("[S]+[0-9]{3}"))
+		{
+		StudentID = studentID;
+		}
+		else
+		{
+			System.out.println("Invalid StudentID");
+			System.exit(0);
+		}
+	}
+	public String getStudentName() {
+		return StudentName;
+	}
+	public void setStudentName(String studentName) {
+		StudentName = studentName;
+	}
+	public String getStudentCity() {
+		return StudentCity;
+	}
+	public void setStudentCity(String studentCity) {
+		StudentCity = studentCity;
+	}
+	public String getStudentCountry() {
+		return StudentCountry;
+	}
+	public void setStudentCountry(String studentCountry) {
+		if(studentCountry.equals("India"))
+		{
+		StudentCountry = studentCountry;
+	}
+		else
+		{
+			System.out.println("Invalid Country");
+			System.exit(0);
+		}
+	}
+	public int getStudentAge() {
+		return StudentAge;
+	}
+	public void setStudentAge(int studentAge) {
+		if(studentAge<100){
+		StudentAge = studentAge;
+	}
+		else
+		{
+			System.out.println("Invalid age!");
+			System.exit(0);
+		}
+}
+}
+
+To display all 10 students details.
+
+Program:
+
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+
+public class Qns11      
+{
+	static File f=new File("QNS1Test");
+	static Scanner s=new Scanner(System.in);
+	static String sid;
+	static String sname;
+	static int sage;
+	static String scity;
+	static String scountry;
+	static Student [] sout=new Student[10];
+	
+	public void disp() throws FileNotFoundException, IOException, ClassNotFoundException
+	{
+		 ObjectInputStream in = new ObjectInputStream(new FileInputStream(f));
+         
+         for(int i=0;i<sout.length;i++)
+       {
+          sout[i] = new Student();
+           sout[i]= (Student)in.readObject();
+           System.out.println("===Student details of Student"+(i+1)+"===");
+           System.out.println("StudentID is--->"+sout[i].getStudentID());
+           System.out.println("StudentName is---->"+sout[i].getStudentName());
+           System.out.println("StudentAge is----->"+sout[i].getStudentAge());
+           System.out.println("StudentCity is---->"+sout[i].getStudentCity());
+           System.out.println("StudentCountry is--->"+sout[i].getStudentCountry());
+           System.out.println("-----------------------");
+         }
+         if(in!=null)
+         {
+        	 in.close();
+         }
+	}
+		
+	
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
+		Student s1=new Student();
+		
+			f.createNewFile();
+			 FileOutputStream fos = new FileOutputStream(f);
+	            ObjectOutputStream oos = new ObjectOutputStream(fos);
+	            Qns11 q=new Qns11();
+	            for(int i=0;i<sout.length;i++)
+	            {
+	                sout[i]=new Student();
+	                System.out.println("The Details of Student:"+(i+1));
+	          System.out.println("Enter the StudentID must start with S and followed by 3 digit.");
+	          sid=s.next();
+	          sout[i].setStudentID(sid);
+	          System.out.println("Enter the StudentName");
+	          sname=s.next();
+	          sout[i].setStudentName(sname);
+	          System.out.println("Enter the StudentAge which is less than 100");
+	          sage=s.nextInt();
+	          sout[i].setStudentAge(sage);
+	          System.out.println("Enter the StudentCity");
+	          scity=s.next();
+	          sout[i].setStudentCity(scity);
+	          System.out.println("Enter the StudentCountry");
+	          scountry=s.next();
+	          sout[i].setStudentCountry(scountry);
+	          oos.writeObject(sout[i]);
+	            }
+	            System.out.println("Successfully written to file!");
+	            System.out.println();
+	            q.disp();
+	  
+	          if(oos!=null && fos!=null)
+	          {
+	        	  oos.close();
+	        	  fos.close();
+	          }
+	}
+}
+
+Output:
+Successfully written to file!
+
+The Details of Student:1
+Enter the StudentID must start with S and followed by 3 digit.
+S100
+Enter the StudentName
+ABI JOSEPH
+Enter the StudentAge which is less than 100
+16
+Enter the StudentCity
+Goa
+Enter the StudentCountry
+India
+The Details of Student:2
+Enter the StudentID must start with S and followed by 3 digit.
+S101
+Enter the StudentName
+BARATH
+Enter the StudentAge which is less than 100
+16
+Enter the StudentCity
+Mumbai
+Enter the StudentCountry
+India
+The Details of Student:3
+Enter the StudentID must start with S and followed by 3 digit.
+S102
+Enter the StudentName
+ADITI
+Enter the StudentAge which is less than 100
+16
+Enter the StudentCity
+Mumbai
+Enter the StudentCountry
+India
+The Details of Student:4
+Enter the StudentID must start with S and followed by 3 digit.
+S103
+Enter the StudentName
+BALANANDAN
+Enter the StudentAge which is less than 100
+17
+Enter the StudentCity
+Bangalore
+Enter the StudentCountry
+India
+The Details of Student:5
+Enter the StudentID must start with S and followed by 3 digit.
+S104
+Enter the StudentName
+BRAGHADEESH
+Enter the StudentAge which is less than 100
+17
+Enter the StudentCity
+Kolkata
+Enter the StudentCountry
+India
+The Details of Student:6
+Enter the StudentID must start with S and followed by 3 digit.
+S105
+Enter the StudentName
+CHINTHALA PRUDHVIRAJ
+Enter the StudentAge which is less than 100
+16
+Enter the StudentCity
+Pune
+Enter the StudentCountry
+India
+The Details of Student:7
+Enter the StudentID must start with S and followed by 3 digit.
+S106
+Enter the StudentName
+GIRISH KUMAR
+Enter the StudentAge which is less than 100
+18
+Enter the StudentCity
+Hyderabad
+Enter the StudentCountry
+India
+The Details of Student:8
+Enter the StudentID must start with S and followed by 3 digit.
+S107
+Enter the StudentName
+GOWSHIKA PREMAPALAN
+Enter the StudentAge which is less than 100
+18
+Enter the StudentCity
+Chennai
+Enter the StudentCountry
+India
+The Details of Student:9
+Enter the StudentID must start with S and followed by 3 digit.
+S108
+Enter the StudentName
+K VISWESWARAN
+Enter the StudentAge which is less than 100
+17
+Enter the StudentCity
+Ahmedabad
+Enter the StudentCountry
+India
+The Details of Student:10
+Enter the StudentID must start with S and followed by 3 digit.
+S109
+Enter the StudentName
+NIKHIL M
+Enter the StudentAge which is less than 100
+18
+Enter the StudentCity
+Bangalore
+Enter the StudentCountry
+India
+Successfully written to file!
+
+===Student details of Student1===
+StudentID is--->S100
+StudentName is---->ABI
+StudentAge is----->16
+StudentCity is---->Goa
+StudentCountry is--->India
+-----------------------
+===Student details of Student2===
+StudentID is--->S101
+StudentName is---->BARATH
+StudentAge is----->16
+StudentCity is---->Mumbai
+StudentCountry is--->India
+-----------------------
+===Student details of Student3===
+StudentID is--->S102
+StudentName is---->ADITI
+StudentAge is----->16
+StudentCity is---->Mumbai
+StudentCountry is--->India
+-----------------------
+===Student details of Student4===
+StudentID is--->S103
+StudentName is---->BALANANDAN
+StudentAge is----->17
+StudentCity is---->Bangalore
+StudentCountry is--->India
+-----------------------
+===Student details of Student5===
+StudentID is--->S104
+StudentName is---->BRAGHADEESH
+StudentAge is----->21
+StudentCity is---->Kolkata
+StudentCountry is--->India
+-----------------------
+===Student details of Student6===
+StudentID is--->S105
+StudentName is---->CHINTHALA
+StudentAge is----->16
+StudentCity is---->Pune
+StudentCountry is--->India
+-----------------------
+===Student details of Student7===
+StudentID is--->S106
+StudentName is---->GIRISH
+StudentAge is----->18
+StudentCity is---->Hyderabad
+StudentCountry is--->India
+-----------------------
+===Student details of Student8===
+StudentID is--->S107
+StudentName is---->GOWSHIKA
+StudentAge is----->18
+StudentCity is---->Chennai
+StudentCountry is--->India
+-----------------------
+===Student details of Student9===
+StudentID is--->S108
+StudentName is---->K
+StudentAge is----->17
+StudentCity is---->Ahmedabad
+StudentCountry is--->India
+-----------------------
+===Student details of Student10===
+StudentID is--->S109
+StudentName is---->NIKHIL
+StudentAge is----->21
+StudentCity is---->Bangalore
+StudentCountry is--->India
+-----------------------
+
+2. Read the data from txt file and count the number of students whose age is greater than 21.
+
+Program:
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class AgeVerify {
+	static Student[] sout = new Student[10];
+
+	public void StudAge(int[] age) {
+		int count = 0;
+		for (int i = 0; i<sout.length; i++) {
+			if (age[i] > 21) {
+				count++;
+			}
+		}
+		System.out.println("The number of students whose age is greater then 21 --->"+ count);
+	}
+
+	public static void main(String[] args) throws FileNotFoundException,
+			IOException, ClassNotFoundException {
+		AgeVerify a = new AgeVerify();
+		int[] age = new int[10];
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("QNS1Test"));
+		for (int i = 0; i < sout.length; i++) {
+			sout[i] = new Student();
+			sout[i] = (Student) in.readObject();
+
+			age[i] = sout[i].getStudentAge();
+		}
+		a.StudAge(age);
+		if (in != null) {
+			in.close();
+		}
+	}
+
+}
+
+Output:
+
+The number of students whose age is greater then 21 --->2
+
+3. Read the data from the file and display the details of all the students whose Names are starting with "A".
+
+Program:
+
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class NameVerify {
+static String name1;
+	
+static Student [] sout=new Student[10];
+	
+
+
+	public void disp() throws FileNotFoundException, IOException,ClassNotFoundException
+	{
+ ObjectInputStream in = new ObjectInputStream(new FileInputStream("QNS1Test"));
+         
+         for(int i=0;i<sout.length;i++)
+       {
+        	 
+          sout[i] = new Student();
+           sout[i]= (Student)in.readObject();
+          
+            if(sout[i].getStudentName().startsWith("A"))           
+           {
+           System.out.println("StudentID is---->"+sout[i].getStudentID());
+           System.out.println("StudentName is---->"+sout[i].getStudentName());
+           System.out.println("StudentAge is----->"+sout[i].getStudentAge());
+           System.out.println("StudentCity is----->"+sout[i].getStudentCity());
+           System.out.println("StudentCountry is---->"+sout[i].getStudentCountry());
+           System.out.println("-----------------------");
+         }
+       }
+         if(in!=null)
+         {
+        	 in.close();
+         }
+	}
+	public static void main(String[] args)throws FileNotFoundException, IOException, ClassNotFoundException  {
+			NameVerify a=new NameVerify();	
+			a.disp();
+	}
+	}
+
+
+Output:
+=========Student details========
+StudentID is---->S100
+StudentName is---->ABI
+StudentAge is----->16
+StudentCity is----->Goa
+StudentCountry is---->India
+-----------------------
+StudentID is---->S102
+StudentName is---->ADITI
+StudentAge is----->16
+StudentCity is----->Mumbai
+StudentCountry is---->India
+-----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

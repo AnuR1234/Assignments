@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+//Qu 3. Write a program using array to accept 10 numbers and display the numbers in ascending order
+public class Program3 {
+
+	public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+		int [] num=new int[10];
+		int temp;
+		for(int i=0;i<10;i++)
+		{
+System.out.println("Enter the number.."+(i+1)+":");
+			num[i]=s.nextInt();
+		}
+		for (int i=0;i<10;i++)
+
+		{
+
+		for(int j=i+1;j<10;j++)
+
+		{
+
+		if(num[i]>num[j])//checking if the numbers are greater than the other
+
+		{
+
+		temp=num[j];//swapping
+
+		num[j]=num[i];//swapping
+
+		num[i]=temp;//swapping 
+
+		}
+
+		}
+
+		}
+	
+		System.out.println("The 10 numbers sorted in ascending order are:");
+
+		for(int i=0;i<10-1;i++)
+		{
+
+		System.out.print(num[i]+",");
+
+		}
+		System.out.print(num[10 - 1]);
+
+	}
+	}
+
+
+Output:
+
+Enter the number..1:
+12
+Enter the number..2:
+11
+Enter the number..3:
+3
+Enter the number..4:
+16
+Enter the number..5:
+20
+Enter the number..6:
+25
+Enter the number..7:
+12
+Enter the number..8:
+11
+Enter the number..9:
+10
+Enter the number..10:
+24
+The 10 numbers sorted in ascending order are:
+3,10,11,11,12,12,16,20,24,25

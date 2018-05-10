@@ -1,0 +1,579 @@
+qns1: List all the columns of the Salespeople table.
+
+soln:Describe salespeople;
+
+qns2:List all customers with a rating of 100.
+
+soln: select cname from customer where rating=100; 
+
+qns3: Find all records in the Customer table with NULL values in the city column. 
+
+soln:select count(*) from customer where city=NULL; 
+
+qns4:Find the largest order taken by each salesperson on each date. 
+
+soln: select snum,odate,max(amt) from orders group by odate,snum;
+
+qns5:Arrange the Orders table by descending customer number.
+
+soln:select * from orders order by cnum desc; 
+
+qns6:Find which salespeople currently have orders in the Orders table. 
+
+soln:select sname from salespeople  where snum in(select snum from orders); 
+
+qns7:List names of all customers matched with the salespeople serving them 
+
+soln:SELECT C.CNAME,S.SNAME  FROM CUSTOMER C LEFT JOIN SALESPEOPLE S ON
+S.SNUM=C.SNUM;
+
+qns8:Find the names and numbers of all salespeople who had more than one customer.
+
+soln:SELECT S.SNAME,S.SNUM,COUNT(C.CNUM) AS CUSTCOUNT FROM SALESPEOPLE S LEFT JOIN CUSTOMER C
+ON S.SNUM=C.SNUM GROUP BY S.SNUM HAVING CUSTCOUNT>1;
+
+qns9:Count the orders of each of the salespeople and output the results in descend ing order. 
+
+soln:select count(onum),snum from orders group by snum order by count(onum) desc ; 
+
+qns10:List the Customer table if and only if one or more of the customers in the Customer table are located in San Jose. 
+
+soln: select * from customer where city in(select city from customer  where city='San Jose'  group by city  having count(city)>1); 
+
+qns11: Match salespeople to customers according to what city they lived in. 
+
+soln:select sname,cname,s.city from salespeople s,customer c where s.city=c.city;
+
+qns12:Find the largest order taken by each salesperson.
+
+soln:select max(amt),snum from orders group by snum;
+
+qns13:Find customers in San Jose who have a rating above 200. 
+
+soln:select * from customer where rating>200; 
+
+
+
+qns14:List the names and commissions of all salespeople in London. 
+
+soln:select sname,comm from salespeople where city='London';
+
+qns15:List all the orders of salesperson Motika from the Orders table. 
+
+soln:select onum from orders where snum=(select snum from salespeople where snam e='Motika'); 
+
+qns16:Find all customers with orders on October 3.
+
+soln:select * from customers where snum in(select snum from orders where odate=' 03-OCT-96');
+
+qns17:Give the sums of the amounts from the Orders table, grouped by date, elimina ting all those dates where the SUM was not at least 2000.00 above the MAX amount . 
+
+soln:select odate,sum(amt) as total,max(amt) as maxamt from orders group by odate having(total-maxamt)>2000;
+
+
+qns18:Select all orders that had amounts that were greater than at least one of th e orders from October 6. 
+
+soln:select * from orders where amt>any(select amt from orders where odate='06-o ct-96'); 
+
+qns19:Write a query that uses the EXISTS operator to extract all salespeople who h ave customers with a rating of 300.
+
+soln: select * from salespeoples where exists(select * from customer c where c. snum=s.snum and c.rating=300);
+
+qns20: Find all pairs of customer having the same rating. 
+
+soln:select c1.cname,c2.cname from customer c1,customer c2 where c1.rating=c2.rating order by c1.rating;
+
+qns21:Find all customer whose CNUM is 1000 above the SNUM of Serres. 
+
+soln:select cnum,cname from customer where cnum >(select cnum+1000 from customer,salespeople where sname="Serres");
+
+qns22:Give the salespeople commissions as percentages instead of decimal numbers. 
+
+soln: select comm*100 from salespeople; 
+
+qns23:Find the largest order taken by each salesperson on each date, eliminating those MAX orders which are less than $3000.00 in value.
+
+soln: select snum,odate,max(amt) from orders group by odate,snum having max(amt)> 3000; 
+
+qns24: List the largest orders for October 3, for each salesperson.
+
+soln: select max(amt),snum,odate from orders group by (snum,odate) ,snum having o date='03-oct-96'; 
+
+qns25:Find all customers located in cities where Serres (SNUM 1002) has customers. 
+
+soln:select cname,city from customer where city in(select city from salespeople where snum=1002);
+
+qns26:Select all customers with a rating above 200.00. 
+
+soln:select * from customer where rating>200
+
+qns27:Count the number of salespeople currently listing orders in the Orders table.
+
+soln:select count(distinct snum) from orders o,salespeople s,customer c where c.snum=s.snum and o.cnum=c.cnum ; 
+
+qns28:Write a query that produces all customers serviced by salespeople with a com mission above 12%. Output the customers name and the salespersons rate of commissi on. 
+
+soln: select c.cname,s.comm from customer c join salespeople s on c.snum=s.snum and s.comm>.12;
+
+qns29: Find salespeople who have multiple customers. 
+
+soln: select snum,count(snum) from customer group by snum having count(snum)>1;
+
+qns30:Find salespeople with customer located in their city.
+
+soln: select s.sname,c.cname,s.city from salespeople s join customer c on s.city =c.city order by city; 
+
+qns31: Find all salespeople whose name starts with P and the fourth character is l.
+
+soln:select sname from salespeople where sname like 'p__l%'; 
+
+qns32:Write a query that uses a subquery to obtain all orders for the customer nam ed Cisneros. Assume you do not know his customer number. 
+
+soln:select onum from orders  where snum=(select snum from customer where cname='Cisneros');
+
+qns33: Find the largest orders for Serres and Rifkin.
+
+soln:select max(amt),s.sname from salespeople s,customer c,orders o where s.snum=c.snum and c.cnum=o.cnum and s.sname in("Serres","Rifkin")group by s.sname;
+
+qns34:.Extract the Salespeople table in the following order : SNUM, SNAME, COMMISSIO N, CITY 
+
+soln:select snum,sname,comm,city from salespeople;
+
+qns35:Select all customers whose names fall in between A and G alphabetical range. 
+
+soln: select cname from customers where cname between 'A' and 'G' order by cname asc;
+
+qns36:Select all the possible combinations of customers that you can assign
+
+soln:select c.cname,s.sname from customers c join salespeople s on c.snum=s.snum;
+
+qns37:Select all orders that are greater than the average for October 4.
+
+Soln: select amt from orders  where amt > (select avg(amt) from orders where odate in(select odate from orders group by odate having odate='04-OCT-96'));
+
+qns38:Write a select command using a corelated subquery that selects the names and numbers of all customers with ratings equal to the maximum for their city.
+
+soln: select cnum,cname,rating from customers where rating in(select max(rating) from customers group by city); 
+
+qns39:Write a query that totals the orders for each day and places the results in d escending order
+
+soln:select sum(amt) from orders group by odate order by sum(amt) desc;
+
+qns40:Write a select command that produces the rating followed by the name of each customer in San Jose
+
+soln:select rating,cname from customers where city in(select city from salespeop le1 where city='San Jose');
+
+qns41:Find all orders with amounts smaller than any amount for a customer in San Jose
+
+soln: select onum,amt from orders  where amt in(select onum from orders where amt >(select avg(amt) from orders));
+
+qns42:Find all orders with above avg amt for their customers
+
+soln:Select * from orders where amt >(select avg(amt) from orders o,customer c where o.cnum=c.cnum);
+
+qns43:Write a query that selects the highest rating in each city.
+
+soln:select city,max(rating) from customers group by city;
+
+qns44:Write a query that calculates the amount of the salespersons commission on ea ch order by a customer with a rating above 100.00.
+
+soln:select sname,comm*amt from salespeople1,orders where snum in(select snum f rom customers where rating > 100); 
+
+qns45: Count the customers with ratings above San Jose average.
+
+soln:select count(city) from customers where rating >(select avg(rating) from c ustomers where city='San Jose'); 
+
+qns46:Write a query that produces all pairs of salespeople with themselves as wel l as duplicate rows with the order reversed. 
+
+soln: select s.sname,d.sname from salespeople s,salespeople d order by s.sname desc;
+
+qns47:Find all salespeople that are located in either Barcelona or London.
+
+soln:select sname from salespeople1 where city='Barcelona' or city='London'; 
+
+qns48:Find all salespeople with only one customer. 
+
+soln:select snum,sname,count(c.cnum) as head_count from salespeople p,customer c where s.snum=c.snum having head_count=1;
+
+qns49:Write a query that joins the Customer table to itself to find all pairs of customers served by a single salesperson. 
+
+soln:select a.cname,b.cname,count(s.snum) from customer a,customer b,salespeople s where a.snum=s.snum and b.snum=s.snum group by s.snum having count(s.snum)=1;
+
+qns50:Write a query that will give you all orders for more than $1000.00
+
+soln: select onum from orders where amt>1000; 
+
+qns51:Write a query that lists each order number followed by the name of the custom er who made that order.
+
+soln:select orders.onum,customers.cname from customers,orders where customers.cn um=orders.cnum;
+
+qns52:.Write 2 queries that select all salespeople (by name and number) who have cus tomers in their cities who they do not service, one using a join and one a corel ated subquery.
+
+soln:select s.snum,s.sname from salespeople s where s.snum not in(select s.snum from customer c,salespeople s where s.snum=c.snum and s.city=c.city;
+
+qns53:Write a query that selects all customers whose ratings are equal to or greater than ANY (in the
+SQL sense) of Serres?
+
+soln:select * from customer where rating >= any(select rating from customer where cname='serres');
+
+qns54:Write 2 queries that will produce all orders taken on October 3 or October 4
+
+soln:Q1-->select onum from orders where odate='03-oct-96'
+     Q2--> select onum from orders where odate='04-oct-96'; 
+
+qns55: Write a query that produces all pairs of orders by a given customer. Name that customer and eliminate duplicates. 
+
+soln: select c.cname,o.onum from customers c,orders o where c.cnum=o.cnum group b y c.cname,o.onum; 
+
+qns56:Find only those customers whose ratings are higher than every customer in Rome.select 
+
+soln:select cname from customers where rating >(select max(rating) from custome rs where city='Rome');
+
+qns57:Write a query on the Customers table whose output will exclude all customers with a rating <=
+100.00, unless they are located in Rome.
+
+soln:select * from customer where city="Rome" and rating not in(select rating from customer where rating<=100);
+
+qns58:Find all rows from the Customers table for which the salesperson number is 1001.
+
+soln:select * from customer where snum=1001;
+
+qns59:Find the total amount in Orders for each salesperson for whom this total is greater than the
+amount of the largest order in the table.
+
+soln:select sum(amt) as total from orders o,customer c,salespeople s where o.cnum=c.cnum and s.snum=c.snum group by s.snum having total >(select max(amt) from orders);
+
+qns60:Write a query that selects all orders save those with zeroes or NULLs in the amount field.
+
+soln:select * from orders where(amt is not null and amt>0);
+
+qns61:Produce all combinations of salespeople and customer names such that the former precedes
+the latter alphabetically, and the latter has a rating of less than 200.
+
+soln:select * from salespeople ,customer where rating<200 order by sname;
+
+qns 62:List all Salespeoples names and the Commission they have earned.
+
+soln:select sname,comm from salespeople;
+
+qns 63:Write a query that produces the names and cities of all customers with the same rating as
+Hoffman. Write the query using Hoffmans CNUM rather than his rating, so that it would still be
+usable if his rating changed.
+
+soln:select cname,city from customer where rating in(select rating from customer where snum=(select snum from customer where cnum="hoffman"));
+
+qns 64:Find all salespeople for whom there are customers that follow them in alphabetical order.
+
+soln:select s.sname,s.snum from salespeople s,customer c where s.snum=c.snum order by s.sname;
+
+qns 65:Write a query that produces the names and ratings of all customers of all who have above
+average orders.
+
+soln:select c.cname,c.rating from customer c,orders o where c.cnum=o.cnum and amt >(select avg(amt) from orders);
+
+qns 66:Find the SUM of all purchases from the Orders table.
+
+soln:select sum(amt) from orders;
+
+qns67:Write a SELECT command that produces the order number, amount and date for all rows in
+the order table.
+
+soln:select onum,amt,odate from orders;
+
+qns68:Count the number of nonNULL rating fields in the Customers table (including repeats).
+
+soln:select rating from customer where rating is not null;
+
+qns69:Write a query that gives the names of both the salesperson and the customer for each order
+after the order number.
+
+soln:select s.sname,c.cname from salespeople s,customer c,orders o where s.snum=c.snum and c.onum=o.onum group by c.cnum,o.onum;
+
+qns70:List the commissions of all salespeople servicing customers in London.
+
+soln:select comm from salespeople s,customer c where c.snum=s.snum and c.city="London";
+
+qns71:Write a query using ANY or ALL that will find all salespeople who have no customers located in
+their cit
+soln:select * from salespeople where snum all(select s.snum from salespeople s,customer c where  s.city<>c,city);
+
+qns72:Write a query using the EXISTS operator that selects all salespeople with customers located in
+their cities who are not assigned to them.
+
+soln:select * from salespeople s,custonmer c where s.city=c.city and exists(select * from salespeople s,customer c where s.snum<>c.snum)
+
+									OR
+select * from salespeople s,customer c where exists(select c.snum from salespeople s,customer c where s.city=c.city and s.snum<>c.snum);
+
+qns73:Write a query that selects all customers serviced by Peel or Motika. (Hint : The SNUM field
+relates the two tables to one another.)
+
+soln:select cnum,cname from customer salespeople where sname in("peel","montika") group by sname;
+
+qns74:Count the number of salespeople registering orders for each day. (If a salesperson has more
+than one order on a given day, he or she should be counted only once.)
+
+soln:
+
+qns75:Find all orders attributed to salespeople in London.
+
+soln:select * from orders o,salespeople s,customer c where o.cnum=c.cnum and s.snum=c.snum and s.city="London";
+
+qns76:Find all orders by customers not located in the same cities as their salespeople.
+
+soln:select onum from orders o,customer c,salespeople s where s.snum=c.snum and c.cnum=o.cnum and c.city<>s.city;
+
+qns77:Find all salespeople who have customers with more than one current order.
+
+soln:select s.snum,s.sname,count(s.snum) from salespeople s,customer c,orders o where s.snum=c.snum and o.cnum=c.cnum group by s.snum having count(s.snum)>1;
+
+qns78:Write a query that extracts from the Customers table every customer assigned to a
+salesperson who currently has at least one other customer (besides the customer being
+selected) with orders in the Orders table.
+
+soln:select c.cnum s.snum,o.onum from customer c,salespeople s,orders o wheer s.snum=c.snum and o.cnum=c.cnum having count(c.snum)>1 group by c.cnum;;
+
+qns 79:Write a query that selects all customers whose names begin with C
+
+soln:select cname from customer where cname like "c%";
+
+qns 80:Write a query on the Customers table that will find the highest rating in each city. Put the output
+in this form : for the city (city) the highest rating is : (rating).
+
+soln:select concat('For the City':city) ,concat('max rating is':max(rating)) from customer group by city;
+
+qns81:Write a query that will produce the SNUM values of all salespeople with orders currently in the
+Orders table (without any repeats).
+
+soln:select distinct(s.snum),o.onum from salespeople s,customer c,orders o where s.snum=c.snum and o.cnum=c.cnum group by  o.odate
+
+qns82:Write a query that lists customers in descending order of rating. Output the rating field first,
+followed by the customers names and numbers.
+
+soln:select c.rating,c.cname,c.cnum from customer c order by c.rating desc;
+
+
+qns83:Find the average commission for salespeople in London.
+
+soln:select avg(comm) from salespeople s where city="london";
+
+qns84:Find all orders credited to the same salesperson who services Hoffman (CNUM 2001).
+
+soln:select o.onum,s.sname from salespeople s,customer c,orders o where s.snum=c.snum and o.cnum=c.cnum and c.cnum in(select c.cnum from customer c where c.cnum=2001);
+
+qns85:Find all salespeople whose commission is in between 0.10 and 0.12 (both inclusive).
+
+soln:select * from salespeople where comm is between 0.10 and 0.12;
+
+qns86:Write a query that will give you the names and cities of all salespeople in London with a
+commission above 0.10.
+
+soln:select name,city from salespeople where city="london" and comm>0.10;
+
+qns87:What will be the output from the following query?
+SELECT * FROM ORDERS
+where (amt < 1000 OR NOT (odate = 10/03/1996 AND cnum >
+2003));
+
+soln:it will fetch all the order details where amount is less than 1000,not on 3rd of oct and customer number=2003
+
+qns88:Write a query that selects each customers smallest order.
+
+soln:select min(amt) as smallest order from customer c,order o where c.cnum=o.cnum group by c.cnum;
+
+qns89:Write a query that selects the first customer in alphabetical order whose name begins with G.
+
+soln:select c.cname from customer c where c.cname like "G%" order by c.cname;
+
+qns90:Write a query that counts the number of different nonNULL city values in the Customers table.
+
+soln:select distinct(count(city)) from customer;
+
+qns91:Find the average amount from the Orders table.
+
+soln:select avg(amt) from orders;
+
+qns92:What would be the output from the following query?
+SELECT * FROM ORDERS
+WHERE NOT (odate = 10/03/96 OR snum > 1006) AND amt >=
+1500);
+
+soln:it will fetch all the order details where amount is more than 1500,not on 3rd of oct and salespeople number=1006
+
+qns93:Find all customers who are not located in San Jose and whose rating is above 200.
+
+soln:select cnum,cname from customer where city<>"san jose" and rating>200
+
+qns94:Give a simpler way to write this query :
+SELECT snum, sname city, comm FROM salespeople
+WHERE (comm > + 0.12 OR comm < 0.14);
+
+soln:SELECT snum, sname city, comm FROM salespeople
+WHERE (comm is between 0.12 and  0.14);
+
+qns95:Evaluate the following query :
+SELECT * FROM orders
+WHERE NOT ((odate = 10/03/96 AND snum > 1002) OR amt > 2000.00);
+
+soln:'3001', '18.69', '1996-03-10', '2008', '1001', 'Peel', 'London', '0.12'
+'3001', '18.69', '1996-03-10', '2008', '1002', 'Serres', 'San Jose', '0.13'
+'3001', '18.69', '1996-03-10', '2008', '1003', 'AxelRod', 'New York', '0.10'
+'3001', '18.69', '1996-03-10', '2008', '1004', 'Motika', 'London', '0.11'
+'3001', '18.69', '1996-03-10', '2008', '1005', 'Fran', 'London', '0.26'
+'3001', '18.69', '1996-03-10', '2008', '1007', 'Rifkin', 'Barcelona', '0.15'
+'3002', '1900.10', '1996-03-10', '2007', '1001', 'Peel', 'London', '0.12'
+'3002', '1900.10', '1996-03-10', '2007', '1002', 'Serres', 'San Jose', '0.13'
+'3002', '1900.10', '1996-03-10', '2007', '1003', 'AxelRod', 'New York', '0.10'
+'3002', '1900.10', '1996-03-10', '2007', '1004', 'Motika', 'London', '0.11'
+'3002', '1900.10', '1996-03-10', '2007', '1005', 'Fran', 'London', '0.26'
+'3002', '1900.10', '1996-03-10', '2007', '1007', 'Rifkin', 'Barcelona', '0.15'
+'3003', '767.19', '1996-03-10', '2001', '1001', 'Peel', 'London', '0.12'
+'3003', '767.19', '1996-03-10', '2001', '1002', 'Serres', 'San Jose', '0.13'
+'3003', '767.19', '1996-03-10', '2001', '1003', 'AxelRod', 'New York', '0.10'
+'3003', '767.19', '1996-03-10', '2001', '1004', 'Motika', 'London', '0.11'
+'3003', '767.19', '1996-03-10', '2001', '1005', 'Fran', 'London', '0.26'
+
+qns96:Which salespersons attend to customers not in the city they have been assigned to?
+
+soln: select s.sname,s.city,c.cname,c.city from salespeople s,customer c where c.city<>s.city and s.snum=c.snum;
+
+qns97:Which salespeople get commission greater than 0.11 are serving customers rated less than
+250?
+
+soln:select s.sname from salespeople s,customer c where s.snum=c.snum and s.comm>0.11 and c.rating<250;
+
+qns98:Which salespeople have been assigned to the same city but get different commission
+percentages?
+
+soln:select sname,comm,city from salespeople where city in(select city from salespeople group by city having count(city)>1);
+
+qns99:Which salesperson has earned the most by way of commission?
+
+soln:select s.sname,s.snum sum(amt*comm) as commission from salespeople s,customer c,orders o where s.snum=c.snum and o.cnum=c.cnum group by s.snum,s.sname  order  by commission desc limit 1;
+
+qns100:Does the customer who has placed the maximum number of orders have the maximum rating?
+
+soln:select a.cnum, c.rating, c.cname, count(*) as total1 from orders a, customer c where a.cnum=c.cnum group by a.cnum, c.rating, c.cname having total1 = ( 
+select max(total) from (select cnum, count(*) as total from orders  b group by b.cnum order by total desc) as counts) and c.rating = (select max(rating) from customer d) ;
+
+qns101.Has the customer who has spent the largest amount of money been given the highest rating?
+
+soln:select a.cnum, c.rating, c.cname, sum(amt) as total1, (select max(rating) from customer) as maxrtng from orders a, customer c where a.cnum=c.cnum group by a.cnum, c.rating, c.cname having total1 = ( 
+select max(total) from (select cnum, sum(amt) as total from orders  b group by b.cnum order by total desc) as maxttl);
+
+
+qns102:List all customers in descending order of customer rating.
+
+soln:select * from customer order by rating desc;
+
+qns 103:On which days(weekday) has Hoffman placed orders?
+
+soln:select o.odate from orders o,customer c where o.cnum=c.cnum and c.cname='Hoffman';
+
+qns104:all salespeople have different commissions?
+
+soln:select distinct(comm),sname from salespeople group by comm;
+
+qns105:Which salespeople have no orders on 10/03/1996?
+
+soln:select distinct(sname) from orders o, customer c, salespeople s where o.cnum=c.cnum and c.snum=s.snum and ((odate > cast( '1996-10-03' as date)) or (odate < cast( '1996-10-03' as date))) and sname not in (select distinct(sname) from orders o, customer c, salespeople s where o.cnum=c.cnum and c.snum=s.snum and (odate <= cast( '1996-10-03' as date)) and (odate >= cast( '1996-10-03' as date)));
+
+qns 106:How many salespersons have succeeded in getting orders?
+
+soln:select count(snum) from salespeople where snum in (select s.snum from salespeople s,customer c,orders o where s.snum=c.snum and c.cnum=o.cnum group  by c.snum);
+
+qns107:How many customers have placed orders?
+
+soln:select count(cnum) from customer where cnum in(select cnum from orders group by cnum);
+
+qns 108:On which date has each salesperson booked an order of maximum value?
+
+soln:select odate, a.amt, m.snum from orders a, (select max(amt) as maxamt, snum from orders a, customer b where a.cnum=b.cnum group by snum) m where a.amt=maxamt order by m.snum;
+
+qns 109:Who is the most successful salesperson?
+
+soln:select b.snum, c.sname, sum(amt), (sum(amt)/(select sum(amt) from orders))*100 as salesPercent from orders a, customer b, salespeople c where a.cnum=b.cnum and b.snum=c.snum group by snum order by salesPercent desc;
+
+qns 110:Who is the worst customer with respect to the company?
+
+soln:select b.cnum,b.cname,sum(amt) as total from orders a,customer b where a.cnum=b.cnum group by b.cnum,b.cname order by total desc;
+
+qns 111:Are all customers not having placed orders greater than 200 totally been serviced by
+salespersons Peel or Serres? 
+
+soln:select c.cname,c.cnum from customer c,salepeople s,orders o where s.sname='peel' and s.sname='serres' and rating not in(select rating from customer where rating > 200);
+
+qns112:Which customers have the same rating?
+
+soln:select c1.cname from customer c1,customer c2 where c1.rating=c2.rating;
+
+qns 113:Find all orders greater than the average for October 4th.
+
+soln:select * from orders where amt > (select avg(amt) from orders where (odate = cast( '1996-10-04' as date)));
+
+qns 114:Which customers have above average orders?
+
+soln:select cnum from orders where amt > any(select avg(amt) frm orders);
+
+qns 115:List all customers with ratings above San Joses average.
+
+soln:select cnum,rating from customer where  rating> any(select avg(rating) from customer c where  c.city='san jose');
+
+qns 116:Select the total amount in orders for each salesperson for whom the total is greater than the
+amount of the largest order in the table.
+
+soln:select sum(a.amt),s.snum from orders o,salespeople s,customer c where s.snum=c.snum and o.cnum=c.cnum group by s.snum having sum(o.amt)>(slect max(amt) from orders);
+
+qns 117:Give names and numbers of all salespersons who have more than one customer.
+
+soln:select s.snum,s.sname count(c.cnum) from salespeople s inner join customer c on s.snum=c.snum having count(c.cnum)>1;
+
+qns 118:Select all salespersons by name and number who have customers in their city whom they
+dont service.
+
+soln:select s.snum,s.sname from salespeople s,customer c where s.city=c.city and s.snum<>c.snum;
+
+qns 119:Which customers rating should be lowered?
+
+soln:select a.cnum,a.cname,a.rating,(sum(amt)/rating) as ratio from customer a,orders b where a.cnum=b.cnum group by a.cnum,a.cname,a.rating order by ratio desc;
+
+qns 120:Is there a case for assigning a salesperson to Berlin?
+
+soln:select sname from salespeople where snum in(select snum from customer where city='berlin');
+
+qns 121:Is there any evidence linking the performance of a salesperson to the commission that he or
+she is being paid?
+
+soln:select b.snum,sum(a.amt), c.comm from orders a, customer b, salespeople c where a.cnum=b.cnum and b.snum=c.snum group by b.snum;
+
+qns 122:Does the total amount in orders by customer in Rome and London exceed the commission
+paid to salespersons in London and New York by more than 5 times?
+
+
+soln:select sum(a.amt) as sales, (select round(sum(e.amt*g.comm)*5,2) from orders e, customer f, salespeople g where e.cnum=f.cnum and f.snum=g.snum and (g.city="London" or g.city="New York") ) as 5_times_comm from orders a, customer b where a.cnum=b.cnum and (b.city="London" or b.city="Rome");
+
+qns 123:.Which is the date, order number, amt and city for each salesperson (by name) for the
+maximum order he has obtained?
+
+soln:select o.odate,o.onum,max(o.amt),s.city where salespeople s,orders o,customer c where s.snum=c.snum and o.cnum=c.cnum group by s.sname;
+
+qns 124:Which salesperson(s) should be fired?
+
+soln:select snum,sname,sum(amt) as total from orders o right join (select  s.snum,s.sname,c.cnum from salespeople s left join customer c on s.snum=c.snum ) as b on o.cnum=b.cnum group by snum,sname order by total desc;
+
+qns 125:What is the total income for the company?
+
+soln:select sum(o.amt)-sum(s.comm*o.amt*0.01) from salespeople s,customer c,orders o where s.snum=c.snum and o.cnum=c.cnum;
+
+qns 126:What is the Gross profit for the company?
+
+soln:select (select sum(amt) from orders) - (select sum(c.comm*a.amt) as 'Total Commission' from orders a, customer b, salespeople c where a.cnum=b.cnum and b.snum=c.snum) as Gross_Profit;
+
+qns 127:Find the contribution of each salesperson in %
+
+soln:select b.snum,c.sname, sum(a.amt) as totalsalesbySP,  (sum(a.amt)*100)/(select sum(amt) from orders) as salesPercent from orders a, customer b, salespeople c where a.cnum=b.cnum and b.snum=c.snum group by b.snum order  by totalsalesbySP desc;
+
+qns 128: Find the total earnings for each Sales person.
+
+soln:select b.snum, c.sname,  sum(c.comm*a.amt) as total from orders a, customer b, salespeople c where a.cnum=b.cnum and b.snum=c.snum group by b.snum order by total desc;
+
