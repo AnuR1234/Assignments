@@ -1,0 +1,923 @@
+JXJY167254JK,18-06-2017,654S654,Pizza:Manchurian:Chow Mein:Crispy Onion Rings,197,Wallet,Emperial,08:31:21,2,Late delivery
+JXJY167254JK,20-06-2017,2444454,Noodles:Pizza:Roti,97,Card,Sadabahar,09:31:21,3,Stale food
+XVTR474839TP,15-06-2017,397T397,Fried Rice:salad,46,Card,Emperial,04:31:31,3,Complicated procedure
+UFDF355524DM,03-06-2017,428K428,Noodles:,71,Card,Delhi pot,05:31:21,1,Food not good
+FRBT691245BA,10-06-2017,437M437,Laccha Prantha:,29,Online,Eat out,06:31:21,1,Stale food
+QTSI285174SG,10-06-2017,106S106,Fried Rice:,59,Cash,Toit,08:31:21,2,Complicated procedure
+OXJY167254JK,02-06-2017,854A854,Chow Mein:,65,Cash,Sadabahar,08:11:21,5,Awesome experience
+SAMV824387MW,03-06-2017,751C751,Quiche:,28,Wallet,Khana Khazana,08:31:21,0,Difficult to order
+JXJY167254JK,21-06-2017,5589654,Quiche:Crispy Onion Rings:Roti,87,Card,Johnahs,08:31:21,2,Late delivery
+JXJY167254JK,22-06-2017,8548654,Noodles:Pizza:Roti,97,Card,Onesta,08:31:21,1,Stale food
+JXJY167254JK,01-06-2017,954S654,Fryams:Manchurian:Chow Mein,77,Wallet,Johnahs,08:31:21,3,Late delivery
+JXJY167254JK,09-06-2017,154S644,Quiche:Noodles:Roti,123,Card,Eat out,08:31:21,4,Will order again
+LRKI603654KL,02-06-2017,742G742,Roti:,86,Card,Little Cafe,08:31:21,1,Difficult to order
+FRBT691245BA,01-06-2017,103Y103,Manchurian:,94,Online,Plan B,08:31:21,0,Late delivery
+FSAM929386AQ,23-06-2017,208U208,Paneer tikka:,33,Wallet,Emperial,08:31:21,0,Difficult to order
+FRBT691245BA,04-06-2017,819Q819,Regular:,86,Cash,Khana Khazana,08:31:21,4,Cheap and best
+UFDF355524DM,10-06-2017,107K107,Biryani:,50,Card,Eat out,08:31:21,4,Delicious food
+FSAM929386AQ,08-06-2017,671T671,Idli:,82,Card,Delhi pot,08:31:21,5,Good service
+QTSI285174SG,09-06-2017,195K195,Crispy Onion Rings:,40,Cash,Delhi pot,08:31:21,1,High price
+QTSI285174SG,03-06-2017,952U952,pickle:,29,Online,Toit,08:31:21,3,Complicated procedure
+LRKI603654KL,29-06-2017,833E833,Chikko shake:,33,Cash,Emperial,08:31:21,3,Coupon applied
+UFDF355524DM,04-06-2017,139A139,Chow Mein:,69,Cash,Plan B,08:31:21,1,High price
+SBXX592702XP,05-06-2017,256A256,Mushroom Masala:,92,Wallet,Little Cafe,08:31:21,4,Delicious food
+FRBT691245BA,09-06-2017,186Q186,salad:,61,Online,Little Cafe,08:31:21,0,Stale food
+LJBO9511000BL,11-06-2017,956U956,Banana shake:,87,Cash,Onesta,08:31:21,4,Cheap and best
+SAMV824387MW,01-06-2017,506K506,salad:,37,Online,Delhi pot,08:31:21,4,Good service
+LRKI603654KL,01-06-2017,739A739,Quiche:,51,Card,Plan B,08:31:21,2,High price
+OXJY167254JK,23-06-2017,428U428,Shahi paneer:,53,Cash,Khana Khazana,08:31:21,3,Stale food
+FRBT691245BA,15-06-2017,902L902,Veg Premium Burger:,58,Wallet,Eat out,08:31:21,5,Good service
+UYXR411673XC,04-06-2017,683T683,Paneer tikka:,93,Cash,Delhi pot,08:31:21,2,Stale food
+SAMV824387MW,21-06-2017,635C635,salad:,96,Cash,Emperial,08:31:21,3,Late delivery
+FSAM929386AQ,01-06-2017,680J680,Tawa naan:,30,Wallet,Johnahs,08:31:21,5,Awesome experience
+SBXX592702XP,04-06-2017,723V723,Tawa naan:,80,Cash,Plan B,08:31:21,5,Delicious food
+UYXR411673XC,23-06-2017,567U567,Curd:,70,Card,Johnahs,08:31:21,0,Difficult to order
+SAMV824387MW,30-06-2017,148W148,Mango shake:,64,Online,Food point,08:31:21,5,Easy to order
+FSAM929386AQ,02-06-2017,391A391,Pulao:,76,Cash,Sadabahar,08:31:21,2,Late delivery
+XVTR474839TP,07-06-2017,131W131,Regular:,66,Cash,Eat out,08:31:21,5,Awesome experience
+XVTR474839TP,03-06-2017,864V864,Manchurian:,45,Online,Khana Khazana,08:31:21,0,Coupon applied
+LRKI603654KL,04-06-2017,538H538,Chikko shake:,56,Card,Johnahs,08:31:21,1,Coupon applied
+UYXR411673XC,06-06-2017,481Q481,Idli:,68,Card,Food point,08:31:21,4,Worth
+QTSI285174SG,09-06-2017,382X382,Prantha:,57,Card,Sadabahar,08:31:21,3,Delivery boy didnt come at doorstep
+UFDF355524DM,11-06-2017,582O582,Biryani:,82,Cash,Johnahs,08:31:21,5,Fast delivery
+FRBT691245BA,23-06-2017,889S889,pickle:,39,Wallet,Khana Khazana,08:31:21,5,Awesome experience
+SAMV824387MW,10-06-2017,660E660,Veg Premium Burger:,89,Card,Food point,08:31:21,3,High price
+LJBO9511000BL,30-06-2017,936X936,Roti:,92,Online,Plan B,08:31:21,0,High price
+JXJY167254JK,07-06-2017,954S654,Fryams:Manchurian:Chow Mein,77,Wallet,Johnahs,08:31:21,3,Late delivery
+JXJY167254JK,29-06-2017,154S644,Quiche:Noodles:Roti,123,Card,Eat out,08:31:21,4,Will order again
+FRBT691245BA,10-06-2017,579N579,salad:,62,Online,Toit,08:31:21,0,Delivery boy didnt come at doorstep
+UYXR411673XC,23-06-2017,253O253,Idli:,70,Card,Emperial,08:31:21,0,High price
+XVTR474839TP,11-06-2017,704P704,Prantha:,26,Wallet,Johnahs,08:31:21,3,Delivery boy didnt come at doorstep
+OXJY167254JK,26-06-2017,866Q866,Idli:,66,Wallet,Emperial,08:31:21,2,Late delivery
+LJBO9511000BL,11-06-2017,152I152,Banana shake:,50,Cash,Khana Khazana,08:31:21,0,Difficult to order
+SBXX592702XP,06-06-2017,837W837,Prantha:,74,Card,Delhi pot,08:31:21,1,Coupon applied
+FRBT691245BA,02-06-2017,200B200,Noodles:,36,Wallet,Eat out,08:31:21,4,Fast delivery
+UYXR411673XC,02-06-2017,358R358,salad:,83,Card,Toit,08:31:21,1,Complicated procedure
+UYXR411673XC,04-06-2017,537J537,Mango shake:,49,Online,Haus Khas,08:31:21,0,Late delivery
+FSAM929386AQ,30-06-2017,997G997,Fryams:,88,Online,Johnahs,08:31:21,4,Delicious food
+SBXX592702XP,02-06-2017,765X765,Chow Mein:,99,Wallet,Khana Khazana,08:31:21,2,Food not good
+QTSI285174SG,26-06-2017,180B180,Laccha Prantha:,41,Online,Plan B,08:31:21,3,Stale food
+SAMV824387MW,03-06-2017,282G282,Mushroom Masala:,88,Card,Toit,08:31:21,5,Fast delivery
+JXJY167254JK,05-06-2017,454S654,Noodles:Crispy Onion Rings:Roti,67,Wallet,Emperial,08:31:21,5,Awesome experience
+JXJY167254JK,15-06-2017,354S654,Quiche:Manchurian,90,Wallet,Eat out,08:31:21,4,Will order again
+JXJY167254JK,16-06-2017,454S654,Fryams:Noodles,96,Wallet,Sadabahar,08:31:21,4,Will order again
+JXJY167254JK,17-06-2017,654S754,Quiche:Fryams:Roti,127,Wallet,Johnahs,08:31:21,4,Will order again
+JXJY167254JK,19-06-2017,554S854,Noodles,67,Wallet,Onesta,08:31:21,4,Will order again
+JXJY167254JK,11-06-2017,654S954,Quiche:Pizza:Roti,97,Wallet,Emperial,08:31:21,4,Awesome experience
+JXJY167254JK,12-06-2017,754S254,Pizza:as:Roti,237,Card,Eat out,08:31:21,4,Will order again
+JXJY167254JK,01-06-2017,854S354,Quiche:Manchurian:Chow Mein,98,Wallet,Eat out,08:31:21,3,Late delivery
+JXJY167254JK,03-06-2017,154S454,Pizza:Noodles:Crispy Onion Rings,107,Wallet,Eat out,08:31:21,3,Late delivery
+JXJY167254JK,04-06-2017,954S554,Quiche:Fryams:Roti,27,Card,Eat out,08:31:21,3,Late delivery
+UFDF355524DM,06-06-2017,354H354,Chow Mein:,91,Card,Plan B,08:31:21,2,Coupon applied
+SBXX592702XP,26-06-2017,263Z263,Shahi paneer:,58,Card,Onesta,08:31:21,5,Awesome experience
+LRKI603654KL,02-06-2017,631I631,Chikko shake:,47,Wallet,Little Cafe,08:31:21,5,Fast delivery
+UFDF355524DM,09-06-2017,436K436,Regular:,72,Cash,Emperial,08:31:21,4,Delicious food
+UYXR411673XC,10-06-2017,508M508,Curd:,32,Card,Food point,08:31:21,3,Stale food
+UFDF355524DM,21-06-2017,894A894,Regular:,96,Cash,Khana Khazana,08:31:21,2,Complicated procedure
+XVTR474839TP,01-06-2017,193H193,Curd:,96,Online,Delhi pot,08:31:21,4,Easy to order
+LRKI603654KL,22-06-2017,501U501,Prantha:,64,Wallet,Delhi pot,08:31:21,1,Coupon applied
+XVTR474839TP,03-06-2017,400Q400,pickle:,55,Wallet,Food point,08:31:21,2,Delivery boy didnt come at doorstep
+FSAM929386AQ,08-06-2017,895R895,Veg Premium Burger:,88,Wallet,Haus Khas,08:31:21,3,Stale food
+QTSI285174SG,21-06-2017,966I966,pickle:,46,Wallet,Toit,08:31:21,2,Stale food
+FSAM929386AQ,13-06-2017,281A281,Chikko shake:,42,Online,Plan B,08:31:21,1,Coupon applied
+FSAM929386AQ,06-06-2017,213F213,Chikko shake:,50,Online,Onesta,08:31:21,1,Food not good
+SAMV824387MW,03-06-2017,570O570,Biryani:,52,Wallet,Little Cafe,08:31:21,1,High price
+QTSI285174SG,03-06-2017,892Z892,Tawa naan:,54,Wallet,Onesta,08:31:21,2,Coupon applied
+OXJY167254JK,03-06-2017,190V190,Fried Rice:,66,Wallet,Little Cafe,08:31:21,1,Complicated procedure
+XVTR474839TP,15-06-2017,397T397,Fried Rice:,46,Card,Emperial,08:31:21,3,Complicated procedure
+UFDF355524DM,03-06-2017,428K428,Noodles:,71,Card,Delhi pot,08:31:21,1,Food not good
+FRBT691245BA,10-06-2017,437M437,Laccha Prantha:,29,Online,Eat out,08:31:21,1,Stale food
+QTSI285174SG,10-06-2017,106S106,Fried Rice:,59,Cash,Toit,08:31:21,2,Complicated procedure
+OXJY167254JK,02-06-2017,854A854,Chow Mein:,65,Cash,Sadabahar,08:31:21,5,Awesome experience
+SAMV824387MW,03-06-2017,751C751,Quiche:,28,Wallet,Khana Khazana,08:31:21,0,Difficult to order
+FRBT691245BA,09-06-2017,186Q186,salad:,61,Online,Little Cafe,08:31:21,0,Stale food
+LJBO9511000BL,11-06-2017,956U956,Banana shake:,87,Cash,Onesta,08:31:21,4,Cheap and best
+SAMV824387MW,01-06-2017,506K506,salad:,37,Online,Delhi pot,08:31:21,4,Good service
+LRKI603654KL,01-06-2017,739A739,Quiche:,51,Card,Plan B,08:31:21,2,High price
+OXJY167254JK,23-06-2017,428U428,Shahi paneer:,53,Cash,Khana Khazana,08:31:21,3,Stale food
+FRBT691245BA,15-06-2017,902L902,Veg Premium Burger:,58,Wallet,Eat out,08:31:21,5,Good service
+UYXR411673XC,04-06-2017,683T683,Paneer tikka:,93,Cash,Delhi pot,08:31:21,2,Stale food
+SAMV824387MW,21-06-2017,635C635,salad:,96,Cash,Emperial,08:31:21,3,Late delivery
+FSAM929386AQ,01-06-2017,680J680,Tawa naan:,30,Wallet,Johnahs,08:31:21,5,Awesome experience
+SBXX592702XP,04-06-2017,723V723,Tawa naan:,80,Cash,Plan B,08:31:21,5,Delicious food
+UYXR411673XC,23-06-2017,567U567,Curd:,70,Card,Johnahs,08:31:21,0,Difficult to order
+SAMV824387MW,30-06-2017,148W148,Mango shake:,64,Online,Food point,08:31:21,5,Easy to order
+FSAM929386AQ,02-06-2017,391A391,Pulao:,76,Cash,Sadabahar,08:31:21,2,Late delivery
+XVTR474839TP,07-06-2017,131W131,Regular:,66,Cash,Eat out,08:31:21,5,Awesome experience
+XVTR474839TP,03-06-2017,864V864,Manchurian:,45,Online,Khana Khazana,08:31:21,0,Coupon applied
+LRKI603654KL,04-06-2017,538H538,Chikko shake:,56,Card,Johnahs,08:31:21,1,Coupon applied
+UYXR411673XC,06-06-2017,481Q481,Idli:,68,Card,Food point,08:31:21,4,Worth
+QTSI285174SG,09-06-2017,382X382,Prantha:,57,Card,Sadabahar,08:31:21,3,Delivery boy didnt come at doorstep
+UFDF355524DM,11-06-2017,582O582,Biryani:,82,Cash,Johnahs,08:31:21,5,Fast delivery
+FRBT691245BA,23-06-2017,889S889,pickle:,39,Wallet,Khana Khazana,08:31:21,5,Awesome experience
+SAMV824387MW,10-06-2017,660E660,Veg Premium Burger:,89,Card,Food point,08:31:21,3,High price
+LJBO9511000BL,30-06-2017,936X936,Roti:,92,Online,Plan B,08:31:21,0,High price
+FRBT691245BA,10-06-2017,579N579,salad:,62,Online,Toit,08:31:21,0,Delivery boy didnt come at doorstep
+SBXX592702XP,06-06-2017,837W837,Prantha:,74,Card,Delhi pot,08:31:21,1,Coupon applied
+FRBT691245BA,02-06-2017,200B200,Noodles:,36,Wallet,Eat out,08:31:21,4,Fast delivery
+LRKI603654KL,04-06-2017,145T145,Chikko shake:,41,Wallet,Eat out,08:31:21,2,Late delivery
+QTSI285174SG,04-06-2017,838T838,Curd:,91,Cash,Delhi pot,08:31:21,2,Stale food
+QTSI285174SG,11-06-2017,155N155,Veg Premium Burger:,83,Cash,Little Cafe,08:31:21,0,Late delivery
+LRKI603654KL,09-06-2017,117W117,Banana shake:,99,Card,Eat out,08:31:21,2,Delivery boy didnt come at doorstep
+FSAM929386AQ,10-06-2017,370L370,Crispy Onion Rings:,93,Cash,Food point,08:31:21,0,Delivery boy didnt come at doorstep
+OXJY167254JK,03-06-2017,281U281,Mushroom Masala:,49,Cash,Eat out,08:31:21,2,Difficult to order
+QTSI285174SG,06-06-2017,947M947,Paneer tikka:,27,Cash,Johnahs,08:31:21,1,High price
+UYXR411673XC,03-06-2017,269G269,Noodles:,99,Online,Khana Khazana,08:31:21,1,Delivery boy didnt come at doorstep
+XVTR474839TP,11-06-2017,365K365,Fryams:,88,Online,Johnahs,08:31:21,4,Delicious food
+SBXX592702XP,04-06-2017,765X765,Fried Rice:,82,Wallet,Food point,08:31:21,4,Fast delivery
+UYXR411673XC,29-06-2017,151T151,Laccha Prantha:,41,Online,Plan B,08:31:21,3,Stale food
+UFDF355524DM,04-06-2017,255O255,Fried Rice:,76,Online,Plan B,08:31:21,3,Stale food
+SAMV824387MW,03-06-2017,282G282,Mushroom Masala:,88,Card,Toit,08:31:21,5,Fast delivery
+SBXX592702XP,05-06-2017,596A596,Chop Suey,38,Card,Johnahs,08:31:21,4,Easy to order
+SBXX592702XP,15-06-2017,372X372,Fryams:,70,Wallet,Onesta,08:31:21,5,Easy to order
+SAMV824387MW,01-06-2017,682D682,pickle:,73,Cash,Food point,08:31:21,3,High price
+XVTR474839TP,22-06-2017,271V271,Chikko shake:,67,Cash,Eat out,08:31:21,2,Stale food
+SAMV824387MW,26-06-2017,607K607,Pizza:,24,Cash,Haus Khas,08:31:21,0,Delivery boy didnt come at doorstep
+OXJY167254JK,03-06-2017,986I986,Shahi paneer:,92,Wallet,Haus Khas,08:31:21,4,Nice
+LRKI603654KL,23-06-2017,107D107,Biryani:,56,Wallet,Delhi pot,08:31:21,2,Coupon applied
+LRKI603654KL,09-06-2017,470N470,Noodles:,27,Cash,Onesta,08:31:21,1,Coupon applied
+LRKI603654KL,11-06-2017,473Z473,pickle:,70,Cash,Plan B,08:31:21,5,Worth
+LJBO9511000BL,03-06-2017,996F996,Mango shake:,74,Online,Sadabahar,08:31:21,1,High price
+UFDF355524DM,09-06-2017,436K436,Regular:,72,Cash,Emperial,08:31:21,4,Delicious food
+SBXX592702XP,02-06-2017,514H514,Banana shake:,87,Wallet,Food point,08:31:21,3,High price
+FRBT691245BA,24-06-2017,713F713,Chikko shake:,32,Online,Little Cafe,08:31:21,5,Awesome experience
+LRKI603654KL,13-06-2017,592A592,Curd:,32,Card,Food point,08:31:21,3,Stale food
+UFDF355524DM,21-06-2017,894A894,Regular:,96,Cash,Khana Khazana,08:31:21,2,Complicated procedure
+XVTR474839TP,07-06-2017,452P452,Mushroom Masala:,32,Card,Delhi pot,08:31:21,1,Difficult to order
+XVTR474839TP,01-06-2017,193H193,Curd:,96,Online,Delhi pot,08:31:21,4,Easy to order
+LRKI603654KL,10-06-2017,985E985,Idli:,88,Cash,Khana Khazana,08:31:21,1,Complicated procedure
+FSAM929386AQ,08-06-2017,104T104,Roti:,42,Wallet,Haus Khas,08:31:21,2,Late delivery
+XVTR474839TP,08-06-2017,898B898,Veg Premium Burger:,69,Card,Toit,08:31:21,2,Stale food
+XVTR474839TP,03-06-2017,400Q400,pickle:,55,Wallet,Food point,08:31:21,2,Delivery boy didnt come at doorstep
+XVTR474839TP,24-06-2017,585X585,Mushroom Masala:,62,Wallet,Emperial,08:31:21,5,Awesome experience
+UYXR411673XC,08-06-2017,335D335,Chow Mein:,81,Online,Food point,08:31:21,2,Difficult to order
+LJBO9511000BL,26-06-2017,576M576,Veg Premium Burger:,23,Wallet,Delhi pot,08:31:21,5,Nice
+XVTR474839TP,09-06-2017,983X983,salad:,100,Wallet,Sadabahar,08:31:21,0,Late delivery
+LRKI603654KL,04-06-2017,589I589,Regular:,58,Wallet,Haus Khas,08:31:21,5,Easy to order
+LJBO9511000BL,09-06-2017,835W835,Curd:,72,Cash,Plan B,08:31:21,5,Cheap and best
+LRKI603654KL,05-06-2017,808W808,Chow Mein:,85,Wallet,Emperial,08:31:21,1,Coupon applied
+QTSI285174SG,05-06-2017,769Z769,Chikko shake:,83,Card,Emperial,08:31:21,1,Food not good
+QTSI285174SG,10-06-2017,690I690,Noodles:,76,Wallet,Haus Khas,08:31:21,0,Delivery boy didnt come at doorstep
+SBXX592702XP,03-06-2017,748R748,Banana shake:,68,Online,Delhi pot,08:31:21,3,Stale food
+QTSI285174SG,05-06-2017,710W710,salad:,80,Online,Khana Khazana,08:31:21,3,Coupon applied
+FSAM929386AQ,13-06-2017,281A281,Chikko shake:,42,Online,Plan B,08:31:21,1,Coupon applied
+FRBT691245BA,06-06-2017,932U932,Curd:,84,Online,Emperial,08:31:21,1,Stale food
+UFDF355524DM,10-06-2017,451O451,Mango shake:,27,Wallet,Haus Khas,08:31:21,4,Will order again
+FRBT691245BA,09-06-2017,539U539,Pulao:,25,Card,Delhi pot,08:31:21,0,Complicated procedure
+FRBT691245BA,03-06-2017,327P327,salad:,87,Card,Toit,08:31:21,4,Delicious food
+UFDF355524DM,15-06-2017,599Y599,Idli:,27,Card,Eat out,08:31:21,0,Delivery boy didnt come at doorstep
+UFDF355524DM,23-06-2017,493N493,Chop Suey,100,Cash,Khana Khazana,08:31:21,3,Delivery boy didnt come at doorstep
+SAMV824387MW,03-06-2017,570O570,Biryani:,52,Wallet,Little Cafe,08:31:21,1,High price
+LJBO9511000BL,24-06-2017,635M635,pickle:,56,Wallet,Haus Khas,08:31:21,4,Nice
+SBXX592702XP,11-06-2017,768Y768,Fryams:,88,Cash,Delhi pot,08:31:21,2,High price
+FSAM929386AQ,13-06-2017,495Q495,Quiche:,30,Wallet,Little Cafe,08:31:21,1,Late delivery
+XVTR474839TP,29-06-2017,761G761,Dosa:,96,Wallet,Delhi pot,08:31:21,5,Nice
+SAMV824387MW,09-06-2017,414U414,Biryani:,56,Card,Onesta,08:31:21,3,Difficult to order
+LJBO9511000BL,08-06-2017,783Z783,Idli:,60,Wallet,Delhi pot,08:31:21,0,Food not good
+LRKI603654KL,26-06-2017,672W672,Mango shake:,58,Online,Haus Khas,08:31:21,3,High price
+OXJY167254JK,26-06-2017,157H157,Manchurian:,43,Online,Delhi pot,08:31:21,5,Cheap and best
+LRKI603654KL,22-06-2017,357R357,Regular:,99,Cash,Delhi pot,08:31:21,3,Difficult to order
+XVTR474839TP,07-06-2017,905K905,Shahi paneer:,46,Online,Plan B,08:31:21,4,Will order again
+UYXR411673XC,10-06-2017,424L424,Mango shake:,98,Cash,Johnahs,08:31:21,3,Coupon applied
+SAMV824387MW,05-06-2017,141F141,Chikko shake:,78,Wallet,Onesta,08:31:21,0,Food not good
+FRBT691245BA,03-06-2017,215C215,Curd:,40,Card,Little Cafe,08:31:21,2,High price
+LJBO9511000BL,29-06-2017,925W925,Manchurian:,46,Wallet,Plan B,08:31:21,0,Stale food
+LRKI603654KL,05-06-2017,747N747,Roti:,93,Wallet,Plan B,08:31:21,1,Food not good
+FRBT691245BA,01-06-2017,441R441,Veg Premium Burger:,31,Card,Delhi pot,08:31:21,5,Worth
+FSAM929386AQ,21-06-2017,292Q292,pickle:,49,Wallet,Onesta,08:31:21,3,Difficult to order
+OXJY167254JK,26-06-2017,933W933,Mango shake:,44,Card,Toit,08:31:21,4,Cheap and best
+LJBO9511000BL,05-06-2017,712N712,Shahi paneer:,42,Card,Plan B,08:31:21,4,Cheap and best
+OXJY167254JK,05-06-2017,654S654,Laccha Prantha:,25,Online,Onesta,08:31:21,5,Awesome experience
+QTSI285174SG,15-06-2017,556T556,Laccha Prantha:,70,Wallet,Emperial,08:31:21,0,Late delivery
+SBXX592702XP,03-06-2017,594V594,Mushroom Masala:,72,Wallet,Delhi pot,08:31:21,1,Coupon applied
+UYXR411673XC,22-06-2017,448B448,Veg Premium Burger:,37,Cash,Delhi pot,08:31:21,5,Nice
+FRBT691245BA,10-06-2017,437M437,Laccha Prantha:,29,Online,Eat out,08:31:21,1,Stale food
+QTSI285174SG,13-06-2017,838O838,Noodles:,20,Card,Toit,08:31:21,4,Good service
+SAMV824387MW,05-06-2017,840A840,Roti:,27,Cash,Onesta,08:31:21,2,Delivery boy didnt come at doorstep
+FRBT691245BA,22-06-2017,549N549,Regular:,45,Wallet,Eat out,08:31:21,5,Cheap and best
+UFDF355524DM,08-06-2017,331B331,Chow Mein:,40,Wallet,Emperial,08:31:21,2,Difficult to order
+OXJY167254JK,02-06-2017,816T816,Curd:,57,Online,Emperial,08:31:21,0,Coupon applied
+SAMV824387MW,03-06-2017,751C751,Quiche:,28,Wallet,Khana Khazana,08:31:21,0,Difficult to order
+QTSI285174SG,07-06-2017,284O284,Laccha Prantha:,40,Online,Haus Khas,08:31:21,4,Worth
+LRKI603654KL,15-06-2017,673X673,Pizza:,44,Card,Johnahs,08:31:21,5,Easy to order
+UFDF355524DM,05-06-2017,998P998,Pizza:,97,Online,Emperial,08:31:21,2,Stale food
+UFDF355524DM,06-06-2017,667M667,Pizza:,95,Wallet,Emperial,08:31:21,0,High price
+SBXX592702XP,02-06-2017,233S233,Biryani:,66,Online,Haus Khas,08:31:21,4,Worth
+UYXR411673XC,01-06-2017,247T247,Idli:,86,Card,Onesta,08:31:21,4,Easy to order
+SBXX592702XP,03-06-2017,835U835,Noodles:,47,Wallet,Sadabahar,08:31:21,2,Food not good
+SBXX592702XP,09-06-2017,324V324,Mushroom Masala:,100,Cash,Johnahs,08:31:21,5,Nice
+SAMV824387MW,02-06-2017,379G379,Dosa:,27,Card,Emperial,08:31:21,0,Food not good
+SBXX592702XP,07-06-2017,585U585,Mango shake:,21,Wallet,Emperial,08:31:21,1,Difficult to order
+XVTR474839TP,10-06-2017,957M957,Veg Premium Burger:,82,Cash,Emperial,08:31:21,3,Difficult to order
+FSAM929386AQ,26-06-2017,881T881,Chikko shake:,62,Card,Delhi pot,08:31:21,3,Coupon applied
+UFDF355524DM,09-06-2017,177A177,Roti:,32,Wallet,Onesta,08:31:21,0,Food not good
+FSAM929386AQ,22-06-2017,737Q737,Laccha Prantha:,39,Online,Haus Khas,08:31:21,0,High price
+XVTR474839TP,29-06-2017,524G524,Dosa:,75,Online,Johnahs,08:31:21,0,Complicated procedure
+XVTR474839TP,10-06-2017,374Z374,Tawa naan:,91,Cash,Sadabahar,08:31:21,4,Easy to order
+SBXX592702XP,06-06-2017,895Y895,Chikko shake:,56,Wallet,Little Cafe,08:31:21,5,Awesome experience
+LRKI603654KL,15-06-2017,471O471,pickle:,65,Card,Sadabahar,08:31:21,3,Stale food
+FRBT691245BA,29-06-2017,143C143,Pulao:,97,Wallet,Delhi pot,08:31:21,3,High price
+OXJY167254JK,10-06-2017,504H504,Quiche:,50,Online,Sadabahar,08:31:21,1,Stale food
+LJBO9511000BL,03-06-2017,223C223,Biryani:,33,Wallet,Onesta,08:31:21,5,Fast delivery
+LJBO9511000BL,11-06-2017,956U956,Banana shake:,87,Cash,Onesta,08:31:21,4,Cheap and best
+SAMV824387MW,01-06-2017,506K506,salad:,37,Online,Delhi pot,08:31:21,4,Good service
+SBXX592702XP,23-06-2017,190Y190,Biryani:,92,Card,Onesta,08:31:21,5,Delicious food
+LRKI603654KL,30-06-2017,578W578,Curd:,27,Online,Johnahs,08:31:21,4,Delicious food
+FSAM929386AQ,30-06-2017,925D925,pickle:,63,Wallet,Emperial,08:31:21,3,Late delivery
+UFDF355524DM,11-06-2017,302V302,Chop Suey,89,Card,Toit,08:31:21,1,Delivery boy didnt come at doorstep
+UYXR411673XC,04-06-2017,683T683,Paneer tikka:,93,Cash,Delhi pot,08:31:21,2,Stale food
+SAMV824387MW,03-06-2017,710Z710,Regular:,75,Wallet,Plan B,08:31:21,4,Awesome experience
+LRKI603654KL,26-06-2017,183J183,Biryani:,22,Cash,Food point,08:31:21,2,Complicated procedure
+SAMV824387MW,03-06-2017,1.00E+102,Veg Premium Burger:,22,Card,Toit,08:31:21,4,Will order again
+UFDF355524DM,13-06-2017,464B464,Quiche:,65,Wallet,Haus Khas,08:31:21,5,Awesome experience
+XVTR474839TP,02-06-2017,355K355,Banana shake:,57,Cash,Onesta,08:31:21,0,Delivery boy didnt come at doorstep
+SAMV824387MW,21-06-2017,635C635,salad:,96,Cash,Emperial,08:31:21,3,Late delivery
+SAMV824387MW,15-06-2017,111H111,Pulao:,34,Cash,Sadabahar,08:31:21,2,Delivery boy didnt come at doorstep
+LJBO9511000BL,22-06-2017,753T753,Chikko shake:,71,Card,Johnahs,08:31:21,2,High price
+OXJY167254JK,23-06-2017,488W488,Manchurian:,28,Wallet,Delhi pot,08:31:21,1,Delivery boy didnt come at doorstep
+SAMV824387MW,21-06-2017,849W849,Chikko shake:,76,Online,Little Cafe,08:31:21,5,Good service
+SAMV824387MW,07-06-2017,523N523,Fryams:,21,Wallet,Onesta,08:31:21,4,Good service
+XVTR474839TP,07-06-2017,217Y217,Pulao:,42,Online,Toit,08:31:21,0,Stale food
+SBXX592702XP,30-06-2017,501F501,Banana shake:,74,Cash,Emperial,08:31:21,1,High price
+FRBT691245BA,29-06-2017,673Y673,Chikko shake:,98,Cash,Food point,08:31:21,2,Late delivery
+UYXR411673XC,01-06-2017,1.08E+110,Prantha:,66,Cash,Onesta,08:31:21,0,Stale food
+SBXX592702XP,04-06-2017,723V723,Tawa naan:,80,Cash,Plan B,08:31:21,5,Delicious food
+XVTR474839TP,04-06-2017,844H844,Pulao:,60,Cash,Khana Khazana,08:31:21,5,Nice
+QTSI285174SG,08-06-2017,770C770,Pulao:,23,Wallet,Johnahs,08:31:21,4,Cheap and best
+OXJY167254JK,07-06-2017,266M266,Biryani:,100,Card,Sadabahar,08:31:21,1,Delivery boy didnt come at doorstep
+SAMV824387MW,21-06-2017,389A389,Laccha Prantha:,76,Wallet,Delhi pot,08:31:21,0,Difficult to order
+SAMV824387MW,07-06-2017,981D981,Mango shake:,64,Online,Food point,08:31:21,5,Easy to order
+UFDF355524DM,24-06-2017,540T540,Fried Rice:,38,Cash,Delhi pot,08:31:21,0,Stale food
+QTSI285174SG,05-06-2017,358J358,Mango shake:,64,Online,Khana Khazana,08:31:21,2,Complicated procedure
+OXJY167254JK,05-06-2017,462R462,Crispy Onion Rings:,78,Online,Plan B,08:31:21,3,Stale food
+FSAM929386AQ,02-06-2017,391A391,Pulao:,76,Cash,Sadabahar,08:31:21,2,Late delivery
+XVTR474839TP,07-06-2017,131W131,Regular:,66,Cash,Eat out,08:31:21,5,Awesome experience
+UFDF355524DM,06-06-2017,671Q671,Banana shake:,99,Wallet,Haus Khas,08:31:21,3,Stale food
+XVTR474839TP,10-06-2017,216S216,Fryams:,66,Cash,Plan B,08:31:21,2,High price
+FRBT691245BA,11-06-2017,981Y981,Regular:,57,Card,Sadabahar,08:31:21,5,Delicious food
+XVTR474839TP,03-06-2017,864V864,Manchurian:,45,Online,Khana Khazana,08:31:21,0,Coupon applied
+LRKI603654KL,04-06-2017,538H538,Chikko shake:,56,Card,Johnahs,08:31:21,1,Coupon applied
+UYXR411673XC,06-06-2017,481Q481,Idli:,68,Card,Food point,08:31:21,4,Worth
+OXJY167254JK,15-06-2017,635P635,Regular:,82,Online,Plan B,08:31:21,4,Awesome experience
+FRBT691245BA,09-06-2017,961Y961,salad:,40,Wallet,Onesta,08:31:21,3,Stale food
+SBXX592702XP,26-06-2017,1.66E+168,Laccha Prantha:,28,Online,Toit,08:31:21,5,Will order again
+FRBT691245BA,21-06-2017,194P194,Banana shake:,95,Wallet,Onesta,08:31:21,0,Difficult to order
+FRBT691245BA,05-06-2017,184N184,Mushroom Masala:,77,Cash,Toit,08:31:21,0,High price
+UFDF355524DM,29-06-2017,628V628,Roti:,28,Wallet,Haus Khas,08:31:21,3,Complicated procedure
+UFDF355524DM,11-06-2017,582O582,Biryani:,82,Cash,Johnahs,08:31:21,5,Fast delivery
+LJBO9511000BL,02-06-2017,955C955,Manchurian:,79,Cash,Delhi pot,08:31:21,3,Food not good
+FRBT691245BA,23-06-2017,889S889,pickle:,39,Wallet,Khana Khazana,08:31:21,5,Awesome experience
+SAMV824387MW,10-06-2017,660E660,Veg Premium Burger:,89,Card,Food point,08:31:21,3,High price
+XVTR474839TP,09-06-2017,819L819,Banana shake:,76,Cash,Food point,08:31:21,3,Coupon applied
+UFDF355524DM,11-06-2017,729H729,Laccha Prantha:,31,Online,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+LJBO9511000BL,01-06-2017,936X936,Prantha:,27,Wallet,Delhi pot,08:31:21,2,Late delivery
+SBXX592702XP,03-06-2017,227G227,Shahi paneer:,51,Online,Onesta,08:31:21,1,High price
+LJBO9511000BL,13-06-2017,215J215,Mushroom Masala:,35,Card,Eat out,08:31:21,4,Cheap and best
+SAMV824387MW,15-06-2017,979X979,Noodles:,31,Online,Johnahs,08:31:21,3,Complicated procedure
+LJBO9511000BL,15-06-2017,731C731,Idli:,85,Wallet,Delhi pot,08:31:21,5,Worth
+FSAM929386AQ,07-06-2017,777X777,Regular:,76,Wallet,Eat out,08:31:21,4,Worth
+UYXR411673XC,21-06-2017,294Q294,Chow Mein:,74,Wallet,Emperial,08:31:21,2,Difficult to order
+SAMV824387MW,09-06-2017,271Q271,Paneer tikka:,68,Cash,Delhi pot,08:31:21,4,Fast delivery
+QTSI285174SG,24-06-2017,205C205,Idli:,30,Cash,Food point,08:31:21,4,Easy to order
+UYXR411673XC,23-06-2017,425R425,Shahi paneer:,38,Card,Onesta,08:31:21,4,Good service
+SAMV824387MW,29-06-2017,551E551,Fryams:,36,Online,Haus Khas,08:31:21,3,Food not good
+LRKI603654KL,05-06-2017,306A306,pickle:,73,Wallet,Haus Khas,08:31:21,5,Good service
+SBXX592702XP,03-06-2017,689A689,Veg Premium Burger:,70,Online,Toit,08:31:21,1,Delivery boy didnt come at doorstep
+UYXR411673XC,06-06-2017,101S101,pickle:,85,Cash,Delhi pot,08:31:21,2,Stale food
+SAMV824387MW,29-06-2017,526K526,Banana shake:,64,Cash,Eat out,08:31:21,3,Coupon applied
+OXJY167254JK,30-06-2017,161J161,Noodles:,91,Wallet,Sadabahar,08:31:21,3,Coupon applied
+XVTR474839TP,11-06-2017,704P704,Prantha:,26,Wallet,Johnahs,08:31:21,3,Delivery boy didnt come at doorstep
+LJBO9511000BL,04-06-2017,143P143,Manchurian:,48,Online,Little Cafe,08:31:21,5,Worth
+LRKI603654KL,10-06-2017,947X947,Chikko shake:,93,Wallet,Haus Khas,08:31:21,3,Difficult to order
+FSAM929386AQ,02-06-2017,938B938,Roti:,27,Card,Little Cafe,08:31:21,4,Awesome experience
+XVTR474839TP,01-06-2017,902H902,Fryams:,56,Online,Khana Khazana,08:31:21,0,Stale food
+LJBO9511000BL,22-06-2017,142J142,Fryams:,31,Cash,Haus Khas,08:31:21,5,Will order again
+LRKI603654KL,02-06-2017,742G742,Roti:,86,Card,Little Cafe,08:31:21,1,Difficult to order
+FRBT691245BA,01-06-2017,103Y103,Manchurian:,94,Online,Plan B,08:31:21,0,Late delivery
+FSAM929386AQ,23-06-2017,208U208,Paneer tikka:,33,Wallet,Emperial,08:31:21,0,Difficult to order
+FRBT691245BA,04-06-2017,819Q819,Regular:,86,Cash,Khana Khazana,08:31:21,4,Cheap and best
+UFDF355524DM,10-06-2017,107K107,Biryani:,50,Card,Eat out,08:31:21,4,Delicious food
+FSAM929386AQ,08-06-2017,671T671,Idli:,82,Card,Delhi pot,08:31:21,5,Good service
+QTSI285174SG,09-06-2017,195K195,Crispy Onion Rings:,40,Cash,Delhi pot,08:31:21,1,High price
+QTSI285174SG,03-06-2017,952U952,pickle:,29,Online,Toit,08:31:21,3,Complicated procedure
+LRKI603654KL,29-06-2017,833E833,Chikko shake:,33,Cash,Emperial,08:31:21,3,Coupon applied
+UFDF355524DM,04-06-2017,139A139,Chow Mein:,69,Cash,Plan B,08:31:21,1,High price
+SBXX592702XP,05-06-2017,256A256,Mushroom Masala:,92,Wallet,Little Cafe,08:31:21,4,Delicious food
+SBXX592702XP,06-06-2017,837W837,Prantha:,74,Card,Delhi pot,08:31:21,1,Coupon applied
+FRBT691245BA,02-06-2017,200B200,Noodles:,36,Wallet,Eat out,08:31:21,4,Fast delivery
+UYXR411673XC,06-07-2017,448B448,Dosa:,93,Online,Onesta,09:31:21,5,Fast delivery
+QTSI285174SG,08-07-2017,838O838,Paneer tikka:,46,Cash,Sadabahar,08:31:21,1,Delivery boy didnt come at doorstep
+FSAM929386AQ,06-07-2017,313Q313,Paneer tikka:,45,Wallet,Sadabahar,08:31:21,3,Late delivery
+UFDF355524DM,23-07-2017,320H320,Noodles:,77,Cash,Toit,08:31:21,0,Difficult to order
+UYXR411673XC,31-07-2017,194J194,Regular:,34,Wallet,Sadabahar,08:31:21,4,Good service
+FSAM929386AQ,07-07-2017,811B811,Prantha:,95,Card,Food point,08:31:21,2,Difficult to order
+SBXX592702XP,24-07-2017,897D897,Pulao:,52,Card,Plan B,08:31:21,5,Good service
+UFDF355524DM,19-07-2017,970L970,Curd:,35,Card,Sadabahar,08:31:21,1,Complicated procedure
+XVTR474839TP,17-07-2017,312R312,Manchurian:,47,Wallet,Sadabahar,08:31:21,0,Stale food
+QTSI285174SG,31-07-2017,744G744,Mango shake:,43,Online,Delhi pot,08:31:21,0,Food not good
+FRBT691245BA,29-07-2017,246T246,Paneer tikka:,79,Cash,Johnahs,08:31:21,1,Difficult to order
+UYXR411673XC,19-07-2017,859F859,Roti:,55,Card,Haus Khas,08:31:21,0,Food not good
+SBXX592702XP,23-07-2017,980I980,Fryams:,28,Card,Johnahs,08:31:21,4,Will order again
+LRKI603654KL,05-07-2017,598V598,Fryams:,65,Online,Little Cafe,08:31:21,3,High price
+LRKI603654KL,07-07-2017,589B589,Dosa:,45,Cash,Khana Khazana,08:31:21,2,Food not good
+LRKI603654KL,07-07-2017,327N327,Dosa:,62,Cash,Johnahs,08:31:21,2,High price
+XVTR474839TP,16-07-2017,605Y605,Veg Premium Burger:,82,Cash,Emperial,08:31:21,3,Difficult to order
+LRKI603654KL,16-07-2017,758W758,Laccha Prantha:,79,Cash,Johnahs,08:31:21,3,Delivery boy didnt come at doorstep
+SBXX592702XP,26-07-2017,477F477,salad:,89,Wallet,Emperial,08:31:21,2,Coupon applied
+UFDF355524DM,25-07-2017,274T274,Biryani:,22,Cash,Food point,08:31:21,2,Complicated procedure
+UYXR411673XC,30-07-2017,845P845,Quiche:,65,Wallet,Haus Khas,08:31:21,5,Awesome experience
+OXJY167254JK,03-07-2017,869G869,Roti:,77,Wallet,Eat out,08:31:21,2,Late delivery
+OXJY167254JK,25-07-2017,488W488,Idli:,87,Cash,Toit,08:31:21,0,Difficult to order
+UYXR411673XC,13-07-2017,1.08E+110,Idli:,56,Wallet,Food point,08:31:21,4,Fast delivery
+SBXX592702XP,05-07-2017,549E549,Mango shake:,32,Card,Plan B,08:31:21,3,Difficult to order
+OXJY167254JK,05-07-2017,673F673,Idli:,95,Wallet,Little Cafe,08:31:21,5,Good service
+LJBO9511000BL,26-07-2017,288T288,Biryani:,100,Card,Sadabahar,08:31:21,1,Delivery boy didnt come at doorstep
+FSAM929386AQ,29-07-2017,378E378,Shahi paneer:,64,Card,Eat out,08:31:21,3,High price
+UFDF355524DM,09-07-2017,540T540,Dosa:,40,Online,Toit,08:31:21,2,Difficult to order
+OXJY167254JK,24-07-2017,639I639,pickle:,92,Wallet,Johnahs,08:31:21,2,Stale food
+QTSI285174SG,02-07-2017,824X824,Chop Suey,65,Wallet,Delhi pot,08:31:21,1,Late delivery
+OXJY167254JK,03-07-2017,522P522,Roti:,24,Card,Haus Khas,08:31:21,0,High price
+OXJY167254JK,17-07-2017,390X390,Paneer tikka:,31,Wallet,Khana Khazana,08:31:21,4,Fast delivery
+UFDF355524DM,23-07-2017,865S865,Mushroom Masala:,29,Wallet,Plan B,08:31:21,2,Stale food
+QTSI285174SG,25-07-2017,115Y115,Dosa:,51,Cash,Food point,08:31:21,3,Complicated procedure
+FRBT691245BA,26-07-2017,176S176,Manchurian:,51,Card,Johnahs,08:31:21,0,Stale food
+QTSI285174SG,02-07-2017,710R710,Crispy Onion Rings:,97,Online,Eat out,08:31:21,5,Awesome experience
+UFDF355524DM,18-07-2017,816A816,Mushroom Masala:,40,Card,Toit,08:31:21,1,Difficult to order
+XVTR474839TP,09-07-2017,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,08:31:21,3,High price
+XVTR474839TP,02-07-2017,110L110,Idli:,90,Cash,Eat out,08:31:21,2,Stale food
+UFDF355524DM,03-07-2017,2.83E+285,Tawa naan:,51,Online,Delhi pot,08:31:21,5,Cheap and best
+UFDF355524DM,08-07-2017,629Y629,Biryani:,38,Wallet,Food point,08:31:21,1,High price
+XVTR474839TP,07-07-2017,256D256,Laccha Prantha:,38,Wallet,Plan B,08:31:21,3,Stale food
+SAMV824387MW,05-07-2017,424B424,Chikko shake:,56,Online,Delhi pot,08:31:21,5,Worth
+UFDF355524DM,24-07-2017,212L212,Shahi paneer:,35,Cash,Haus Khas,08:31:21,1,Coupon applied
+XVTR474839TP,29-07-2017,757O757,Crispy Onion Rings:,96,Online,Khana Khazana,08:31:21,1,High price
+LJBO9511000BL,24-07-2017,143P143,Fried Rice:,66,Online,Plan B,08:31:21,4,Awesome experience
+UYXR411673XC,30-07-2017,471J471,Regular:,49,Wallet,Sadabahar,08:31:21,0,Stale food
+LJBO9511000BL,31-07-2017,834M834,Banana shake:,72,Online,Delhi pot,08:31:21,0,Coupon applied
+QTSI285174SG,07-07-2017,497V497,Idli:,50,Cash,Johnahs,08:31:21,4,Worth
+UFDF355524DM,11-07-2017,476Z476,Chow Mein:,69,Cash,Plan B,08:31:21,1,High price
+LJBO9511000BL,01-07-2017,966Z966,Curd:,91,Cash,Delhi pot,08:31:21,2,Stale food
+LRKI603654KL,26-07-2017,736K736,Fried Rice:,58,Cash,Food point,08:31:21,4,Easy to order
+SBXX592702XP,11-07-2017,539D539,Chow Mein:,86,Cash,Emperial,08:31:21,3,Food not good
+UFDF355524DM,11-07-2017,903T903,Chop Suey,38,Card,Johnahs,08:31:21,4,Easy to order
+LJBO9511000BL,19-07-2017,291Z291,pickle:,73,Cash,Food point,08:31:21,3,High price
+JXJY167254JK,19-07-2017,154S754,Fryams:as:Roti,107,Wallet,Onesta,08:31:21,2,Late delivery
+JXJY167254JK,20-07-2017,54S6841,Quiche:Noodles:Chow Mein,67,Wallet,Sadabahar,08:31:21,4,Will order again
+JXJY167254JK,11-07-2017,954S954,Pizza:Crispy Onion Rings:Roti:Manchurian,89,Wallet,Emperial,08:31:21,5,Awesome experience
+JXJY167254JK,15-07-2017,954Sg54,Crispy Onion Rings:Fryams:Chow Mein,67,Wallet,Johnahs,08:31:21,4,Will order again
+SBXX592702XP,04-07-2017,342M342,Chow Mein:,90,Online,Eat out,08:31:21,2,Food not good
+LRKI603654KL,25-07-2017,470N470,Chop Suey,82,Online,Onesta,08:31:21,2,Difficult to order
+UYXR411673XC,02-07-2017,248W248,Quiche:,51,Card,Johnahs,08:31:21,3,Difficult to order
+LJBO9511000BL,13-07-2017,399D399,Chow Mein:,41,Wallet,Emperial,08:31:21,4,Fast delivery
+LRKI603654KL,27-07-2017,589I589,pickle:,30,Cash,Toit,08:31:21,5,Awesome experience
+UFDF355524DM,26-07-2017,713R713,Fried Rice:,44,Card,Little Cafe,08:31:21,1,Coupon applied
+UYXR411673XC,04-07-2017,475V475,Pulao:,61,Wallet,Delhi pot,08:31:21,4,Cheap and best
+FRBT691245BA,09-07-2017,932U932,Fryams:,44,Cash,Emperial,08:31:21,5,Will order again
+LJBO9511000BL,05-07-2017,896C896,Crispy Onion Rings:,23,Cash,Food point,08:31:21,3,Stale food
+UFDF355524DM,02-07-2017,493N493,Chop Suey,37,Card,Khana Khazana,08:31:21,3,Delivery boy didnt come at doorstep
+LJBO9511000BL,11-07-2017,321F321,Chikko shake:,24,Cash,Eat out,08:31:21,5,Cheap and best
+FSAM929386AQ,11-07-2017,258T258,Shahi paneer:,54,Card,Emperial,08:31:21,2,Food not good
+LJBO9511000BL,06-07-2017,831G831,Laccha Prantha:,36,Wallet,Sadabahar,08:31:21,5,Fast delivery
+XVTR474839TP,11-07-2017,981A981,Mango shake:,58,Online,Haus Khas,08:31:21,3,High price
+UFDF355524DM,11-07-2017,403X403,Pulao:,89,Wallet,Little Cafe,08:31:21,1,Difficult to order
+OXJY167254JK,25-07-2017,963O963,Idli:,77,Online,Toit,08:31:21,1,Late delivery
+SAMV824387MW,19-07-2017,308A308,Laccha Prantha:,60,Wallet,Onesta,08:31:21,3,High price
+JXJY167254JK,11-07-2017,954S954,Pizza:Crispy Onion Rings:Roti:Manchurian,89,Wallet,Emperial,08:31:21,5,Awesome experience
+OXJY167254JK,18-07-2017,424Z424,pickle:,49,Wallet,Onesta,08:31:21,3,Difficult to order
+LRKI603654KL,27-07-2017,467S467,Curd:,23,Wallet,Little Cafe,08:31:21,5,Worth
+SAMV824387MW,27-07-2017,794P794,Mango shake:,68,Wallet,Khana Khazana,08:31:21,2,High price
+UYXR411673XC,06-07-2017,448B448,Dosa:,93,Online,Onesta,08:31:21,5,Fast delivery
+QTSI285174SG,08-07-2017,838O838,Paneer tikka:,46,Cash,Sadabahar,08:31:21,1,Delivery boy didnt come at doorstep
+XVTR474839TP,16-07-2017,605Y605,Veg Premium Burger:,82,Cash,Emperial,08:31:21,3,Difficult to order
+JXJY167254JK,15-07-2017,954Sg54,Crispy Onion Rings:Fryams:Chow Mein,67,Wallet,Johnahs,08:31:21,4,Will order again
+LRKI603654KL,16-07-2017,758W758,Laccha Prantha:,79,Cash,Johnahs,08:31:21,3,Delivery boy didnt come at doorstep
+SBXX592702XP,26-07-2017,477F477,salad:,89,Wallet,Emperial,08:31:21,2,Coupon applied
+UFDF355524DM,25-07-2017,274T274,Biryani:,22,Cash,Food point,08:31:21,2,Complicated procedure
+UYXR411673XC,30-07-2017,845P845,Quiche:,65,Wallet,Haus Khas,08:31:21,5,Awesome experience
+OXJY167254JK,03-07-2017,869G869,Roti:,77,Wallet,Eat out,08:31:21,2,Late delivery
+OXJY167254JK,25-07-2017,488W488,Idli:,87,Cash,Toit,08:31:21,0,Difficult to order
+JXJY167254JK,11-07-2017,954S954,Pizza:Crispy Onion Rings:Roti:Manchurian,89,Wallet,Emperial,08:31:21,5,Awesome experience
+UYXR411673XC,13-07-2017,1.08E+110,Idli:,56,Wallet,Food point,08:31:21,4,Fast delivery
+SBXX592702XP,05-07-2017,549E549,Mango shake:,32,Card,Plan B,08:31:21,3,Difficult to order
+OXJY167254JK,05-07-2017,673F673,Idli:,95,Wallet,Little Cafe,08:31:21,5,Good service
+LJBO9511000BL,26-07-2017,288T288,Biryani:,100,Card,Sadabahar,08:31:21,1,Delivery boy didnt come at doorstep
+UFDF355524DM,09-07-2017,540T540,Dosa:,40,Online,Toit,08:31:21,2,Difficult to order
+OXJY167254JK,24-07-2017,639I639,pickle:,92,Wallet,Johnahs,08:31:21,2,Stale food
+QTSI285174SG,02-07-2017,824X824,Chop Suey,65,Wallet,Delhi pot,08:31:21,1,Late delivery
+OXJY167254JK,03-07-2017,522P522,Roti:,24,Card,Haus Khas,08:31:21,0,High price
+OXJY167254JK,17-07-2017,390X390,Paneer tikka:,31,Wallet,Khana Khazana,08:31:21,4,Fast delivery
+UFDF355524DM,23-07-2017,865S865,Mushroom Masala:,29,Wallet,Plan B,08:31:21,2,Stale food
+QTSI285174SG,25-07-2017,115Y115,Dosa:,51,Cash,Food point,08:31:21,3,Complicated procedure
+FRBT691245BA,26-07-2017,176S176,Manchurian:,51,Card,Johnahs,08:31:21,0,Stale food
+QTSI285174SG,02-07-2017,710R710,Crispy Onion Rings:,97,Online,Eat out,08:31:21,5,Awesome experience
+UFDF355524DM,18-07-2017,816A816,Mushroom Masala:,40,Card,Toit,08:31:21,1,Difficult to order
+XVTR474839TP,09-07-2017,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,08:31:21,3,High price
+XVTR474839TP,02-07-2017,110L110,Idli:,90,Cash,Eat out,08:31:21,2,Stale food
+UFDF355524DM,03-07-2017,2.83E+285,Tawa naan:,51,Online,Delhi pot,08:31:21,5,Cheap and best
+UFDF355524DM,08-07-2017,629Y629,Biryani:,38,Wallet,Food point,08:31:21,1,High price
+XVTR474839TP,07-07-2017,256D256,Laccha Prantha:,38,Wallet,Plan B,08:31:21,3,Stale food
+SAMV824387MW,05-07-2017,424B424,Chikko shake:,56,Online,Delhi pot,08:31:21,5,Worth
+UFDF355524DM,24-07-2017,212L212,Shahi paneer:,35,Cash,Haus Khas,08:31:21,1,Coupon applied
+XVTR474839TP,29-07-2017,757O757,Crispy Onion Rings:,96,Online,Khana Khazana,08:31:21,1,High price
+OXJY167254JK,31-07-2017,315P315,Fryams:,49,Online,Eat out,08:31:21,0,Late delivery
+LJBO9511000BL,05-07-2017,285S285,Chikko shake:,24,Card,Food point,08:31:21,4,Delicious food
+UFDF355524DM,06-07-2017,504F504,Curd:,23,Cash,Eat out,08:31:21,1,Difficult to order
+OXJY167254JK,25-07-2017,858S858,Fryams:,73,Online,Khana Khazana,08:31:21,1,Delivery boy didnt come at doorstep
+SBXX592702XP,30-07-2017,286U286,Fryams:,82,Wallet,Khana Khazana,08:31:21,1,High price
+LRKI603654KL,26-07-2017,264H264,Mushroom Masala:,84,Wallet,Haus Khas,08:31:21,1,Stale food
+OXJY167254JK,02-07-2017,364H364,salad:,83,Card,Toit,08:31:21,1,Complicated procedure
+QTSI285174SG,19-07-2017,320Q320,pickle:,75,Online,Eat out,08:31:21,4,Will order again
+SAMV824387MW,07-07-2017,893U893,Tawa naan:,45,Wallet,Plan B,08:31:21,1,High price
+UFDF355524DM,06-07-2017,350E350,Dosa:,36,Card,Sadabahar,08:31:21,0,Coupon applied
+XVTR474839TP,25-07-2017,166W166,Fried Rice:,98,Cash,Khana Khazana,08:31:21,0,Complicated procedure
+SBXX592702XP,01-07-2017,975Q975,Pizza:,57,Card,Delhi pot,08:31:21,1,Complicated procedure
+SBXX592702XP,11-07-2017,539D539,Chow Mein:,86,Cash,Emperial,08:31:21,3,Food not good
+XVTR474839TP,25-07-2017,536D536,Shahi paneer:,60,Cash,Onesta,08:31:21,3,Food not good
+FRBT691245BA,29-07-2017,219S219,salad:,80,Cash,Johnahs,08:31:21,4,Cheap and best
+UYXR411673XC,17-07-2017,306Y306,Quiche:,92,Card,Onesta,08:31:21,3,High price
+SAMV824387MW,29-07-2017,607D607,Fried Rice:,93,Online,Onesta,08:31:21,0,Stale food
+FRBT691245BA,29-07-2017,120C120,Chow Mein:,42,Online,Plan B,08:31:21,3,High price
+LJBO9511000BL,27-07-2017,678S678,Veg Premium Burger:,77,Online,Khana Khazana,08:31:21,5,Awesome experience
+QTSI285174SG,23-07-2017,244M244,Idli:,44,Wallet,Johnahs,08:31:21,2,Difficult to order
+UFDF355524DM,16-07-2017,763Q763,Mushroom Masala:,25,Online,Emperial,08:31:21,0,High price
+XVTR474839TP,23-07-2017,169H169,Curd:,41,Card,Eat out,08:31:21,1,Difficult to order
+UYXR411673XC,26-07-2017,829I829,Paneer tikka:,71,Online,Haus Khas,08:31:21,3,Late delivery
+OXJY167254JK,17-07-2017,624T624,Idli:,55,Online,Little Cafe,08:31:21,0,Complicated procedure
+OXJY167254JK,11-07-2017,556M556,Noodles:,99,Card,Khana Khazana,08:31:21,1,Complicated procedure
+QTSI285174SG,16-07-2017,908S908,Fryams:,79,Cash,Johnahs,08:31:21,3,Complicated procedure
+SAMV824387MW,07-07-2017,136C136,Chop Suey,43,Card,Food point,08:31:21,4,Delicious food
+UYXR411673XC,06-07-2017,575J575,Chop Suey,21,Card,Toit,08:31:21,4,Fast delivery
+SBXX592702XP,23-07-2017,584A584,Curd:,51,Wallet,Onesta,08:31:21,3,High price
+XVTR474839TP,08-07-2017,276D276,Chikko shake:,47,Wallet,Little Cafe,08:31:21,5,Fast delivery
+UYXR411673XC,02-07-2017,248W248,Quiche:,51,Card,Johnahs,08:31:21,3,Difficult to order
+UFDF355524DM,25-07-2017,904M904,Mushroom Masala:,94,Online,Haus Khas,08:31:21,2,Coupon applied
+SBXX592702XP,08-07-2017,327U327,Crispy Onion Rings:,66,Online,Eat out,08:31:21,1,High price
+XVTR474839TP,25-07-2017,411E411,Pulao:,82,Wallet,Eat out,08:31:21,0,High price
+UFDF355524DM,18-07-2017,765Q765,Pizza:,69,Wallet,Onesta,08:31:21,0,Stale food
+FRBT691245BA,03-07-2017,734P734,Chop Suey,64,Card,Emperial,08:31:21,3,Stale food
+LJBO9511000BL,13-07-2017,399D399,Chow Mein:,41,Wallet,Emperial,08:31:21,4,Fast delivery
+SBXX592702XP,06-07-2017,973O973,salad:,58,Cash,Emperial,08:31:21,0,Coupon applied
+UYXR411673XC,02-07-2017,891U891,Chop Suey,53,Wallet,Delhi pot,08:31:21,0,Complicated procedure
+FRBT691245BA,06-07-2017,279R279,pickle:,22,Online,Haus Khas,08:31:21,4,Awesome experience
+UFDF355524DM,25-07-2017,934X934,Fried Rice:,68,Card,Toit,08:31:21,3,Late delivery
+SAMV824387MW,05-07-2017,573R573,Banana shake:,77,Card,Plan B,08:31:21,5,Cheap and best
+SAMV824387MW,05-07-2017,604F604,Tawa naan:,91,Cash,Emperial,08:31:21,4,Delicious food
+UFDF355524DM,17-07-2017,814Y814,Paneer tikka:,46,Card,Plan B,08:31:21,5,Delicious food
+SBXX592702XP,03-07-2017,175M175,pickle:,52,Wallet,Khana Khazana,08:31:21,3,Food not good
+LJBO9511000BL,25-07-2017,625Z625,Chow Mein:,93,Online,Toit,08:31:21,5,Will order again
+UFDF355524DM,16-07-2017,899A899,Veg Premium Burger:,31,Online,Delhi pot,08:31:21,3,Stale food
+OXJY167254JK,01-07-2017,719J719,Quiche:,82,Cash,Khana Khazana,08:31:21,5,Worth
+OXJY167254JK,30-07-2017,602V602,Regular:,64,Cash,Onesta,08:31:21,4,Delicious food
+QTSI285174SG,29-07-2017,828Y828,Tawa naan:,32,Wallet,Toit,08:31:21,4,Good service
+QTSI285174SG,02-07-2017,576H576,Manchurian:,38,Card,Plan B,08:31:21,0,Difficult to order
+LJBO9511000BL,03-07-2017,579S579,pickle:,46,Wallet,Toit,08:31:21,2,Stale food
+UFDF355524DM,19-07-2017,590K590,Laccha Prantha:,67,Cash,Sadabahar,08:31:21,1,Difficult to order
+LRKI603654KL,06-07-2017,562J562,Mango shake:,95,Online,Plan B,08:31:21,5,Fast delivery
+XVTR474839TP,16-07-2017,862F862,Banana shake:,32,Card,Johnahs,08:31:21,3,Coupon applied
+FRBT691245BA,05-07-2017,329N329,Crispy Onion Rings:,23,Cash,Food point,08:31:21,3,Stale food
+OXJY167254JK,17-07-2017,764T764,Fried Rice:,32,Card,Emperial,08:31:21,2,High price
+XVTR474839TP,25-07-2017,412W412,Mango shake:,60,Wallet,Khana Khazana,08:31:21,0,Difficult to order
+XVTR474839TP,04-07-2017,298O298,Tawa naan:,82,Wallet,Johnahs,08:31:21,3,Late delivery
+XVTR474839TP,05-07-2017,430S430,Veg Premium Burger:,35,Wallet,Plan B,08:31:21,4,Nice
+QTSI285174SG,07-07-2017,997J997,Prantha:,88,Cash,Delhi pot,08:31:21,5,Easy to order
+LJBO9511000BL,05-07-2017,666G666,Pulao:,83,Cash,Plan B,08:31:21,5,Awesome experience
+LJBO9511000BL,18-07-2017,382J382,Quiche:,20,Online,Delhi pot,08:31:21,5,Good service
+XVTR474839TP,11-07-2017,468M468,Banana shake:,80,Wallet,Onesta,08:31:21,5,Delicious food
+XVTR474839TP,26-07-2017,100R100,Prantha:,92,Card,Food point,08:31:21,5,Worth
+QTSI285174SG,05-07-2017,481H481,Pulao:,34,Cash,Toit,08:31:21,0,Coupon applied
+FRBT691245BA,13-07-2017,848J848,Prantha:,50,Online,Emperial,08:31:21,2,Delivery boy didnt come at doorstep
+OXJY167254JK,13-07-2017,703K703,Paneer tikka:,36,Card,Food point,08:31:21,0,Stale food
+UYXR411673XC,11-07-2017,445Y445,Pizza:,78,Cash,Khana Khazana,08:31:21,2,Coupon applied
+FRBT691245BA,11-07-2017,175H175,Noodles:,23,Card,Haus Khas,08:31:21,3,Late delivery
+SAMV824387MW,27-07-2017,725Q725,Mushroom Masala:,24,Online,Little Cafe,08:31:21,2,Coupon applied
+LRKI603654KL,11-07-2017,310K310,Idli:,95,Online,Onesta,08:31:21,1,Late delivery
+LJBO9511000BL,13-07-2017,329T329,Crispy Onion Rings:,22,Online,Eat out,08:31:21,4,Delicious food
+UFDF355524DM,27-07-2017,481L481,Shahi paneer:,97,Cash,Little Cafe,08:31:21,0,Complicated procedure
+SAMV824387MW,29-07-2017,308A308,Manchurian:,42,Card,Johnahs,08:31:21,0,Complicated procedure
+XVTR474839TP,06-07-2017,596E596,Dosa:,50,Wallet,Onesta,08:31:21,3,Delivery boy didnt come at doorstep
+FSAM929386AQ,02-07-2017,951Q951,Banana shake:,93,Online,Plan B,08:31:21,2,Difficult to order
+SBXX592702XP,11-07-2017,840X840,Fried Rice:,43,Cash,Eat out,08:31:21,0,Delivery boy didnt come at doorstep
+QTSI285174SG,16-07-2017,378C378,Regular:,97,Wallet,Eat out,08:31:21,4,Will order again
+SBXX592702XP,11-07-2017,392T392,Banana shake:,86,Online,Haus Khas,08:31:21,5,Fast delivery
+UYXR411673XC,04-07-2017,558Q558,Mango shake:,27,Card,Johnahs,08:31:21,5,Cheap and best
+UYXR411673XC,24-07-2017,311N311,Tawa naan:,71,Cash,Plan B,08:31:21,1,Food not good
+UYXR411673XC,11-07-2017,511Q511,Mushroom Masala:,59,Online,Little Cafe,08:31:21,1,Food not good
+UYXR411673XC,26-07-2017,302P302,Shahi paneer:,79,Wallet,Food point,08:31:21,5,Will order again
+LJBO9511000BL,25-07-2017,258M258,Laccha Prantha:,36,Online,Khana Khazana,08:31:21,1,Stale food
+LRKI603654KL,17-07-2017,512U512,Pulao:,27,Card,Sadabahar,08:31:21,1,Late delivery
+UFDF355524DM,02-07-2017,932N932,salad:,82,Wallet,Sadabahar,08:31:21,2,High price
+FRBT691245BA,07-07-2017,634O634,Fried Rice:,45,Wallet,Onesta,08:31:21,5,Awesome experience
+SAMV824387MW,16-07-2017,208X208,Laccha Prantha:,37,Card,Food point,08:31:21,5,Awesome experience
+UFDF355524DM,29-07-2017,795Q795,Chikko shake:,77,Wallet,Eat out,08:31:21,1,High price
+SAMV824387MW,24-07-2017,916L916,Chop Suey,60,Wallet,Haus Khas,08:31:21,0,Stale food
+OXJY167254JK,29-07-2017,979V979,Curd:,95,Card,Delhi pot,08:31:21,2,Late delivery
+SAMV824387MW,30-07-2017,135F135,Regular:,83,Cash,Haus Khas,08:31:21,1,Complicated procedure
+XVTR474839TP,07-07-2017,959O959,Dosa:,88,Wallet,Sadabahar,08:31:21,3,Difficult to order
+XVTR474839TP,02-07-2017,672E672,Chop Suey,22,Card,Sadabahar,08:31:21,0,Delivery boy didnt come at doorstep
+LJBO9511000BL,19-07-2017,675F675,Shahi paneer:,70,Wallet,Food point,08:31:21,3,Stale food
+LRKI603654KL,03-07-2017,463X463,Veg Premium Burger:,77,Card,Onesta,08:31:21,5,Cheap and best
+OXJY167254JK,05-07-2017,228R228,Pizza:,68,Card,Food point,08:31:21,2,Difficult to order
+LJBO9511000BL,02-07-2017,327G327,Curd:,40,Cash,Haus Khas,08:31:21,1,Complicated procedure
+FRBT691245BA,24-07-2017,168V168,Manchurian:,53,Wallet,Food point,08:31:21,0,Difficult to order
+SBXX592702XP,24-07-2017,596G596,Tawa naan:,72,Card,Khana Khazana,08:31:21,4,Delicious food
+LRKI603654KL,27-07-2017,758W758,Banana shake:,58,Wallet,Johnahs,08:31:21,1,Stale food
+SBXX592702XP,02-07-2017,239O239,Pulao:,98,Cash,Plan B,08:31:21,0,Stale food
+OXJY167254JK,05-07-2017,345Z345,Fried Rice:,36,Cash,Sadabahar,08:31:21,4,Delicious food
+FRBT691245BA,19-07-2017,492M492,Idli:,56,Card,Haus Khas,08:31:21,2,Stale food
+OXJY167254JK,07-07-2017,179Y179,Shahi paneer:,99,Card,Onesta,08:31:21,4,Easy to order
+QTSI285174SG,29-07-2017,413L413,Manchurian:,33,Online,Emperial,08:31:21,0,Delivery boy didnt come at doorstep
+SBXX592702XP,16-07-2017,910U910,Chow Mein:,57,Cash,Onesta,08:31:21,5,Nice
+SBXX592702XP,01-07-2017,347B347,Tawa naan:,38,Card,Khana Khazana,08:31:21,3,Food not good
+UFDF355524DM,25-07-2017,723H723,Laccha Prantha:,95,Online,Eat out,08:31:21,0,Late delivery
+OXJY167254JK,19-07-2017,375D375,Laccha Prantha:,36,Cash,Johnahs,08:31:21,2,Coupon applied
+LJBO9511000BL,27-07-2017,689M689,Manchurian:,81,Card,Johnahs,08:31:21,2,Delivery boy didnt come at doorstep
+QTSI285174SG,19-07-2017,902X902,Laccha Prantha:,38,Card,Haus Khas,08:31:21,4,Awesome experience
+OXJY167254JK,26-07-2017,963R963,Banana shake:,73,Cash,Toit,08:31:21,3,Stale food
+OXJY167254JK,29-07-2017,2.21E+223,Quiche:,69,Card,Delhi pot,08:31:21,4,Easy to order
+SBXX592702XP,25-07-2017,559Z559,Pulao:,32,Online,Toit,08:31:21,5,Fast delivery
+LJBO9511000BL,16-07-2017,105Z105,Idli:,64,Wallet,Toit,08:31:21,4,Easy to order
+XVTR474839TP,27-07-2017,761U761,Chow Mein:,52,Cash,Haus Khas,08:31:21,5,Cheap and best
+SBXX592702XP,26-07-2017,932D932,Regular:,55,Cash,Delhi pot,08:31:21,4,Nice
+XVTR474839TP,24-07-2017,257S257,Crispy Onion Rings:,44,Wallet,Eat out,08:31:21,3,Food not good
+UFDF355524DM,17-07-2017,728T728,Biryani:,49,Wallet,Johnahs,08:31:21,5,Awesome experience
+OXJY167254JK,03-07-2017,869G869,Roti:,77,Wallet,Eat out,08:31:21,2,Late delivery
+LRKI603654KL,29-07-2017,316O316,Tawa naan:,78,Cash,Delhi pot,08:31:21,4,Delicious food
+LJBO9511000BL,09-07-2017,330M330,Chow Mein:,71,Online,Johnahs,08:31:21,0,Food not good
+XVTR474839TP,29-07-2017,381I381,Mango shake:,82,Card,Sadabahar,08:31:21,5,Nice
+UFDF355524DM,29-07-2017,188W188,pickle:,58,Online,Khana Khazana,08:31:21,0,Food not good
+FSAM929386AQ,05-07-2017,408G408,Quiche:,75,Online,Onesta,08:31:21,5,Awesome experience
+UFDF355524DM,25-07-2017,605B605,Pulao:,84,Wallet,Food point,08:31:21,3,Coupon applied
+OXJY167254JK,04-07-2017,198N198,Tawa naan:,30,Wallet,Johnahs,08:31:21,5,Awesome experience
+SBXX592702XP,30-07-2017,549E549,Fried Rice:,61,Online,Onesta,08:31:21,0,Food not good
+UFDF355524DM,25-07-2017,171L171,Laccha Prantha:,31,Wallet,Plan B,08:31:21,3,Coupon applied
+FRBT691245BA,23-07-2017,128T128,Veg Premium Burger:,81,Cash,Johnahs,08:31:21,5,Easy to order
+LJBO9511000BL,29-07-2017,494G494,Tawa naan:,39,Card,Johnahs,08:31:21,4,Awesome experience
+FRBT691245BA,24-07-2017,234L234,pickle:,51,Online,Johnahs,08:31:21,5,Delicious food
+QTSI285174SG,30-07-2017,378G378,Tawa naan:,21,Card,Plan B,08:31:21,3,Delivery boy didnt come at doorstep
+UYXR411673XC,25-07-2017,182Y182,Crispy Onion Rings:,84,Wallet,Toit,08:31:21,0,Delivery boy didnt come at doorstep
+FRBT691245BA,25-07-2017,928E928,Chop Suey,76,Online,Onesta,08:31:21,4,Nice
+XVTR474839TP,11-07-2017,427V427,Veg Premium Burger:,37,Online,Delhi pot,08:31:21,3,Coupon applied
+UYXR411673XC,19-07-2017,598X598,Tawa naan:,80,Cash,Eat out,08:31:21,5,Awesome experience
+UFDF355524DM,26-07-2017,200S200,Quiche:,44,Online,Food point,08:31:21,1,Difficult to order
+QTSI285174SG,02-07-2017,824X824,Chop Suey,65,Wallet,Delhi pot,08:31:21,1,Late delivery
+OXJY167254JK,05-07-2017,519B519,pickle:,76,Online,Plan B,08:31:21,5,Will order again
+FRBT691245BA,11-07-2017,932S932,Roti:,24,Card,Haus Khas,08:31:21,0,High price
+OXJY167254JK,16-07-2017,390X390,Noodles:,100,Card,Plan B,08:31:21,3,Stale food
+LRKI603654KL,11-07-2017,617D617,Manchurian:,53,Card,Sadabahar,08:31:21,4,Fast delivery
+LJBO9511000BL,24-07-2017,237Z237,Banana shake:,54,Card,Toit,08:31:21,0,Late delivery
+UFDF355524DM,23-07-2017,865S865,Mushroom Masala:,29,Wallet,Plan B,08:31:21,2,Stale food
+QTSI285174SG,25-07-2017,115Y115,Dosa:,51,Cash,Food point,08:31:21,3,Complicated procedure
+LJBO9511000BL,24-07-2017,332C332,Curd:,38,Card,Toit,08:31:21,3,Coupon applied
+FRBT691245BA,26-07-2017,176S176,Manchurian:,51,Card,Johnahs,08:31:21,0,Stale food
+OXJY167254JK,05-07-2017,552I552,Laccha Prantha:,29,Online,Plan B,08:31:21,0,Food not good
+OXJY167254JK,29-07-2017,877M877,Shahi paneer:,30,Wallet,Johnahs,08:31:21,4,Easy to order
+QTSI285174SG,02-07-2017,710R710,Crispy Onion Rings:,97,Online,Eat out,08:31:21,5,Awesome experience
+SAMV824387MW,06-07-2017,593K593,Chow Mein:,30,Wallet,Toit,08:31:21,5,Awesome experience
+SBXX592702XP,07-07-2017,535L535,Laccha Prantha:,58,Wallet,Little Cafe,08:31:21,2,Delivery boy didnt come at doorstep
+UFDF355524DM,17-07-2017,816A816,Noodles:,43,Online,Sadabahar,08:31:21,1,Food not good
+FRBT691245BA,05-07-2017,913D913,Prantha:,57,Card,Sadabahar,08:31:21,3,Delivery boy didnt come at doorstep
+XVTR474839TP,09-07-2017,999L999,Crispy Onion Rings:,20,Cash,Little Cafe,08:31:21,3,High price
+LRKI603654KL,27-07-2017,281D281,Pulao:,52,Wallet,Delhi pot,08:31:21,4,Delicious food
+QTSI285174SG,19-07-2017,963V963,pickle:,87,Cash,Eat out,08:31:21,5,Awesome experience
+OXJY167254JK,29-07-2017,895B895,Quiche:,20,Cash,Khana Khazana,08:31:21,0,Difficult to order
+UYXR411673XC,30-07-2017,367P367,Dosa:,64,Wallet,Toit,08:31:21,4,Delicious food
+SAMV824387MW,02-07-2017,551N551,Crispy Onion Rings:,96,Wallet,Eat out,08:31:21,2,Coupon applied
+QTSI285174SG,16-07-2017,616Z616,Chop Suey,40,Card,Plan B,08:31:21,0,High price
+UFDF355524DM,07-07-2017,196G196,salad:,89,Card,Eat out,08:31:21,0,Difficult to order
+QTSI285174SG,31-07-2017,640X640,Biryani:,79,Online,Plan B,08:31:21,2,High price
+FRBT691245BA,26-07-2017,181R181,Paneer tikka:,39,Online,Food point,08:31:21,1,Delivery boy didnt come at doorstep
+UFDF355524DM,11-07-2017,936S936,Noodles:,47,Card,Plan B,08:31:21,0,Stale food
+QTSI285174SG,01-07-2017,532A532,Curd:,66,Online,Haus Khas,08:31:21,3,Delivery boy didnt come at doorstep
+SBXX592702XP,11-07-2017,264Z264,Shahi paneer:,59,Wallet,Little Cafe,08:31:21,5,Fast delivery
+UYXR411673XC,06-07-2017,854Q854,Veg Premium Burger:,62,Card,Delhi pot,08:31:21,4,Good service
+SAMV824387MW,16-07-2017,757C757,Regular:,67,Cash,Onesta,08:31:21,3,Stale food
+LRKI603654KL,19-07-2017,264U264,Chikko shake:,40,Cash,Food point,08:31:21,1,Coupon applied
+LRKI603654KL,29-07-2017,167A167,Prantha:,70,Online,Little Cafe,08:31:21,3,Coupon applied
+FRBT691245BA,07-07-2017,114L114,Manchurian:,85,Wallet,Johnahs,08:31:21,1,Delivery boy didnt come at doorstep
+LRKI603654KL,06-07-2017,341I341,Chop Suey,49,Card,Delhi pot,08:31:21,5,Delicious food
+SBXX592702XP,13-07-2017,773C773,Tawa naan:,37,Online,Food point,08:31:21,0,Complicated procedure
+XVTR474839TP,30-07-2017,228N228,Fried Rice:,38,Online,Eat out,08:31:21,1,Delivery boy didnt come at doorstep
+UYXR411673XC,23-07-2017,412H412,Tawa naan:,55,Online,Food point,08:31:21,2,Coupon applied
+SAMV824387MW,04-07-2017,597W597,Crispy Onion Rings:,91,Online,Onesta,08:31:21,5,Easy to order
+LJBO9511000BL,23-07-2017,601F601,Pulao:,41,Wallet,Delhi pot,08:31:21,4,Fast delivery
+QTSI285174SG,13-07-2017,140Z140,Prantha:,39,Cash,Emperial,08:31:21,1,Difficult to order
+UYXR411673XC,19-07-2017,825W825,Dosa:,45,Online,Delhi pot,08:31:21,2,Difficult to order
+UYXR411673XC,25-07-2017,234F234,Crispy Onion Rings:,66,Card,Johnahs,08:31:21,1,Late delivery
+LJBO9511000BL,18-07-2017,930J930,Curd:,75,Card,Emperial,08:31:21,5,Good service
+QTSI285174SG,27-07-2017,101P101,Roti:,26,Online,Food point,08:31:21,2,Complicated procedure
+LJBO9511000BL,25-07-2017,208I208,Fried Rice:,72,Card,Food point,08:31:21,2,High price
+LJBO9511000BL,11-07-2017,907Q907,Idli:,52,Online,Toit,08:31:21,2,High price
+XVTR474839TP,02-07-2017,890T890,pickle:,95,Online,Khana Khazana,08:31:21,4,Awesome experience
+LJBO9511000BL,11-07-2017,811Q811,Veg Premium Burger:,65,Cash,Emperial,08:31:21,3,Complicated procedure
+OXJY167254JK,09-07-2017,168N168,Pizza:,88,Cash,Plan B,08:31:21,0,Food not good
+XVTR474839TP,16-07-2017,926H926,Roti:,89,Wallet,Sadabahar,08:31:21,3,Food not good
+OXJY167254JK,11-07-2017,575G575,Quiche:,67,Cash,Emperial,08:31:21,3,Delivery boy didnt come at doorstep
+XVTR474839TP,02-07-2017,329X329,salad:,28,Online,Johnahs,08:31:21,5,Will order again
+UFDF355524DM,02-07-2017,654N654,salad:,38,Card,Delhi pot,08:31:21,1,Stale food
+LRKI603654KL,05-07-2017,213S213,Quiche:,48,Online,Eat out,08:31:21,0,Food not good
+LJBO9511000BL,16-07-2017,342T342,Regular:,82,Online,Toit,08:31:21,1,Delivery boy didnt come at doorstep
+SBXX592702XP,06-07-2017,821D821,Curd:,90,Card,Emperial,08:31:21,0,Food not good
+UFDF355524DM,19-07-2017,306H306,Idli:,98,Wallet,Eat out,08:31:21,2,Coupon applied
+UYXR411673XC,06-07-2017,676G676,Crispy Onion Rings:,92,Online,Toit,08:31:21,2,Coupon applied
+UFDF355524DM,23-07-2017,320H320,Noodles:,77,Cash,Toit,08:31:21,0,Difficult to order
+UYXR411673XC,31-07-2017,194J194,Regular:,34,Wallet,Sadabahar,08:31:21,4,Good service
+FSAM929386AQ,07-07-2017,811B811,Prantha:,95,Card,Food point,08:31:21,2,Difficult to order
+SBXX592702XP,24-07-2017,897D897,Pulao:,52,Card,Plan B,08:31:21,5,Good service
+UFDF355524DM,19-07-2017,970L970,Curd:,35,Card,Sadabahar,08:31:21,1,Complicated procedure
+XVTR474839TP,17-07-2017,312R312,Manchurian:,47,Wallet,Sadabahar,08:31:21,0,Stale food
+QTSI285174SG,31-07-2017,744G744,Mango shake:,43,Online,Delhi pot,08:31:21,0,Food not good
+FRBT691245BA,29-07-2017,246T246,Paneer tikka:,79,Cash,Johnahs,08:31:21,1,Difficult to order
+UYXR411673XC,19-07-2017,859F859,Roti:,55,Card,Haus Khas,08:31:21,0,Food not good
+SBXX592702XP,23-07-2017,980I980,Fryams:,28,Card,Johnahs,08:31:21,4,Will order again
+LRKI603654KL,05-07-2017,598V598,Fryams:,65,Online,Little Cafe,08:31:21,3,High price
+LRKI603654KL,07-07-2017,589B589,Dosa:,45,Cash,Khana Khazana,08:31:21,2,Food not good
+LRKI603654KL,07-07-2017,327N327,Dosa:,62,Cash,Johnahs,08:31:21,2,High price
+OXJY167254JK,31-07-2017,315P315,Fryams:,49,Online,Eat out,08:31:21,0,Late delivery
+OXJY167254JK,18-08-2017,654S654,Regular:Mango shake:Roti,97,Wallet,Eat out,18:31:21,4,Will order again
+QTSI285174SG,02-08-2017,556T556,Chow Mein:pickle,34,Card,Little Cafe,08:34:21,2,Food not good
+FRBT691245BA,02-08-2017,616X616,Mango shake:Noodles,68,Wallet,Khana Khazana,08:21:21,2,High price
+LRKI603654KL,30-08-2017,562T562,Roti:,20,Card,Johnahs,05:31:21,4,Cheap and best
+LRKI603654KL,17-08-2017,611D611,Dosa:,94,Cash,Onesta,09:31:21,1,Complicated procedure
+LJBO9511000BL,31-08-2017,441M441,salad:,82,Wallet,Sadabahar,08:31:21,2,High price
+SAMV824387MW,06-08-2017,352G352,pickle:,62,Online,Emperial,08:31:28,2,Difficult to order
+UYXR411673XC,11-08-2017,662X662,Shahi paneer:,49,Online,Haus Khas,08:31:21,2,Coupon applied
+QTSI285174SG,25-08-2017,249A249,Curd:,57,Online,Emperial,08:31:21,0,Coupon applied
+QTSI285174SG,03-08-2017,284O284,Pizza:,44,Card,Johnahs,08:31:21,5,Easy to order
+UFDF355524DM,02-08-2017,998P998,Veg Premium Burger:,48,Wallet,Johnahs,08:31:21,4,Cheap and best
+OXJY167254JK,03-08-2017,586V586,Curd:,95,Card,Delhi pot,08:31:21,2,Late delivery
+UFDF355524DM,24-08-2017,667M667,Curd:,96,Card,Onesta,08:31:21,1,High price
+UFDF355524DM,17-08-2017,152D152,Noodles:,22,Cash,Sadabahar,08:31:21,3,Coupon applied
+SBXX592702XP,03-08-2017,409H409,Chow Mein:,71,Online,Johnahs,08:31:21,2,Stale food
+LJBO9511000BL,24-08-2017,158J158,Manchurian:,24,Card,Food point,08:31:21,3,Difficult to order
+OXJY167254JK,04-08-2017,187L187,Veg Premium Burger:,28,Cash,Johnahs,08:31:21,5,Fast delivery
+QTSI285174SG,02-08-2017,878Q878,Manchurian:,64,Wallet,Delhi pot,08:31:21,5,Delicious food
+LRKI603654KL,11-08-2017,699V699,Roti:,89,Card,Onesta,08:31:21,4,Easy to order
+UYXR411673XC,11-08-2017,102M102,Banana shake:,42,Card,Emperial,08:31:21,2,High price
+FSAM929386AQ,16-08-2017,127K127,Mushroom Masala:,48,Wallet,Haus Khas,08:31:21,3,Stale food
+SBXX592702XP,09-08-2017,400S400,Chikko shake:,62,Card,Delhi pot,08:31:21,3,Coupon applied
+UFDF355524DM,19-08-2017,177A177,Laccha Prantha:,39,Online,Haus Khas,08:31:21,0,High price
+FRBT691245BA,31-08-2017,168V168,Dosa:,75,Online,Johnahs,08:31:21,0,Complicated procedure
+XVTR474839TP,23-08-2017,374Z374,Tawa naan:,72,Card,Khana Khazana,08:31:21,4,Delicious food
+SBXX592702XP,16-08-2017,895Y895,pickle:,65,Card,Sadabahar,08:31:21,3,Stale food
+UFDF355524DM,02-08-2017,202U202,Roti:,62,Wallet,Sadabahar,08:31:21,2,Delivery boy didnt come at doorstep
+SBXX592702XP,16-08-2017,925Y925,Biryani:,86,Cash,Little Cafe,08:31:21,5,Cheap and best
+SBXX592702XP,30-08-2017,190Y190,Pulao:,81,Cash,Haus Khas,08:31:21,1,Late delivery
+SAMV824387MW,27-08-2017,732H732,pickle:,71,Wallet,Emperial,08:31:21,3,Difficult to order
+OXJY167254JK,30-08-2017,994T994,Idli:,83,Wallet,Emperial,08:31:21,2,Delivery boy didnt come at doorstep
+OXJY167254JK,09-08-2017,722N722,Banana shake:,41,Wallet,Toit,08:31:21,0,Complicated procedure
+SAMV824387MW,11-08-2017,885W885,Manchurian:,76,Online,Johnahs,08:31:21,5,Easy to order
+UFDF355524DM,19-08-2017,217O217,Noodles:,86,Card,Khana Khazana,08:31:21,0,Food not good
+UYXR411673XC,11-08-2017,533X533,Manchurian:,81,Card,Johnahs,08:31:21,2,Delivery boy didnt come at doorstep
+QTSI285174SG,17-08-2017,902X902,Chikko shake:,33,Card,Little Cafe,08:31:21,1,Complicated procedure
+OXJY167254JK,29-08-2017,963R963,Fried Rice:,82,Online,Eat out,08:31:21,4,Easy to order
+OXJY167254JK,23-08-2017,2.21E+223,Fryams:,69,Cash,Little Cafe,08:31:21,2,Difficult to order
+FRBT691245BA,24-08-2017,701A701,Pulao:,32,Online,Toit,08:31:21,5,Fast delivery
+LJBO9511000BL,03-08-2017,105Z105,Paneer tikka:,80,Card,Eat out,08:31:21,0,Stale food
+LJBO9511000BL,30-08-2017,557Z557,Regular:,55,Cash,Delhi pot,08:31:21,4,Nice
+LRKI603654KL,30-08-2017,689S689,Biryani:,49,Wallet,Johnahs,08:31:21,5,Awesome experience
+LRKI603654KL,08-08-2017,316O316,Laccha Prantha:,29,Cash,Haus Khas,08:31:21,4,Fast delivery
+OXJY167254JK,18-08-2017,307X307,Fryams:,69,Wallet,Eat out,08:31:21,4,Delicious food
+LRKI603654KL,25-08-2017,983A983,Manchurian:,35,Wallet,Emperial,08:31:21,4,Delicious food
+UYXR411673XC,11-08-2017,742Y742,Fryams:,21,Wallet,Onesta,08:31:21,4,Good service
+XVTR474839TP,23-08-2017,381I381,Pulao:,42,Online,Toit,08:31:21,0,Stale food
+SBXX592702XP,11-08-2017,501F501,Pulao:,43,Card,Food point,08:31:21,3,Complicated procedure
+XVTR474839TP,06-08-2017,668P668,Banana shake:,96,Wallet,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+UFDF355524DM,17-08-2017,825D825,Chikko shake:,98,Cash,Food point,08:31:21,2,Late delivery
+OXJY167254JK,17-08-2017,847M847,Roti:,31,Wallet,Plan B,08:31:21,3,Coupon applied
+FRBT691245BA,25-08-2017,128T128,Quiche:,38,Wallet,Johnahs,08:31:21,2,Late delivery
+FRBT691245BA,31-08-2017,234L234,Crispy Onion Rings:,45,Online,Sadabahar,08:31:21,4,Cheap and best
+OXJY167254JK,02-08-2017,421H421,Chop Suey,23,Cash,Little Cafe,08:31:21,1,High price
+OXJY167254JK,11-08-2017,519B519,Chop Suey,94,Card,Delhi pot,08:31:21,1,Complicated procedure
+QTSI285174SG,09-08-2017,358J358,Crispy Onion Rings:,78,Online,Plan B,08:31:21,3,Stale food
+XVTR474839TP,31-08-2017,376E376,Banana shake:,54,Card,Toit,08:31:21,0,Late delivery
+LJBO9511000BL,05-08-2017,332C332,Pizza:,76,Card,Eat out,08:31:21,4,Delicious food
+FRBT691245BA,06-08-2017,584R584,Regular:,57,Card,Sadabahar,08:31:21,5,Delicious food
+OXJY167254JK,11-08-2017,552I552,Chow Mein:,28,Cash,Plan B,08:31:21,4,Delicious food
+SAMV824387MW,06-08-2017,919M919,Shahi paneer:,30,Wallet,Johnahs,08:31:21,4,Easy to order
+FRBT691245BA,19-08-2017,961Y961,Laccha Prantha:,28,Online,Toit,08:31:21,5,Will order again
+SAMV824387MW,03-08-2017,593K593,Chop Suey,38,Online,Sadabahar,08:31:21,5,Will order again
+OXJY167254JK,30-08-2017,752N752,Banana shake:,95,Wallet,Onesta,08:31:21,0,Difficult to order
+LJBO9511000BL,30-08-2017,455W455,Biryani:,96,Online,Emperial,08:31:21,0,Complicated procedure
+LRKI603654KL,24-08-2017,281D281,Manchurian:,79,Cash,Delhi pot,08:31:21,3,Food not good
+XVTR474839TP,02-08-2017,819L819,Laccha Prantha:,31,Online,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,17-08-2017,373I373,Quiche:,37,Card,Emperial,08:31:21,0,Late delivery
+OXJY167254JK,03-08-2017,564J564,salad:,63,Wallet,Onesta,08:31:21,5,Cheap and best
+SAMV824387MW,07-08-2017,149F149,Roti:,31,Cash,Sadabahar,08:31:21,4,Worth
+XVTR474839TP,04-08-2017,539I539,Shahi paneer:,51,Online,Onesta,08:31:21,1,High price
+LJBO9511000BL,05-08-2017,215J215,Chow Mein:,39,Cash,Emperial,08:31:21,1,Delivery boy didnt come at doorstep
+SAMV824387MW,06-08-2017,363Z363,Shahi paneer:,52,Cash,Khana Khazana,08:31:21,5,Worth
+UYXR411673XC,01-08-2017,726Z726,Biryani:,55,Wallet,Johnahs,08:31:21,2,Delivery boy didnt come at doorstep
+LRKI603654KL,19-08-2017,741F741,Banana shake:,67,Online,Haus Khas,08:31:21,3,Stale food
+LRKI603654KL,27-08-2017,264U264,Shahi paneer:,52,Card,Sadabahar,08:31:21,1,Difficult to order
+SBXX592702XP,27-08-2017,775V775,Chikko shake:,54,Cash,Haus Khas,08:31:21,3,Delivery boy didnt come at doorstep
+XVTR474839TP,16-08-2017,403H403,pickle:,55,Online,Sadabahar,08:31:21,2,Difficult to order
+SBXX592702XP,11-08-2017,517U517,pickle:,27,Online,Sadabahar,08:31:21,0,Complicated procedure
+UYXR411673XC,17-08-2017,715H715,Paneer tikka:,66,Wallet,Haus Khas,08:31:21,5,Nice
+QTSI285174SG,19-08-2017,527W527,Fryams:,59,Wallet,Plan B,08:31:21,0,Late delivery
+LRKI603654KL,25-08-2017,491A491,Fried Rice:,80,Online,Toit,08:31:21,5,Easy to order
+UYXR411673XC,29-08-2017,510N510,Curd:,75,Card,Emperial,08:31:21,5,Good service
+QTSI285174SG,18-08-2017,101P101,Veg Premium Burger:,70,Online,Toit,08:31:21,1,Delivery boy didnt come at doorstep
+LJBO9511000BL,03-08-2017,208I208,Prantha:,52,Card,Haus Khas,08:31:21,5,Nice
+QTSI285174SG,30-08-2017,798W798,Crispy Onion Rings:,95,Cash,Sadabahar,08:31:21,4,Awesome experience
+LJBO9511000BL,05-08-2017,811Q811,Quiche:,62,Online,Khana Khazana,08:31:21,4,Nice
+UFDF355524DM,02-08-2017,966E966,Laccha Prantha:,67,Card,Emperial,08:31:21,2,Complicated procedure
+SBXX592702XP,13-08-2017,457Y457,Pulao:,91,Cash,Toit,08:31:21,3,Coupon applied
+UFDF355524DM,25-08-2017,919I919,Manchurian:,92,Cash,Khana Khazana,08:31:21,2,Food not good
+SBXX592702XP,26-08-2017,902G902,salad:,38,Card,Delhi pot,08:31:21,1,Stale food
+LRKI603654KL,25-08-2017,213S213,Noodles:,60,Card,Food point,08:31:21,2,Late delivery
+QTSI285174SG,29-08-2017,393C393,Pizza:,70,Cash,Haus Khas,08:31:21,4,Easy to order
+SBXX592702XP,06-08-2017,851P851,Paneer tikka:,48,Online,Onesta,08:31:21,5,Fast delivery
+SAMV824387MW,18-08-2017,491V491,Noodles:,31,Online,Haus Khas,08:31:21,3,Difficult to order
+LRKI603654KL,13-08-2017,360Z360,Pizza:,50,Online,Plan B,08:31:21,1,Difficult to order
+SBXX592702XP,08-08-2017,625P625,Shahi paneer:,96,Wallet,Delhi pot,08:31:21,1,High price
+UYXR411673XC,29-08-2017,210B210,Chop Suey,75,Online,Emperial,08:31:21,3,Stale food
+XVTR474839TP,05-08-2017,644C644,Mango shake:,43,Online,Delhi pot,08:31:21,0,Food not good
+FRBT691245BA,25-08-2017,246T246,Fried Rice:,93,Card,Haus Khas,08:31:21,1,Coupon applied
+SBXX592702XP,02-08-2017,378A378,Regular:,86,Cash,Khana Khazana,08:31:21,4,Cheap and best
+UFDF355524DM,02-08-2017,107K107,Curd:,32,Online,Plan B,08:31:21,2,Food not good
+LJBO9511000BL,30-08-2017,570T570,Chikko shake:,97,Online,Johnahs,08:31:21,5,Good service
+UYXR411673XC,23-08-2017,847B847,Regular:,68,Cash,Khana Khazana,08:31:21,5,Delicious food
+SBXX592702XP,17-08-2017,860Q860,Crispy Onion Rings:,49,Online,Haus Khas,08:31:21,1,Late delivery
+LRKI603654KL,02-08-2017,327N327,Mushroom Masala:,92,Wallet,Little Cafe,08:31:21,4,Delicious food
+OXJY167254JK,05-08-2017,315P315,Manchurian:,67,Online,Emperial,08:31:21,5,Fast delivery
+UYXR411673XC,16-08-2017,499O499,Banana shake:,23,Cash,Eat out,08:31:21,1,Difficult to order
+OXJY167254JK,02-08-2017,858S858,Mushroom Masala:,28,Wallet,Delhi pot,08:31:21,0,Coupon applied
+SBXX592702XP,26-08-2017,286U286,Veg Premium Burger:,83,Cash,Little Cafe,08:31:21,0,Late delivery
+LRKI603654KL,27-08-2017,264H264,Manchurian:,71,Card,Eat out,08:31:21,1,Coupon applied
+QTSI285174SG,05-08-2017,320Q320,Curd:,60,Cash,Delhi pot,08:31:21,4,Will order again
+QTSI285174SG,23-08-2017,923T923,Chop Suey,95,Online,Food point,08:31:21,0,Stale food
+SBXX592702XP,13-08-2017,501N501,Dosa:,36,Card,Sadabahar,08:31:21,0,Coupon applied
+QTSI285174SG,19-08-2017,947M947,Regular:,81,Wallet,Emperial,08:31:21,5,Worth
+FSAM929386AQ,18-08-2017,218R218,Mango shake:,83,Card,Eat out,08:31:21,3,Coupon applied
+OXJY167254JK,04-08-2017,123F123,Pizza:,57,Card,Delhi pot,08:31:21,1,Complicated procedure
+XVTR474839TP,17-08-2017,536D536,Prantha:,52,Card,Johnahs,08:31:21,5,Worth
+UYXR411673XC,19-08-2017,306Y306,Manchurian:,60,Online,Little Cafe,08:31:21,5,Good service
+SAMV824387MW,26-08-2017,607D607,Chow Mein:,68,Cash,Plan B,08:31:21,0,Complicated procedure
+JXJY167254JK,19-08-2017,954Sr54,Noodles:as:Roti,89,Wallet,Onesta,08:31:21,5,Awesome experience
+UYXR411673XC,07-08-2017,123W123,Curd:,49,Wallet,Eat out,08:31:21,5,Fast delivery
+OXJY167254JK,31-08-2017,183M183,Chow Mein:,48,Wallet,Johnahs,08:31:21,4,Easy to order
+QTSI285174SG,13-08-2017,779Q779,Banana shake:,23,Wallet,Toit,08:31:21,3,Late delivery
+LJBO9511000BL,24-08-2017,836M836,Shahi paneer:,61,Cash,Onesta,08:31:21,1,Difficult to order
+XVTR474839TP,11-08-2017,655V655,salad:,30,Wallet,Onesta,08:31:21,1,High price
+FRBT691245BA,19-08-2017,389V389,Crispy Onion Rings:,55,Card,Toit,08:31:21,0,Complicated procedure
+XVTR474839TP,11-08-2017,351F351,Tawa naan:,39,Card,Plan B,08:31:21,0,High price
+LJBO9511000BL,17-08-2017,468P468,Roti:,44,Card,Emperial,08:31:21,3,Late delivery
+UFDF355524DM,05-08-2017,904M904,Banana shake:,70,Card,Little Cafe,08:31:21,5,Nice
+UYXR411673XC,30-08-2017,334A334,Banana shake:,87,Wallet,Food point,08:31:21,3,High price
+XVTR474839TP,24-08-2017,518A518,Chikko shake:,32,Online,Little Cafe,08:31:21,5,Awesome experience
+UFDF355524DM,24-08-2017,765Q765,Curd:,78,Wallet,Plan B,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,04-08-2017,452P452,Chop Suey,64,Card,Emperial,08:31:21,3,Stale food
+SBXX592702XP,09-08-2017,973O973,Banana shake:,90,Cash,Onesta,08:31:21,5,Awesome experience
+JXJY167254JK,23-08-2017,954Sr54,Roti,12,Wallet,Onesta,09:31:21,4,Awesome experience
+OXJY167254JK,11-08-2017,394G394,Chikko shake:,78,Cash,Delhi pot,08:31:21,0,Late delivery
+UYXR411673XC,01-08-2017,773E773,Veg Premium Burger:,69,Card,Toit,08:31:21,2,Stale food
+FRBT691245BA,31-08-2017,279R279,Crispy Onion Rings:,26,Cash,Haus Khas,08:31:21,4,Nice
+SBXX592702XP,06-08-2017,848O848,Chow Mein:,81,Online,Food point,08:31:21,2,Difficult to order
+LJBO9511000BL,01-08-2017,576M576,Dosa:,44,Wallet,Emperial,08:31:21,4,Good service
+LRKI603654KL,02-08-2017,697A697,salad:,100,Wallet,Sadabahar,08:31:21,0,Late delivery
+LRKI603654KL,02-08-2017,176C176,Idli:,74,Cash,Onesta,08:31:21,2,Late delivery
+XVTR474839TP,25-08-2017,566F566,Tawa naan:,91,Cash,Emperial,08:31:21,4,Delicious food
+JXJY167254JK,14-08-2017,954Sr54,Noodles:Roti,19,Wallet,Onesta,08:31:21,5,Awesome experience
+QTSI285174SG,08-08-2017,769Z769,Veg Premium Burger:,28,Card,Plan B,08:31:21,5,Worth
+FSAM929386AQ,11-08-2017,874C874,Manchurian:,78,Online,Sadabahar,08:31:21,5,Good service
+OXJY167254JK,13-08-2017,937A937,Chow Mein:,60,Card,Eat out,08:31:21,4,Delicious food
+OXJY167254JK,19-08-2017,658B658,Chikko shake:,70,Online,Onesta,08:31:21,2,Complicated procedure
+QTSI285174SG,23-08-2017,755B755,Manchurian:,76,Cash,Little Cafe,08:31:21,3,High price
+LRKI603654KL,05-08-2017,771L771,Tawa naan:,94,Cash,Onesta,08:31:21,0,Late delivery
+SAMV824387MW,06-08-2017,859K859,Crispy Onion Rings:,67,Cash,Haus Khas,08:31:21,0,Coupon applied
+OXJY167254JK,02-08-2017,873Y873,Paneer tikka:,45,Wallet,Emperial,08:31:21,0,Food not good
+OXJY167254JK,02-08-2017,764T764,Shahi paneer:,25,Card,Food point,08:31:21,4,Cheap and best
+QTSI285174SG,24-08-2017,341I341,Laccha Prantha:,40,Wallet,Khana Khazana,08:31:21,3,Complicated procedure
+LRKI603654KL,09-08-2017,404X404,Idli:,27,Card,Eat out,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,26-08-2017,758D758,Shahi paneer:,36,Card,Food point,08:31:21,3,Stale food
+XVTR474839TP,18-08-2017,430S430,Mango shake:,96,Wallet,Toit,08:31:21,1,Delivery boy didnt come at doorstep
+QTSI285174SG,05-08-2017,823G823,Fryams:,88,Cash,Delhi pot,08:31:21,2,High price
+FRBT691245BA,05-08-2017,666X666,Dosa:,96,Wallet,Delhi pot,08:31:21,5,Nice
+LJBO9511000BL,17-08-2017,382J382,Crispy Onion Rings:,91,Card,Plan B,08:31:21,2,Food not good
+OXJY167254JK,05-08-2017,752W752,Chikko shake:,89,Card,Little Cafe,08:31:21,4,Easy to order
+LJBO9511000BL,30-08-2017,912Z912,Prantha:,50,Online,Emperial,08:31:21,2,Delivery boy didnt come at doorstep
+OXJY167254JK,16-08-2017,703K703,Banana shake:,57,Wallet,Food point,08:31:21,5,Good service
+UYXR411673XC,27-08-2017,445Y445,Crispy Onion Rings:,56,Wallet,Onesta,08:31:21,1,Complicated procedure
+LJBO9511000BL,01-08-2017,309J309,Mango shake:,51,Cash,Delhi pot,08:31:21,1,Difficult to order
+LRKI603654KL,11-08-2017,608Q608,Mushroom Masala:,24,Online,Little Cafe,08:31:21,2,Coupon applied
+XVTR474839TP,24-08-2017,905K905,Idli:,95,Online,Onesta,08:31:21,1,Late delivery
+LJBO9511000BL,16-08-2017,329T329,Roti:,26,Online,Emperial,08:31:21,0,Coupon applied
+LJBO9511000BL,25-08-2017,627Z627,Pulao:,66,Online,Johnahs,08:31:21,3,Delivery boy didnt come at doorstep
+XVTR474839TP,05-08-2017,787I787,Fryams:,80,Online,Khana Khazana,08:31:21,0,Stale food
+SBXX592702XP,30-08-2017,938D938,Veg Premium Burger:,91,Cash,Onesta,08:31:21,0,Delivery boy didnt come at doorstep
+OXJY167254JK,17-08-2017,933W933,Shahi paneer:,42,Card,Plan B,08:31:21,4,Cheap and best
+FRBT691245BA,24-08-2017,792P792,Biryani:,48,Online,Food point,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,23-08-2017,425V425,Mango shake:,41,Cash,Sadabahar,08:31:21,1,Coupon applied
+LRKI603654KL,30-08-2017,562T562,Roti:,20,Card,Johnahs,08:31:21,4,Cheap and best
+LRKI603654KL,17-08-2017,611D611,Dosa:,94,Cash,Onesta,08:31:21,1,Complicated procedure
+LJBO9511000BL,31-08-2017,441M441,salad:,82,Wallet,Sadabahar,08:31:21,2,High price
+SAMV824387MW,06-08-2017,352G352,pickle:,62,Online,Emperial,08:31:21,2,Difficult to order
+UYXR411673XC,11-08-2017,662X662,Shahi paneer:,49,Online,Haus Khas,08:31:21,2,Coupon applied
+QTSI285174SG,25-08-2017,249A249,Curd:,57,Online,Emperial,08:31:21,0,Coupon applied
+QTSI285174SG,03-08-2017,284O284,Pizza:,44,Card,Johnahs,08:31:21,5,Easy to order
+UFDF355524DM,02-08-2017,998P998,Veg Premium Burger:,48,Wallet,Johnahs,08:31:21,4,Cheap and best
+OXJY167254JK,03-08-2017,586V586,Curd:,95,Card,Delhi pot,08:31:21,2,Late delivery
+UFDF355524DM,24-08-2017,667M667,Curd:,96,Card,Onesta,08:31:21,1,High price
+UFDF355524DM,17-08-2017,152D152,Noodles:,22,Cash,Sadabahar,08:31:21,3,Coupon applied
+SBXX592702XP,03-08-2017,409H409,Chow Mein:,71,Online,Johnahs,08:31:21,2,Stale food
+LJBO9511000BL,24-08-2017,158J158,Manchurian:,24,Card,Food point,08:31:21,3,Difficult to order
+OXJY167254JK,04-08-2017,187L187,Veg Premium Burger:,28,Cash,Johnahs,08:31:21,5,Fast delivery
+QTSI285174SG,02-08-2017,878Q878,Manchurian:,64,Wallet,Delhi pot,08:31:21,5,Delicious food
+LRKI603654KL,11-08-2017,699V699,Roti:,89,Card,Onesta,08:31:21,4,Easy to order
+UYXR411673XC,11-08-2017,102M102,Banana shake:,42,Card,Emperial,08:31:21,2,High price
+SBXX592702XP,09-08-2017,400S400,Chikko shake:,62,Card,Delhi pot,08:31:21,3,Coupon applied
+UFDF355524DM,19-08-2017,177A177,Laccha Prantha:,39,Online,Haus Khas,08:31:21,0,High price
+FRBT691245BA,31-08-2017,168V168,Dosa:,75,Online,Johnahs,08:31:21,0,Complicated procedure
+XVTR474839TP,23-08-2017,374Z374,Tawa naan:,72,Card,Khana Khazana,08:31:21,4,Delicious food
+SBXX592702XP,16-08-2017,895Y895,pickle:,65,Card,Sadabahar,08:31:21,3,Stale food
+UFDF355524DM,02-08-2017,202U202,Roti:,62,Wallet,Sadabahar,08:31:21,2,Delivery boy didnt come at doorstep
+SBXX592702XP,16-08-2017,925Y925,Biryani:,86,Cash,Little Cafe,08:31:21,5,Cheap and best
+SBXX592702XP,30-08-2017,190Y190,Pulao:,81,Cash,Haus Khas,08:31:21,1,Late delivery
+SAMV824387MW,27-08-2017,732H732,pickle:,71,Wallet,Emperial,08:31:21,3,Difficult to order
+OXJY167254JK,30-08-2017,994T994,Idli:,83,Wallet,Emperial,08:31:21,2,Delivery boy didnt come at doorstep
+OXJY167254JK,09-08-2017,722N722,Banana shake:,41,Wallet,Toit,08:31:21,0,Complicated procedure
+SAMV824387MW,11-08-2017,885W885,Manchurian:,76,Online,Johnahs,08:31:21,5,Easy to order
+UFDF355524DM,19-08-2017,217O217,Noodles:,86,Card,Khana Khazana,08:31:21,0,Food not good
+UYXR411673XC,11-08-2017,533X533,Manchurian:,81,Card,Johnahs,08:31:21,2,Delivery boy didnt come at doorstep
+QTSI285174SG,17-08-2017,902X902,Chikko shake:,33,Card,Little Cafe,08:31:21,1,Complicated procedure
+OXJY167254JK,29-08-2017,963R963,Fried Rice:,82,Online,Eat out,08:31:21,4,Easy to order
+OXJY167254JK,23-08-2017,2.21E+223,Fryams:,69,Cash,Little Cafe,08:31:21,2,Difficult to order
+FRBT691245BA,24-08-2017,701A701,Pulao:,32,Online,Toit,08:31:21,5,Fast delivery
+LJBO9511000BL,03-08-2017,105Z105,Paneer tikka:,80,Card,Eat out,08:31:21,0,Stale food
+LJBO9511000BL,30-08-2017,557Z557,Regular:,55,Cash,Delhi pot,08:31:21,4,Nice
+LRKI603654KL,30-08-2017,689S689,Biryani:,49,Wallet,Johnahs,08:31:21,5,Awesome experience
+LRKI603654KL,08-08-2017,316O316,Laccha Prantha:,29,Cash,Haus Khas,08:31:21,4,Fast delivery
+OXJY167254JK,18-08-2017,307X307,Fryams:,69,Wallet,Eat out,08:31:21,4,Delicious food
+LRKI603654KL,25-08-2017,983A983,Manchurian:,35,Wallet,Emperial,08:31:21,4,Delicious food
+UYXR411673XC,11-08-2017,742Y742,Fryams:,21,Wallet,Onesta,08:31:21,4,Good service
+XVTR474839TP,23-08-2017,381I381,Pulao:,42,Online,Toit,08:31:21,0,Stale food
+SBXX592702XP,11-08-2017,501F501,Pulao:,43,Card,Food point,08:31:21,3,Complicated procedure
+XVTR474839TP,06-08-2017,668P668,Banana shake:,96,Wallet,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+UFDF355524DM,17-08-2017,825D825,Chikko shake:,98,Cash,Food point,08:31:21,2,Late delivery
+OXJY167254JK,17-08-2017,847M847,Roti:,31,Wallet,Plan B,08:31:21,3,Coupon applied
+FRBT691245BA,25-08-2017,128T128,Quiche:,38,Wallet,Johnahs,08:31:21,2,Late delivery
+FRBT691245BA,31-08-2017,234L234,Crispy Onion Rings:,45,Online,Sadabahar,08:31:21,4,Cheap and best
+OXJY167254JK,02-08-2017,421H421,Chop Suey,23,Cash,Little Cafe,08:31:21,1,High price
+OXJY167254JK,11-08-2017,519B519,Chop Suey,94,Card,Delhi pot,08:31:21,1,Complicated procedure
+QTSI285174SG,09-08-2017,358J358,Crispy Onion Rings:,78,Online,Plan B,08:31:21,3,Stale food
+XVTR474839TP,31-08-2017,376E376,Banana shake:,54,Card,Toit,08:31:21,0,Late delivery
+LJBO9511000BL,05-08-2017,332C332,Pizza:,76,Card,Eat out,08:31:21,4,Delicious food
+FRBT691245BA,06-08-2017,584R584,Regular:,57,Card,Sadabahar,08:31:21,5,Delicious food
+OXJY167254JK,11-08-2017,552I552,Chow Mein:,28,Cash,Plan B,08:31:21,4,Delicious food
+SAMV824387MW,06-08-2017,919M919,Shahi paneer:,30,Wallet,Johnahs,08:31:21,4,Easy to order
+FRBT691245BA,19-08-2017,961Y961,Laccha Prantha:,28,Online,Toit,08:31:21,5,Will order again
+SAMV824387MW,03-08-2017,593K593,Chop Suey,38,Online,Sadabahar,08:31:21,5,Will order again
+OXJY167254JK,30-08-2017,752N752,Banana shake:,95,Wallet,Onesta,08:31:21,0,Difficult to order
+LJBO9511000BL,30-08-2017,455W455,Biryani:,96,Online,Emperial,08:31:21,0,Complicated procedure
+LRKI603654KL,24-08-2017,281D281,Manchurian:,79,Cash,Delhi pot,08:31:21,3,Food not good
+XVTR474839TP,02-08-2017,819L819,Laccha Prantha:,31,Online,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,17-08-2017,373I373,Quiche:,37,Card,Emperial,08:31:21,0,Late delivery
+OXJY167254JK,03-08-2017,564J564,salad:,63,Wallet,Onesta,08:31:21,5,Cheap and best
+SAMV824387MW,07-08-2017,149F149,Roti:,31,Cash,Sadabahar,08:31:21,4,Worth
+XVTR474839TP,04-08-2017,539I539,Shahi paneer:,51,Online,Onesta,08:31:21,1,High price
+LJBO9511000BL,05-08-2017,215J215,Chow Mein:,39,Cash,Emperial,08:31:21,1,Delivery boy didnt come at doorstep
+SAMV824387MW,06-08-2017,363Z363,Shahi paneer:,52,Cash,Khana Khazana,08:31:21,5,Worth
+UYXR411673XC,01-08-2017,726Z726,Biryani:,55,Wallet,Johnahs,08:31:21,2,Delivery boy didnt come at doorstep
+LRKI603654KL,19-08-2017,741F741,Banana shake:,67,Online,Haus Khas,08:31:21,3,Stale food
+LRKI603654KL,27-08-2017,264U264,Shahi paneer:,52,Card,Sadabahar,08:31:21,1,Difficult to order
+SBXX592702XP,27-08-2017,775V775,Chikko shake:,54,Cash,Haus Khas,08:31:21,3,Delivery boy didnt come at doorstep
+XVTR474839TP,16-08-2017,403H403,pickle:,55,Online,Sadabahar,08:31:21,2,Difficult to order
+SBXX592702XP,11-08-2017,517U517,pickle:,27,Online,Sadabahar,08:31:21,0,Complicated procedure
+UYXR411673XC,17-08-2017,715H715,Paneer tikka:,66,Wallet,Haus Khas,08:31:21,5,Nice
+QTSI285174SG,19-08-2017,527W527,Fryams:,59,Wallet,Plan B,08:31:21,0,Late delivery
+LRKI603654KL,25-08-2017,491A491,Fried Rice:,80,Online,Toit,08:31:21,5,Easy to order
+JXJY167254JK,09-09-2017,154S644,Quiche:Noodles:Roti,123,Card,Eat out,08:31:21,4,Will order again
+LJBO9511000BL,03-09-2017,105Z105,Paneer tikka:,80,Card,Eat out,08:31:21,0,Stale food
+LJBO9511000BL,30-09-2017,557Z557,Regular:,55,Cash,Delhi pot,08:31:21,4,Nice
+LRKI603654KL,30-09-2017,689S689,Biryani:,49,Wallet,Johnahs,08:31:21,5,Awesome experience
+LRKI603654KL,08-09-2017,316O316,Laccha Prantha:,29,Cash,Haus Khas,08:31:21,4,Fast delivery
+OXJY167254JK,18-09-2017,307X307,Fryams:,69,Wallet,Eat out,08:31:21,4,Delicious food
+LRKI603654KL,25-09-2017,983A983,Manchurian:,35,Wallet,Emperial,08:31:21,4,Delicious food
+UYXR411673XC,11-09-2017,742Y742,Fryams:,21,Wallet,Onesta,08:31:21,4,Good service
+XVTR474839TP,23-09-2017,381I381,Pulao:,42,Online,Toit,08:31:21,0,Stale food
+SBXX592702XP,11-09-2017,501F501,Pulao:,43,Card,Food point,08:31:21,3,Complicated procedure
+XVTR474839TP,06-09-2017,668P668,Banana shake:,96,Wallet,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+UFDF355524DM,17-09-2017,825D825,Chikko shake:,98,Cash,Food point,08:31:21,2,Late delivery
+OXJY167254JK,17-09-2017,847M847,Roti:,31,Wallet,Plan B,08:31:21,3,Coupon applied
+FRBT691245BA,25-09-2017,128T128,Quiche:,38,Wallet,Johnahs,08:31:21,2,Late delivery
+FRBT691245BA,31-09-2017,234L234,Crispy Onion Rings:,45,Online,Sadabahar,08:31:21,4,Cheap and best
+OXJY167254JK,02-09-2017,421H421,Chop Suey,23,Cash,Little Cafe,08:31:21,1,High price
+OXJY167254JK,11-09-2017,519B519,Chop Suey,94,Card,Delhi pot,08:31:21,1,Complicated procedure
+QTSI285174SG,09-09-2017,358J358,Crispy Onion Rings:,78,Online,Plan B,08:31:21,3,Stale food
+XVTR474839TP,31-09-2017,376E376,Banana shake:,54,Card,Toit,08:31:21,0,Late delivery
+LJBO9511000BL,05-09-2017,332C332,Pizza:,76,Card,Eat out,08:31:21,4,Delicious food
+FRBT691245BA,06-09-2017,584R584,Regular:,57,Card,Sadabahar,08:31:21,5,Delicious food
+OXJY167254JK,11-09-2017,552I552,Chow Mein:,28,Cash,Plan B,08:31:21,4,Delicious food
+SAMV824387MW,06-09-2017,919M919,Shahi paneer:,30,Wallet,Johnahs,08:31:21,4,Easy to order
+FRBT691245BA,19-09-2017,961Y961,Laccha Prantha:,28,Online,Toit,08:31:21,5,Will order again
+SAMV824387MW,03-09-2017,593K593,Chop Suey,38,Online,Sadabahar,08:31:21,5,Will order again
+OXJY167254JK,30-09-2017,752N752,Banana shake:,95,Wallet,Onesta,08:31:21,0,Difficult to order
+LJBO9511000BL,30-09-2017,455W455,Biryani:,96,Online,Emperial,08:31:21,0,Complicated procedure
+LRKI603654KL,24-09-2017,281D281,Manchurian:,79,Cash,Delhi pot,08:31:21,3,Food not good
+XVTR474839TP,02-09-2017,819L819,Laccha Prantha:,31,Online,Johnahs,08:31:21,0,Delivery boy didnt come at doorstep
+XVTR474839TP,17-09-2017,373I373,Quiche:,37,Card,Emperial,08:31:21,0,Late delivery
+OXJY167254JK,03-09-2017,564J564,salad:,63,Wallet,Onesta,08:31:21,5,Cheap and best
+SAMV824387MW,07-09-2017,149F149,Roti:,31,Cash,Sadabahar,08:31:21,4,Worth
+XVTR474839TP,04-09-2017,539I539,Shahi paneer:,51,Online,Onesta,08:31:21,1,High price
+LJBO9511000BL,05-09-2017,215J215,Chow Mein:,39,Cash,Emperial,08:31:21,1,Delivery boy didnt come at doorstep
+SAMV824387MW,06-09-2017,363Z363,Shahi paneer:,52,Cash,Khana Khazana,08:31:21,5,Worth
